@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-09-18</title>
+<meta name="description" content="No candidate items were fetched for this period.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html">AI Digest</a>
+  <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-09-18</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">0 stories</p>
+  </div>
+  <blockquote class="lede">No candidate items were fetched for this period.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid"><p class="empty-note">No stories cleared the importance threshold this period.</p></div>
+  </section>
+  
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <p class="empty-note">Nothing notable outside the Top Stories this period.</p>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    <p class="empty-note">Nothing stood out enough to recommend a deep dive this period.</p>
+  </section>
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
