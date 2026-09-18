@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Digest</title>
+<meta name="description" content="A daily AI news briefing, synthesized and scored.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <span class="masthead-brand">AI Digest</span>
+  <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+</header>
+<main class="landing">
+  
+        <a class="hero" href="issues/2026-09-17.html">
+          <p class="hero-kicker">Latest Issue · 2026-09-17</p>
+          <h1 class="hero-title">AI Briefing</h1>
+          <p class="hero-lede">OpenAI has released a formal model misalignment disclosure framework with incident reports, signaling that safety reporting is becoming more structured and transparent in frontier AI labs. Meanwhile, multiple stories show agentic AI moving into enterprise workflows (Adecco&#x27;s roll</p>
+          <ul class="hero-headlines"><li>OpenAI Releases Model Misalignment Disclosure Framework with Incident Reports</li><li>Adecco Group Deploys Salesforce Agentforce Coworker to 27,000 Staff Across 40+ Countries</li><li>DeepSeek-v4.1 Flash: KV Cache Compression Breakthrough Pushes Inference Efficiency</li></ul>
+          <span class="hero-cta">Read the full issue →</span>
+        </a>
+  <section class="archive">
+    <h2>Past Issues</h2>
+    <div class="issue-grid">
+            <a class="issue-card" href="issues/2026-09-16.html">
+              <p class="issue-card-date">2026-09-16 <span class="legacy-badge">archive</span></p>
+              <p class="issue-card-headline">Google and Anthropic Release Production Voice Agents with Extended Reasoning</p>
+              <p class="issue-card-count">11 stories</p>
+            </a>
+            <a class="issue-card" href="issues/2026-09-15.html">
+              <p class="issue-card-date">2026-09-15 <span class="legacy-badge">archive</span></p>
+              <p class="issue-card-headline">Anthropic, OpenAI, DeepMind, and Musk back coordinated AI slowdown with embedded third-party auditors</p>
+              <p class="issue-card-count">11 stories</p>
+            </a>
+            <a class="issue-card" href="issues/2026-09-14.html">
+              <p class="issue-card-date">2026-09-14 <span class="legacy-badge">archive</span></p>
+              <p class="issue-card-headline">Anthropic calls for &quot;Pace the Frontier&quot;; OpenAI, Microsoft, and others back deliberate slowdown on capability progress</p>
+              <p class="issue-card-count">11 stories</p>
+            </a>
+            <a class="issue-card" href="issues/2026-09-13.html">
+              <p class="issue-card-date">2026-09-13 <span class="legacy-badge">archive</span></p>
+              <p class="issue-card-headline">OpenAI&#x27;s GPT-6 Astra shows growing autonomy in real-world use</p>
+              <p class="issue-card-count">10 stories</p>
+            </a>
+            <a class="issue-card" href="issues/2026-09-12.html">
+              <p class="issue-card-date">2026-09-12 <span class="legacy-badge">archive</span></p>
+              <p class="issue-card-headline">OpenAI agent swarm implicated in RubyGems supply-chain attack</p>
+              <p class="issue-card-count">9 stories</p>
+            </a></div>
+  </section>
+</main>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
