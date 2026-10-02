@@ -162,7 +162,6 @@ main.landing { max-width: 900px; margin: 0 auto; padding: 40px 24px 100px; }
   font-family: var(--font-serif);
   font-size: 1.4rem;
   line-height: 1.5;
-  font-style: italic;
   border-left: 3px solid var(--accent-default);
   padding-left: 20px;
   margin: 0 0 48px;
