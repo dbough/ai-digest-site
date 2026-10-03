@@ -3,9 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Digest</title>
+<title>AI Briefing</title>
 <meta name="description" content="A daily AI news briefing, synthesized and scored.">
-<link rel="alternate" type="application/rss+xml" title="AI Digest" href="feed.xml">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing">
+<meta property="og:description" content="A daily AI news briefing, synthesized and scored.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,25 +25,32 @@
 <body>
 
 <header class="masthead">
-  <span class="masthead-brand">AI Digest</span>
+  <a class="masthead-brand" href="index.html"><img class="brand-mark" src="assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
   <div class="masthead-actions">
-    <a class="rss-link" href="feed.xml" title="Subscribe via RSS">RSS</a>
+    <a class="nav-link" href="about.html">How this works</a>
+    <a class="nav-link rss-link" href="feed.xml" title="Subscribe via RSS">RSS</a>
     <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
   </div>
 </header>
 <main class="landing">
+  <p class="site-tagline">The day&#x27;s most important AI news, merged across about thirty sources, scored, and summarized. <a href="about.html">How this works →</a></p>
   
-        <a class="hero" href="issues/2026-10-02.html">
-          <p class="hero-kicker">Latest Issue · 2026-10-02</p>
+        <a class="hero" href="issues/2026-10-03.html">
+          <p class="hero-kicker">Latest Issue · 2026-10-03</p>
           <h1 class="hero-title">AI Briefing</h1>
-          <p class="hero-lede">The AI field is experiencing a sharp bifurcation: frontier models (Gemini 4 Argon, GPT-6.1 Sol, Claude Opus) are stabilizing into a competitive trio with incremental capability gains, while the real action has shifted to agentic systems—agents that act autonomously, multi-agent o</p>
-          <ul class="hero-headlines"><li>Gemini 4 Argon: Google&#x27;s frontier model arrives with 1M context and restricted access</li><li>OpenAI&#x27;s Dots: Always-on personal AI agents designed to compete with Meta&#x27;s Muse</li><li>GPT-6.1 Sol: OpenAI&#x27;s cost-competitive model reaches near-Astra performance at one-fifth the price</li></ul>
+          <p class="hero-lede">The week shows a consolidation of agentic AI as a major deployment pattern: Meta (Muse), OpenAI (Dots), and others are shipping always-on agents with proactive behavior, triggering real security and privacy responses from Apple and raising broader questions about user consent and</p>
+          <ul class="hero-headlines"><li>Apple tightens macOS Full Disk Access to block unauthorized AI agent snooping</li><li>OpenAI launches Dots: enterprise agentic assistant platform</li><li>Meta open-sources Muse gadget SDKs; wants hardware ecosystem around AI agent</li></ul>
           <span class="hero-cta">Read the full issue →</span>
         </a>
   
   <section class="archive">
     <h2>Past Issues</h2>
     <div class="issue-grid">
+            <a class="issue-card" href="issues/2026-10-02.html">
+              <p class="issue-card-date">2026-10-02</p>
+              <p class="issue-card-headline">Gemini 4 Argon: Google&#x27;s frontier model arrives with 1M context and restricted access</p>
+              <p class="issue-card-count">11 stories</p>
+            </a>
             <a class="issue-card" href="issues/2026-09-29.html">
               <p class="issue-card-date">2026-09-29</p>
               <p class="issue-card-headline">OpenAI pauses frontier model training after multiple agent misalignment incidents; cancels GPT-6.1 over safety regression</p>
@@ -85,6 +103,13 @@
             </a></div>
   </section>
 </main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="feed.xml">RSS</a></p>
+</footer>
 
 <script>
 (function() {

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How this works · AI Briefing</title>
+<meta name="description" content="How the daily AI briefing is sourced, selected, and summarized, and why you should always check the sources.">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="How this works · AI Briefing">
+<meta property="og:description" content="How the daily AI briefing is sourced, selected, and summarized, and why you should always check the sources.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="index.html"><img class="brand-mark" src="assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="about.html">How this works</a>
+    <a class="nav-link rss-link" href="feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="about">
+  <h1 class="about-title">How this works</h1>
+  <p class="about-lede">AI Briefing is a daily summary of the most important developments in
+    AI: new models, research, tools, business moves, and policy. It's written to be read in a few
+    minutes, with links to every original source.</p>
+
+  <div class="disclaimer-box">
+    <strong>Please read.</strong> This briefing is selected and written automatically by AI, and no person reviews it before it&#x27;s published. It can contain mistakes, miss nuance, or misstate what a source says. The creator of this site is not responsible for the accuracy of this information. Always read the linked original sources and use your own judgment before acting on anything here.
+  </div>
+
+  <h2>1. Finding the news</h2>
+  <p>Every morning (issues are up by 7 a.m. Eastern) an automated process checks a fixed list of
+    about thirty sources for anything published since the previous issue:</p>
+  <ul>
+    <li><strong>AI labs and research teams:</strong> Anthropic, OpenAI, Google DeepMind, Google
+      AI, Meta AI, Microsoft Research, Hugging Face, NVIDIA, AWS, and GitHub</li>
+    <li><strong>Research papers:</strong> new arXiv papers in AI, machine learning, and
+      language models</li>
+    <li><strong>Technology journalism:</strong> The Verge, Wired, Ars Technica, TechCrunch,
+      VentureBeat, MIT Technology Review, InfoQ, and others</li>
+    <li><strong>Newsletters and independent writers:</strong> Simon Willison, Ethan Mollick's
+      One Useful Thing, Import AI, Latent Space, TLDR AI, and The Rundown AI</li>
+    <li><strong>Community and policy:</strong> highly upvoted Hacker News posts, NTEN, and
+      Georgetown's Center for Security and Emerging Technology</li>
+  </ul>
+  <p>That's usually a few hundred articles, many of them covering the same events.</p>
+
+  <h2>2. Choosing and summarizing</h2>
+  <p>All of those articles go to one AI model (Anthropic's Claude) together, in a single pass. The
+    model:</p>
+  <ul>
+    <li><strong>Groups coverage of the same event</strong> into one story, so you don't read the
+      same news five times.</li>
+    <li><strong>Rates each story's importance</strong> from 1 to 5. Only stories rated 3 or
+      higher make it into the issue.</li>
+    <li><strong>Separately rates how relevant each story is</strong> to five kinds of work. A
+      story that matters a lot to one of them, but isn't a top story, shows up under
+      "Especially Relevant to Your Work":
+      <ul><li>Developer</li><li>Tech Consulting</li><li>Entrepreneur/Small Business</li><li>Nonprofit</li><li>Coaching &amp; Human Impact</li></ul></li>
+    <li><strong>Writes a short summary</strong> with pros and cons, plus "Worth Watching" items
+      and one topic worth exploring further, each linked to its sources.</li>
+  </ul>
+  <p>The "first reported" and "latest update" dates on each story come from the sources' own
+    publish dates, not from the AI. Images come from the linked articles.</p>
+
+  <h2>3. No human in the loop</h2>
+  <p>No person selects, writes, edits, or fact-checks the stories. Each issue is published
+    automatically and isn't reviewed by a person first. That's why every story links to its
+    original sources, and why you should read them and use your own judgment before acting on
+    anything here.</p>
+
+  <h2>Spot a problem? Have a request?</h2>
+  <p>If a summary gets something wrong, a story doesn't belong, something important was missed,
+    or you'd like a source added, please
+    <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">send a message on LinkedIn</a>.</p>
+
+  <nav class="issue-footer"><a href="index.html">← Latest issue</a></nav>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>

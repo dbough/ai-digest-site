@@ -1,11 +1,13 @@
 
 :root {
-  --bg: #fdfcfa;
+  /* Palette follows danbough.com: warm paper, copper accent, near-black ink. */
+  --bg: #fbf8f2;
   --bg-elevated: #ffffff;
+  --bg-soft: #fff1e5;
   --text: #1a1a1a;
-  --text-muted: #6b6b6b;
-  --border: #e5e2dc;
-  --accent-default: #6366f1;
+  --text-muted: #5f6875;
+  --border: #e8e1d6;
+  --accent-default: #b96f3a;
   --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
   --font-serif: 'Source Serif 4', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -13,21 +15,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #16151a;
-    --bg-elevated: #201f26;
+    --bg: #141312;
+    --bg-elevated: #1f1d1b;
+    --bg-soft: #2a211a;
     --text: #ece9e4;
-    --text-muted: #9a9690;
-    --border: #34323b;
+    --text-muted: #a29d96;
+    --border: #36322e;
+    --accent-default: #e0954f;
     --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #16151a;
-  --bg-elevated: #201f26;
+  --bg: #141312;
+  --bg-elevated: #1f1d1b;
+  --bg-soft: #2a211a;
   --text: #ece9e4;
-  --text-muted: #9a9690;
-  --border: #34323b;
+  --text-muted: #a29d96;
+  --border: #36322e;
+  --accent-default: #e0954f;
   --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
 }
 
@@ -64,9 +70,12 @@ a { color: inherit; }
   letter-spacing: -0.01em;
 }
 
+.masthead-brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand-mark { width: 28px; height: 28px; border-radius: 7px; flex: none; box-shadow: 0 0 0 1px var(--border); }
+
 .masthead-actions { display: flex; align-items: center; gap: 14px; }
-.rss-link { font-size: 0.85rem; font-weight: 600; color: var(--text-muted); text-decoration: none; }
-.rss-link:hover { color: var(--accent-default); }
+.nav-link { font-size: 0.85rem; font-weight: 600; color: var(--text-muted); text-decoration: none; white-space: nowrap; }
+.nav-link:hover { color: var(--accent-default); }
 
 .theme-toggle {
   background: none;
@@ -79,10 +88,10 @@ a { color: inherit; }
   color: var(--text);
 }
 
-main { max-width: 720px; margin: 0 auto; padding: 40px 24px 100px; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 24px 56px; }
 
 .landing main.landing { max-width: 900px; }
-main.landing { max-width: 900px; margin: 0 auto; padding: 40px 24px 100px; }
+main.landing { max-width: 900px; margin: 0 auto; padding: 40px 24px 56px; }
 
 .hero {
   display: block;
@@ -348,6 +357,50 @@ main.landing { max-width: 900px; margin: 0 auto; padding: 40px 24px 100px; }
 .issue-footer a { text-decoration: none; color: var(--text-muted); font-size: 0.9rem; }
 
 .empty-note { color: var(--text-muted); font-style: italic; }
+
+.site-tagline { color: var(--text-muted); margin: 0 0 24px; }
+.site-tagline a, .issue-disclaimer a { color: var(--accent-default); font-weight: 600; text-decoration: none; }
+
+.issue-disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-left: 3px solid var(--accent-default);
+  padding-left: 12px;
+  margin: 12px 0 0;
+}
+
+main.about h1 { font-family: var(--font-serif); font-size: 2.2rem; margin: 0 0 16px; }
+main.about h2 { font-family: var(--font-serif); margin-top: 40px; }
+.about-lede { font-size: 1.15rem; }
+main.about li { margin-bottom: 8px; }
+main.about ul ul { margin-top: 8px; }
+main.about a { color: var(--accent-default); }
+.disclaimer-box {
+  background: var(--bg-soft);
+  border-left: 3px solid var(--accent-default);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 28px 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 24px 40px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.site-footer p { margin: 0 auto 8px; max-width: 640px; }
+.site-footer a { color: var(--text-muted); }
+.site-footer a:hover { color: var(--accent-default); }
+.footer-links { margin-top: 14px !important; }
+
+@media (max-width: 560px) {
+  .masthead { padding: 14px 16px; }
+  .masthead-actions { gap: 10px; }
+  .rss-link { display: none; }
+  .site-footer { padding: 24px 16px 32px; }
+}
 
 .legacy-content h1, .legacy-content h2, .legacy-content h3 { font-family: var(--font-serif); }
 .legacy-content h3 { margin-top: 32px; }

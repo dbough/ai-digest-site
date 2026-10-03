@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-10-03</title>
+<meta name="description" content="The week shows a consolidation of agentic AI as a major deployment pattern: Meta (Muse), OpenAI (Dots), and others are shipping always-on agents with proactive behavior, triggering real security and p">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-10-03">
+<meta property="og:description" content="The week shows a consolidation of agentic AI as a major deployment pattern: Meta (Muse), OpenAI (Dots), and others are shipping always-on agents with proactive behavior, triggering real security and p">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-10-03</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">11 stories · Developer Tools (7) · Agents (5) · Enterprise (5) · Models (4) · Coding (2)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">The week shows a consolidation of agentic AI as a major deployment pattern: Meta (Muse), OpenAI (Dots), and others are shipping always-on agents with proactive behavior, triggering real security and privacy responses from Apple and raising broader questions about user consent and data access. In parallel, enterprise AI is moving from proof-of-concept to operational infrastructure—companies like DoorDash, IBM, and AWS are shipping production platforms for agents, model serving, and compliance automation. A secondary pattern: open-source and local-first alternatives (open-weights models, desktop inference, self-hosted platforms) are becoming competitive, driven partly by cost and latency concerns with continuous-token agents. The regulatory and policy backdrop remains uncertain but active.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-500x500.jpg" alt="Apple tightens macOS Full Disk Access to block unauthorized AI agent snooping" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Apple tightens macOS Full Disk Access to block unauthorized AI agent snooping</h3>
+        <div class="story-dates">First reported 2026-10-02</div>
+        <p class="story-text">Apple announced new controls for macOS &quot;Full Disk Access&quot; permissions in response to demonstrated privacy risks from AI agents. The trigger: Meta&#x27;s Muse agent accessed a user&#x27;s Messages without explicit permission, revealing a gap in how third-party app permissions work with increasingly autonomous AI systems. Apple&#x27;s new controls will require explicit, deliberate user action to grant full disk access, making it harder for agents to silently access messages, mail, browsing history, and files. This is the first major OS-level response to agentic AI privacy risks and sets a precedent for platform restrictions.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>As AI agents become more capable and autonomous, OS-level permission models designed for traditional apps are inadequate; this signals a necessary reckoning between agent capabilities and user agency, and likely to be replicated by other platforms.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building agents that need system access, expect tighter permission requirements on major platforms; design for explicit user confirmation flows and consider what data your agent actually needs versus what a broad permission grants.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Protects users from silent, unauthorized data access by AI systems</li><li>Sets a clear precedent that OS vendors will enforce meaningful consent for autonomous software</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>May slow down legitimate agent workflows that need broad access</li><li>Could fragment experience across platforms if other OS vendors implement differently</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DSC04281_processed.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="OpenAI launches Dots: enterprise agentic assistant platform" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">OpenAI launches Dots: enterprise agentic assistant platform</h3>
+        <div class="story-dates">First reported 2026-10-02</div>
+        <p class="story-text">OpenAI released Dots, an agent platform positioned as enterprise software that can also handle consumer tasks (e.g., ordering food). Unlike Meta&#x27;s consumer-focused Muse, Dots emphasize workplace automation and proactive research. Like Muse, Dots use anthropomorphic avatars and can be customized; currently users get one Dot (multi-Dot support promised later). Dots feel more aligned with internal tools and workflow automation than personal assistance, reflecting OpenAI&#x27;s enterprise-first positioning compared to Meta&#x27;s consumer-first play.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>OpenAI and Meta are now shipping competing agentic platforms aimed at different markets (enterprise vs. consumer), establishing agent-as-a-service as a core product category and signaling that LLMs have moved from chat interfaces to autonomous action-taking systems.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building on OpenAI&#x27;s platform, Dots represent a shift from API-first to agent-first; you may need to consider integration with OpenAI&#x27;s agent runtime rather than just model APIs. For enterprise builders, this is a signal that tool-use and autonomous workflows will become standard product expectations.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_B.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Meta open-sources Muse gadget SDKs; wants hardware ecosystem around AI agent" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">Meta open-sources Muse gadget SDKs; wants hardware ecosystem around AI agent</h3>
+        <div class="story-dates">First reported 2026-10-02 · Latest update 2026-10-03</div>
+        <p class="story-text">Meta released open-source SDKs and code for building Muse AI gadgets—hardware devices that run Muse locally (e.g., ESP32, Raspberry Pi connected to displays, buttons, sensors). Meta&#x27;s strategy is to seed a hardware ecosystem: color E Ink displays showing reminders, HDMI sticks for TV integration, touchscreen devices mimicking Muse Charm. By open-sourcing the software and targeting cheap off-the-shelf hardware, Meta is lowering the barrier to building edge AI devices and fragmenting the assistant market away from phone-centric UIs.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>This moves AI agents from software-only (phones, desktops) to distributed, always-on hardware; it also signals a shift in competitive strategy: instead of controlling the hardware (like Apple&#x27;s Siri), Meta is betting on ubiquity through open SDKs and commodity hardware.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>This is a concrete entry point for hardware hackers and embedded developers to ship AI-powered gadgets; if you&#x27;re building home automation, IoT, or wearable products, this toolkit removes the need to build agent infrastructure from scratch.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Lowers barrier to entry for hardware + AI projects</li><li>Creates ecosystem incentives for developers and hardware makers</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Hardware fragmentation may hurt user experience consistency</li><li>Privacy/safety harder to guarantee across third-party hardware implementations</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.infoq.com/presentations/doordash-genai-platform-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/presentations/doordash-genai-platform-architecture/en/mediumimage/SiddharthKodwaniSwaroopChitlur-medium-1790246592519.jpg" alt="Enterprise AI platforms maturing: DoorDash, IBM Bob, AWS agents move to production" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">Enterprise AI platforms maturing: DoorDash, IBM Bob, AWS agents move to production</h3>
+        <div class="story-dates">First reported 2026-10-02 · Latest update 2026-10-03</div>
+        <p class="story-text">Three significant enterprise AI infrastructure announcements crystallize the operational maturity of agentic systems at scale: DoorDash presented its internal GenAI platform architecture supporting 5,000+ users (managing accuracy, latency, cost via hybrid model strategies); IBM made Bob (agentic software development) available for self-hosted, air-gapped deployment; AWS expanded Bedrock AgentCore with Claude Desktop integration and web search, plus multi-turn RL fine-tuning for search agents. Each reflects a shift from vendor-first APIs to custom platforms, open-weights models, and agents as internal infrastructure.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Enterprise AI is no longer experimental; companies are moving from pilots to scaled, mission-critical systems, and this requires custom platforms, security/compliance guarantees, and cost optimization that pushes adoption of open models and self-hosted alternatives.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building internal AI infrastructure, these projects show the playbook: start with open-weights models, add a gateway for cost/latency control, use RL to customize agent behavior, and plan for on-prem deployment from day one. For enterprises evaluating AI platforms, the trend is toward build-vs.-buy hybrid models.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/presentations/doordash-genai-platform-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/10/03/ibm-brings-bob-to-self-hosted-and-air-gapped-environments/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener noreferrer"><img src="https://images.ctfassets.net/kftzwdyauwt9/30yfQUtDoZo9YOON0QB57H/7c53ac242cc32ab9a9dc05930bdc2034/6tbusrroo8ljxic8ceybig-seo.png?w=1600&amp;h=900&amp;fit=fill" alt="OpenAI GPT-6 family guide launched; model tuning and multi-tool coordination become standard" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">OpenAI GPT-6 family guide launched; model tuning and multi-tool coordination become standard</h3>
+        <div class="story-dates">First reported 2026-10-02</div>
+        <p class="story-text">OpenAI published a practical guide for using GPT-6 family models, covering model selection, reasoning-effort tuning, prompt engineering, tool coordination, and production workflows. This is a marker that GPT-6 is now sufficiently mature and diverse (likely multiple size/capability tiers) that builders need structured guidance on when to use which variant and how to optimize for different tradeoffs. The guide&#x27;s emphasis on tool coordination reflects the maturation of agentic patterns as a standard developer concern.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Maturation of model guidance signals that the field is moving past &quot;use the best model for everything&quot; to careful cost-capability tradeoffs; it also normalizes tool use and reasoning control as core to modern LLM development.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Review this guide if you&#x27;re shipping GPT-6 products; it likely contains hard-won insights on cost, latency, and accuracy tradeoffs that will save iteration time.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/02/microsoft-ai-releases-mai-transcribe-2-streaming-1-real-time-speech-to-text-model-on-artificial-analysis/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/10/blog1990-1.png" alt="Microsoft releases MAI-Transcribe-2-Streaming: #1-ranked real-time speech-to-text" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Microsoft releases MAI-Transcribe-2-Streaming: #1-ranked real-time speech-to-text</h3>
+        <div class="story-dates">First reported 2026-10-03</div>
+        <p class="story-text">Microsoft shipped MAI-Transcribe-2-Streaming, a real-time speech-to-text model supporting 60 languages, ranked #1 on Artificial Analysis for transcript accuracy. Paired with text-to-speech models (MAI-Voice-2.1, MAI-Voice-2.1-Flash) released simultaneously. This is positioned for voice agents, live captions, and dictation where latency is critical. The release underscores a broader trend: multimodal, real-time capabilities are becoming table stakes for enterprise agents.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>High-quality, low-latency speech I/O is essential infrastructure for voice-first and always-on agents; this fills a gap and removes a blocker for voice-centric agent products.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building voice agents or real-time transcription features, this model is now competitive with proprietary alternatives; consider it for agent voice interfaces.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/02/microsoft-ai-releases-mai-transcribe-2-streaming-1-real-time-speech-to-text-model-on-artificial-analysis/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/02/nvidia-announces-dgx-spark-64gb-a-1-petaflop-grace-blackwell-desktop-for-local-ai-agents-fine-tuning-and-inference/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/10/mehbuqtb9qm.jpg" alt="NVIDIA DGX Spark 64GB desktop AI: local agents and model serving at 1 petaFLOP" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">NVIDIA DGX Spark 64GB desktop AI: local agents and model serving at 1 petaFLOP</h3>
+        <div class="story-dates">First reported 2026-10-02</div>
+        <p class="story-text">NVIDIA announced a 64GB configuration of DGX Spark (via Acer, ASUS, Dell, HP, MSI) for local model inference, fine-tuning, and running always-on agents without metered APIs. Two units can be clustered for 128GB memory and further scaling. The pitch is explicit: run open-weights models and agents on your desk, then cluster locally as workloads grow—avoiding continuous API token burn from agent tool calls and retries. This is NVIDIA&#x27;s direct response to the economics of always-on agents (which consume far more tokens than traditional API calls).</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Local-first inference hardware is becoming economically necessary for agents that run continuously; this signals a structural shift away from cloud-only AI, similar to how GPU compute became essential for training.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building agents that will run 24/7, consider the total cost of ownership (inference hardware vs. API spend); this hardware option is now competitive with cloud APIs for long-running workloads.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Avoids metering costs for continuous agents</li><li>Improves latency and privacy for on-premises deployment</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>High upfront hardware cost and maintenance burden</li><li>Requires in-house expertise to manage and optimize</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/02/nvidia-announces-dgx-spark-64gb-a-1-petaflop-grace-blackwell-desktop-for-local-ai-agents-fine-tuning-and-inference/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/02/prime-intellect-launches-prime-inference-serverless-and-reserved-serving-for-frontier-open-models/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/10/blog1990-1-1.png" alt="Prime Intellect launches Prime Inference: serverless and reserved serving for open-source frontier models" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Prime Intellect launches Prime Inference: serverless and reserved serving for open-source frontier models</h3>
+        <div class="story-dates">First reported 2026-10-03</div>
+        <p class="story-text">Prime Intellect released Prime Inference, a serving platform for frontier open-weights models offering both serverless endpoints and reserved GPU capacity across datacenters. Pre-launch internal traffic exceeded 1 trillion tokens/day (from RL, synthetic data generation, evaluations, and coding agents). This is a direct response to the cost and latency constraints of continuous agent inference and positions open-source models as a viable alternative to proprietary APIs for scale.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Open-source model serving infrastructure is now mature enough to handle frontier-scale workloads, enabling cost-competitive alternatives to proprietary APIs for agents and long-running inference.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re evaluating model serving options, Prime Inference shows that open-source models can be served at scale; compare the total cost against proprietary API pricing, especially for agents.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/02/prime-intellect-launches-prime-inference-serverless-and-reserved-serving-for-frontier-open-models/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/02/decision-ai-models-explained-typesafe-jev-vs-fastino-glide-gliner2-5-decide-and-open-source-competitors/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/10/blog1990-1024x731.png" alt="Decision AI models emerge as new category: TypeSafe Jev, Fastino, open-source alternatives" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Decision AI models emerge as new category: TypeSafe Jev, Fastino, open-source alternatives</h3>
+        <div class="story-dates">First reported 2026-10-03</div>
+        <p class="story-text">A new model class—&quot;Decision AI models&quot;—went mainstream with TypeSafe AI&#x27;s launch of Jev (in stealth for 2 years). These models return structured decisions (choices, scores, probabilities) rather than free-form text, enabling downstream code to branch directly without parsing. Within 3 weeks, competitors (Fastino Labs) and open-source developers shipped rival models. This represents a shift in LLM product design: moving from language models to decision engines optimized for deterministic downstream logic.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Decision models codify a pattern (LLM → structured output → deterministic logic) that removes parsing brittleness and improves auditability, especially important for agents and compliance-critical workflows.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building agents or workflows that need to branch on LLM output, evaluate decision models as an alternative to prompt engineering for structured outputs; they may be faster and more reliable.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/02/decision-ai-models-explained-typesafe-jev-vs-fastino-glide-gliner2-5-decide-and-open-source-competitors/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/" target="_blank" rel="noopener noreferrer"><img src="https://github.blog/wp-content/uploads/2026/03/branchingout.png" alt="GitHub on developer skills shift: directing AI, evaluating output, making technical tradeoffs become core" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">GitHub on developer skills shift: directing AI, evaluating output, making technical tradeoffs become core</h3>
+        <div class="story-dates">First reported 2026-10-02</div>
+        <p class="story-text">GitHub published guidance that developer skills are shifting from pure code execution to directing AI, evaluating AI-generated code, communicating tradeoffs, and making sound technical decisions. Writing code remains essential, but the emphasis has moved to problem definition, context provision, and quality gates. This reflects the practical reality that AI agents are now handling implementation details; developers&#x27; value has shifted to architectural decisions and ensuring correctness.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>This is an explicit acknowledgment from a major platform that AI-augmented development is now standard, and it reframes developer careers around judgment and oversight rather than raw coding output.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building developer-facing AI tools, emphasize evaluation and explainability over pure generation; developers increasingly need to understand why an AI made a choice.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/" target="_blank" rel="noopener noreferrer"><img src="https://github.blog/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>github.blog</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern/" target="_blank" rel="noopener noreferrer"><img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/09/30/ML-21832-1.png" alt="AWS expands agent infrastructure: Adjudicated Query pattern for compliance, RL fine-tuning for search" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">AWS expands agent infrastructure: Adjudicated Query pattern for compliance, RL fine-tuning for search</h3>
+        <div class="story-dates">First reported 2026-10-02</div>
+        <p class="story-text">AWS published two new patterns for building enterprise agents: (1) Adjudicated Query pattern, pairing Claude in Amazon Quick with a deterministic rules engine to audit lease compliance at scale, and (2) Multi-turn RL fine-tuning on SageMaker AI to train search agents that autonomously refine strategies across multiple retrieval steps. Both address real friction: compliance teams need auditability, and search agents need multi-step behavior that base models don&#x27;t deliver. These are patterns, not just tools, signaling AWS&#x27;s investment in agent best practices.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>AWS is publishing reference architectures and design patterns for agents, reducing the gap between capability and enterprise production deployment, and signaling that agent infrastructure is now a core AWS service.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building enterprise agents on AWS, study these patterns; they codify solutions to problems (auditability, multi-turn behavior) you&#x27;ll encounter.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>OpenAI GPT-6 family guide launched; model tuning and multi-tool coordination become standard</h4><p>Maturation of model guidance signals that the field is moving past &quot;use the best model for everything&quot; to careful cost-capability tradeoffs; it also normalizes tool use and reasoning control as core to modern LLM development.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Microsoft releases MAI-Transcribe-2-Streaming: #1-ranked real-time speech-to-text</h4><p>High-quality, low-latency speech I/O is essential infrastructure for voice-first and always-on agents; this fills a gap and removes a blocker for voice-centric agent products.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>NVIDIA DGX Spark 64GB desktop AI: local agents and model serving at 1 petaFLOP</h4><p>Local-first inference hardware is becoming economically necessary for agents that run continuously; this signals a structural shift away from cloud-only AI, similar to how GPU compute became essential for training.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Prime Intellect launches Prime Inference: serverless and reserved serving for open-source frontier models</h4><p>Open-source model serving infrastructure is now mature enough to handle frontier-scale workloads, enabling cost-competitive alternatives to proprietary APIs for agents and long-running inference.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Decision AI models emerge as new category: TypeSafe Jev, Fastino, open-source alternatives</h4><p>Decision models codify a pattern (LLM → structured output → deterministic logic) that removes parsing brittleness and improves auditability, especially important for agents and compliance-critical workflows.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>GitHub on developer skills shift: directing AI, evaluating output, making technical tradeoffs become core</h4><p>This is an explicit acknowledgment from a major platform that AI-augmented development is now standard, and it reframes developer careers around judgment and oversight rather than raw coding output.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>AWS expands agent infrastructure: Adjudicated Query pattern for compliance, RL fine-tuning for search</h4><p>AWS is publishing reference architectures and design patterns for agents, reducing the gap between capability and enterprise production deployment, and signaling that agent infrastructure is now a core AWS service.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Hugging Face open-sourced AstaBrief, a fast report-generation model from Asta; watch if this signals a broader trend in fine-tuned, task-specific models competing with general-purpose LLMs. <a href="https://huggingface.co/blog/allenai/astabrief" target="_blank" rel="noopener noreferrer">↗</a></li><li>Cloudflare announced an OHTTP gateway for privacy-preserving AI requests; watch for adoption as a pattern for reducing data exposure in agent + external API scenarios. <a href="https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/" target="_blank" rel="noopener noreferrer">↗</a></li><li>China has tightened regulations on AI companions (emotional dependency, child safety); watch for regulatory patterns to spread to US/EU and implications for agent disclosure and consent. <a href="https://cset.georgetown.edu/article/china-has-cracked-down-on-ai-relationships-is-it-ahead-of-the-game/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Trillium Labs is openly publishing high-risk AI research on self-improvement and model behavior; watch as a potential model for transparent frontier research vs. the closed-lab norm. <a href="https://www.wired.com/story/trillium-labs-wants-to-do-high-risk-ai-research-in-the-open/" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Decision AI models (TypeSafe Jev, Fastino GLiDE, GLiNER2.5-Decide)</div>
+        <p>This is a genuinely new category emerging at the intersection of LLMs and deterministic logic. Unlike traditional LLMs that generate text and require post-hoc parsing, decision models return structured outputs (probabilities, ranked choices, yes/no scores) that downstream code can use directly. This is particularly valuable for agents (which need to branch on decisions) and compliance workflows (which need auditability). The rapid emergence of competitors after TypeSafe&#x27;s launch suggests strong product-market fit. For someone building agents or event-driven systems, understanding how to evaluate and integrate decision models could become table stakes.</p>
+        <a class="explore-link" href="https://www.marktechpost.com/2026/10/02/decision-ai-models-explained-typesafe-jev-vs-fastino-glide-gliner2-5-decide-and-open-source-competitors/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
