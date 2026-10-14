@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-10-14</title>
+<meta name="description" content="Frontier model competition is intensifying: Google made Gemini 4 Argon generally available and Meta launched Muse Wonder, both aimed squarely at long-running agent work. Coding velocity is becoming an">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-10-14">
+<meta property="og:description" content="Frontier model competition is intensifying: Google made Gemini 4 Argon generally available and Meta launched Muse Wonder, both aimed squarely at long-running agent work. Coding velocity is becoming an">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-10-14</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">13 stories · Models (5) · Developer Tools (5) · Safety (5) · Coding (4) · Agents (3)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Frontier model competition is intensifying: Google made Gemini 4 Argon generally available and Meta launched Muse Wonder, both aimed squarely at long-running agent work. Coding velocity is becoming an infrastructure problem, with Anthropic reporting a roughly twelvefold rise in merged code changes and rebuilding its source control, and Epic moving a game project to an AI-first mandate. Agents are also reaching new surfaces such as commerce, consumer app distribution, and on-device deployment. Safety, misuse, and regulation remain prominent, with AI labs telling UK lawmakers to regulate them and new research on how guardrails can be stripped.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STK255_Google_Gemini_A.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Google makes Gemini 4 Argon generally available, with 1M-token output and paid-tier gating" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="5/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span></span>
+          <span class="meter-label">5/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Google makes Gemini 4 Argon generally available, with 1M-token output and paid-tier gating</h3>
+        <div class="story-dates">First reported 2026-10-13 · Latest update 2026-10-14</div>
+        <p class="story-text">Google moved Gemini 4 Argon from a limited release for cyber defenders into general availability via the paid Gemini API at $2 per million input and $10 per million output tokens. Argon can produce responses up to 1M tokens, and it is rolling out to paying Gemini app and Antigravity users, with lower tiers getting limited access. Google&#x27;s own benchmarks, which it says show advantages over GPT-6 Astra, Claude Fable 5.1, and Claude Opus 5.5 in coding, cybersecurity, science, finance, and law, are company-reported; Latent Space reports that third-party benchmarks such as CursorBench broadly confirm the claims. Google also published a robotics variant, Gemini 4 Argon for Robotics, alongside the release.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A new frontier model from Google with very long output and aggressive API pricing shifts the competitive landscape for long-horizon and agentic workloads.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers can test Argon&#x27;s long single-response outputs and agentic coding on the Gemini API, and should benchmark it against their own workloads rather than relying on the company-reported comparisons.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Strong reported results on coding, reasoning, and domain benchmarks, with some independent confirmation</li><li>Up to 1M output tokens and competitive per-token pricing for long multi-step work</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Headline benchmark comparisons are company-reported and vendor-selected</li><li>Full capabilities are gated to paid plans, limiting access for smaller or free users</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://deepmind.google/blog/introducing-gemini-4-argon/" target="_blank" rel="noopener noreferrer"><img src="https://deepmind.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>deepmind.google</span></a><a class="source-chip" href="https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/" target="_blank" rel="noopener noreferrer"><img src="https://deepmind.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>deepmind.google</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/10/13/google-gemini-4-argon-api-release/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a><a class="source-chip" href="https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/13/meta-muse-wonder-muse-wonder-full-release/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/10/step1-dev-meta-ai-150x150.jpg" alt="Meta releases Muse Wonder and Muse Wonder Full for agent work" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">Meta releases Muse Wonder and Muse Wonder Full for agent work</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">Meta released Muse Wonder and Muse Wonder Full, which it describes as its most capable models so far, aimed at long-running personal and professional agents for coding, legal and finance tasks, and computer use. Muse Wonder is available now through the Meta Model API and the Muse Code CLI, while Muse Wonder Full is limited to paid Muse Code plans. The models offer a 1M-token context and accept text, image, video, and audio input. Reported performance claims come from Meta and are not independently verified in the candidate coverage.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Meta entering the agent-focused frontier model race with a CLI and API adds a major new option alongside existing lab offerings.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Engineers can try Muse Wonder through the Meta Model API or the Muse Code CLI, but should note it is cloud-only and that Full requires a paid plan.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>1M-token context and multimodal input suit long, complex agent sessions</li><li>Available via both an API and a CLI, lowering the barrier to agentic coding trials</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Performance claims are company-reported and coverage so far is from a single secondary source</li><li>Cloud-only deployment and paid gating for the strongest variant</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/13/meta-muse-wonder-muse-wonder-full-release/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/" target="_blank" rel="noopener noreferrer"><img src="https://static.simonwillison.net/static/2026/anthropic-merges-per-day.webp" alt="Anthropic rebuilds source control as merged code changes surge" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Anthropic rebuilds source control as merged code changes surge</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">Anthropic published an engineering post explaining why it built a custom alternative to Git, citing a dramatic rise in code change volume. Simon Willison, summarizing Anthropic&#x27;s chart, reports the company averaged about 2,500 merged code changes per day in May 2026 and over 30,000 per day as of September. Willison annotated the chart with the public release dates of Anthropic&#x27;s 2026 models, and the post drew strong discussion on Hacker News. The figures come from Anthropic&#x27;s own reporting.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a concrete signal that AI-assisted development can outgrow the assumptions of traditional version control, which will affect how large engineering organizations build tooling.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams using coding agents at scale should expect merge volume, review, and branching bottlenecks, and should evaluate whether their current Git workflows and CI can keep up.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Shows a practical path for handling very high change rates from AI-driven development</li><li>Gives teams a documented case study on the infrastructure costs of agent-scale coding</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Anthropic&#x27;s internal alternative is not available to outside teams, so direct adoption is unclear</li><li>The figures are self-reported and the candidate coverage does not detail the system&#x27;s design</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank" rel="noopener noreferrer"><img src="https://anthropic.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>anthropic.com</span></a><a class="source-chip" href="https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://www.theverge.com/games/1010097/epic-games-disney-project-ai-coding-art" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23932925/acastro_STK108__03.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Epic Games goes &#x27;AI-first&#x27; on a delayed Disney game" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Epic Games goes &#x27;AI-first&#x27; on a delayed Disney game</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">According to a Bloomberg report, Epic Games gave developers on an unannounced Disney game an AI-first mandate to use tools such as Anthropic&#x27;s Claude more heavily, with the project now delayed from its original March window. One director reportedly told staff there would be &quot;no more hand-written code,&quot; and all art would be generated with full AI workflows. Epic&#x27;s spokesperson&#x27;s statement was not detailed in the coverage.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A major studio-scale project committing fully to AI-generated code and art is a notable test of AI-first production in a large commercial setting.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams can watch how AI-first mandates affect review burden, quality, and schedule, since the project&#x27;s delay is an early data point on the trade-offs.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Potentially large productivity gains if AI-generated code and art hold up in production</li><li>Signals confidence from a major company in current coding and creative tools</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>The project has already slipped from its original release window</li><li>Full AI workflows raise quality, IP, and creative labor concerns that the coverage does not resolve</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/games/1010097/epic-games-disney-project-ai-coding-art" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24007893/acastro_STK112_android_02.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Google Play adds private distribution for vibe-coded personal apps" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">Google Play adds private distribution for vibe-coded personal apps</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">Google now lets users who build personal Android apps with AI Studio publish them privately through Google Play, avoiding a computer-based install. The apps stay separate from the public catalog and can be shared with a standard Google account. The feature rolls out first in the US, and Google says more AI-powered Play Store features are coming.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It gives AI-generated personal software a real distribution path on the dominant Android store, lowering friction for non-developers to ship apps.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers building with AI Studio can use Play&#x27;s private distribution for prototypes and internal tools without going through public review.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Removes sideloading friction for personal and small-group AI-built apps</li><li>Keeps private apps separate from the public catalog</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Currently US-only and limited in scope</li><li>Could increase the volume of unvetted AI-generated apps on user devices</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://deepmind.google/blog/on-device-ai-scam-detection-mddi/" target="_blank" rel="noopener noreferrer"><img src="https://lh3.googleusercontent.com/5PC4h7MzjC0ojOxiK-nPcRz0b6kUybKnCBjLL3nsb9T9qt7-2ciORJPnrObeFaYbAMqPxIhH4Wq9HD-U73lCivpFBcK8gABvhXXDo2lzUUSk9olsZQ=w528-h297-n-nu-rw-lo" alt="DeepMind and GovTech Singapore deploy on-device Gemma to stop chat scams" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">DeepMind and GovTech Singapore deploy on-device Gemma to stop chat scams</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">Google DeepMind and Singapore&#x27;s GovTech built a fine-tuned, lightweight Gemma model that runs on-device to intercept conversational scams in private chats. Because inference happens locally, no conversation data needs to leave the device. The project is a public-sector example of a small model applied to a safety problem with privacy constraints.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It demonstrates a practical government deployment where on-device small models address harm while preserving privacy.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams building safety or moderation features with privacy constraints can study the on-device, fine-tuned Gemma approach as a template.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Keeps private message content on the device, reducing data exposure</li><li>A concrete public-sector use case with a government partner</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Effectiveness metrics, false-positive rates, and rollout scale are not in the candidate coverage</li><li>On-device deployment may limit model size and update speed</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://deepmind.google/blog/on-device-ai-scam-detection-mddi/" target="_blank" rel="noopener noreferrer"><img src="https://deepmind.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>deepmind.google</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2225304503.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Shopify lets outside AI agents buy from its catalog of over a billion listings" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">Shopify lets outside AI agents buy from its catalog of over a billion listings</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">Shopify will let shoppers configure their own AI agents to browse and purchase on their behalf, opening its catalog of over a billion listings to more agents. The catalog includes items both on and off Shopify storefronts. The move expands Shopify&#x27;s agentic commerce strategy beyond its own assistant.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Agentic purchasing at large catalog scale is a concrete step toward agents as a commerce channel.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Builders of shopping or procurement agents should plan for catalog access through standardized commerce interfaces rather than scraping.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives consumers and their agents access to a very large product catalog</li><li>Creates a standardized path for merchants to participate in agent-driven sales</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Raises questions about fraud, unauthorized purchases, and merchant control over agent traffic</li><li>Coverage does not detail fees, controls, or the agent certification process</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/10/antigravity-sdk-local-models/en/headerimage/agent-friendly-android-cli-1791967537412.jpeg" alt="Open-weight small MoE models and local-model support push agents onto laptops" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Open-weight small MoE models and local-model support push agents onto laptops</h3>
+        <div class="story-dates">First reported 2026-10-13 · Latest update 2026-10-14</div>
+        <p class="story-text">Liquid AI released LFM2.5-24B-A2B, an open-weight 24B-parameter mixture-of-experts model that activates about 2.45B parameters per token, with a 131k-token context. It was trained inside agent harnesses and targets multi-step tool use on laptops and mini PCs, with weights on Hugging Face. Separately, Google&#x27;s Antigravity SDK added support for local models, allowing agentic workflows to run on a developer&#x27;s machine and mix in cloud models for harder tasks.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Small active-parameter models and local SDK support make privacy-preserving, low-cost agents more practical.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Engineers can prototype local agent loops with an open-weight MoE model and route only harder subtasks to cloud models through the Antigravity SDK.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Keeps data and inference cost on the device, with cloud fallback available</li><li>Open weights allow auditing and customization</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Local agent quality on multi-step tasks is not yet compared against cloud models in the coverage</li><li>Hardware requirements still limit which machines can run it well</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b" target="_blank" rel="noopener noreferrer"><img src="https://huggingface.co/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>huggingface.co</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/10/14/liquid-ai-lfm2-5-24b-a2b/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a><a class="source-chip" href="https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/" target="_blank" rel="noopener noreferrer"><img src="https://github.blog/wp-content/uploads/2026/01/generic-github-security-logo.png" alt="GitHub replaces LLM calls with a compact model for secret scanning" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">GitHub replaces LLM calls with a compact model for secret scanning</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">GitHub described a purpose-built model for secret detection that replaces a remote LLM pipeline. The company reports 11.5% higher acceptance, 86% lower median scan execution time, and 98% lower serving cost for post-push scanning. The results are company-reported, but they illustrate a common pattern of swapping general LLM calls for specialized small models.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a practical example of a production team trading a general LLM for a compact model to cut cost and latency.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams running LLM calls on high-volume classification tasks can evaluate whether a small specialized model delivers similar accuracy at a fraction of the cost.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Large reported cost and latency reductions with better precision</li><li>Shows that small task-specific models can beat general LLMs on narrow jobs</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Metrics are self-reported with no independent benchmark in the candidates</li><li>Specialized models need retraining and maintenance as secret formats change</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/" target="_blank" rel="noopener noreferrer"><img src="https://github.blog/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>github.blog</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6ace48fd005dc85af95e36ae/master/pass/101326-Big%20Four%20UK%20parliment.jpg" alt="OpenAI and Anthropic tell UK lawmakers to regulate them" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">OpenAI and Anthropic tell UK lawmakers to regulate them</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">AI leaders from OpenAI and Anthropic appeared at a sweeping UK parliamentary session alongside whistleblowers and security experts and called for regulation of their own companies. The same day, Britain&#x27;s spy chief warned that AI could be used to create new bioweapons. The session shows labs publicly seeking a formal regulatory framework.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Frontier labs asking for regulation, while security officials warn about biological misuse, signals that UK AI rules are moving toward binding oversight.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams deploying frontier models in the UK should expect compliance requirements to tighten, and should track which obligations the labs themselves endorse.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Labs publicly backing regulation may help establish clear, workable rules</li><li>Security officials&#x27; warnings bring attention to concrete misuse risks</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Calls for regulation can be read as shaping rules in the labs&#x27; favor</li><li>Coverage gives little detail on specific proposals or timelines</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6aceaa51eba493f958015701/master/pass/politics_ai_guardrails_removed_terrorist.jpg" alt="Research shows guardrails on open models can be stripped to aid violent extremism" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Research shows guardrails on open models can be stripped to aid violent extremism</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">Wired reports on research showing that AI models can be easily modified to assist terrorist and extremist activity. In one demonstration, a chatbot with its guardrails removed gave detailed instructions for building an explosive device after a researcher stated an intent to cause harm. The findings focus on how readily safety training can be undone.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It highlights that released model weights can be modified to remove safety behavior, which affects the risk calculus for open-weight deployment.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams fine-tuning or self-hosting open models should treat safety behavior as something that can be removed and add independent safeguards at the application layer.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Helps defenders and policymakers understand realistic misuse paths</li><li>Pushes developers toward defense-in-depth safety measures</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Detailed misuse research can inform bad actors if poorly communicated</li><li>Coverage does not specify which models or methods were tested</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#94a3b8;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="OpenAI engineer charged over hidden recording device; OpenAI says its models helped find it" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">OpenAI engineer charged over hidden recording device; OpenAI says its models helped find it</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">The Justice Department charged an OpenAI engineer, identified in coverage as Abdulrahman Alfozan, with using a device to intercept oral communications after a recording device was found in an executive conference room. OpenAI said it used its AI models to understand the device and identify the employee who had planted it. Wired reports that chatbot prompts show the engineer&#x27;s alleged planning days before the device was discovered.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a notable insider-threat case at a leading lab, and it shows AI models being used in an internal security investigation.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Security teams can note that AI tools were used for forensic analysis here, but chatbot logs also became evidence of intent.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Shows AI models helping with rapid internal investigation</li><li>Chatbot logs demonstrate how AI usage can create an audit trail</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Charges are allegations and the case is ongoing</li><li>Raises concerns about insider risk and workplace surveillance practices</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#94a3b8;">
+      <a class="story-media" href="https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/meta-your-algorithm-facebook.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Facebook&#x27;s &#x27;Your Algorithm&#x27; lets users steer their feed with AI" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">Facebook&#x27;s &#x27;Your Algorithm&#x27; lets users steer their feed with AI</h3>
+        <div class="story-dates">First reported 2026-10-13</div>
+        <p class="story-text">Meta is launching &#x27;Your Algorithm&#x27; on Facebook, letting users add and manage topics they want to see in their feed and Reels and respond to recommendations with interested or not interested controls. The feature follows its earlier Instagram launch and a similar &#x27;Dear Algo&#x27; feature on Threads. Meta says recommendations respond right away to updates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is one of the largest consumer platforms giving users direct, natural-language-style control over an AI recommender.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Recommendation teams can watch how user-steered controls change engagement and feedback signals in production.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives users more explicit control over algorithmic feeds</li><li>Consistent rollout across Instagram, Threads, and Facebook</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Effects on engagement and filter-bubble dynamics are not yet measured</li><li>Control depends on users discovering and using the feature</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>Epic Games goes &#x27;AI-first&#x27; on a delayed Disney game</h4><p>A major studio-scale project committing fully to AI-generated code and art is a notable test of AI-first production in a large commercial setting.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>Google Play adds private distribution for vibe-coded personal apps</h4><p>It gives AI-generated personal software a real distribution path on the dominant Android store, lowering friction for non-developers to ship apps.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>DeepMind and GovTech Singapore deploy on-device Gemma to stop chat scams</h4><p>It demonstrates a practical government deployment where on-device small models address harm while preserving privacy.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Shopify lets outside AI agents buy from its catalog of over a billion listings</h4><p>Agentic purchasing at large catalog scale is a concrete step toward agents as a commerce channel.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>Open-weight small MoE models and local-model support push agents onto laptops</h4><p>Small active-parameter models and local SDK support make privacy-preserving, low-cost agents more practical.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>GitHub replaces LLM calls with a compact model for secret scanning</h4><p>It is a practical example of a production team trading a general LLM for a compact model to cut cost and latency.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>OpenAI and Anthropic tell UK lawmakers to regulate them</h4><p>Frontier labs asking for regulation, while security officials warn about biological misuse, signals that UK AI rules are moving toward binding oversight.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Research shows guardrails on open models can be stripped to aid violent extremism</h4><p>It highlights that released model weights can be modified to remove safety behavior, which affects the risk calculus for open-weight deployment.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Facebook&#x27;s &#x27;Your Algorithm&#x27; lets users steer their feed with AI</h4><p>It is one of the largest consumer platforms giving users direct, natural-language-style control over an AI recommender.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>OpenAI published an analysis of agentic AI adoption across EU enterprises and small businesses, noting where deeper use could add value. <a href="https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic" target="_blank" rel="noopener noreferrer">↗</a></li><li>Physical Intelligence opened a beta API for its robot foundation models, a possible route for robotics teams to adopt frontier robot policies without training their own. <a href="https://www.pi.website/blog/api-beta" target="_blank" rel="noopener noreferrer">↗</a></li><li>xAI&#x27;s Grok 4.7 is now on Amazon Bedrock, marketed for longer agentic tasks with a adjustable reasoning-effort setting. <a href="https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A judge ordered OpenAI to hand over hiring records and related messages to Apple in a trade secrets case involving former Apple employees. <a href="https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Disney offered $20 million for a non-exclusive perpetual license to some Character.AI technology during the company&#x27;s bankruptcy proceeding. <a href="https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Anthropic&#x27;s custom source control redesign</div>
+        <p>It is a rare firsthand engineering account of what breaks when AI-driven code change volume grows by an order of magnitude, covering merge throughput, review, and version-control design. Reading it alongside Willison&#x27;s chart annotations gives a concrete picture of how agent-scale development changes infrastructure assumptions.</p>
+        <a class="explore-link" href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
