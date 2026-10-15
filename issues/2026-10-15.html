@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-10-15</title>
+<meta name="description" content="Safety, liability, and regulation pressure on consumer AI is rising sharply: eight US states sued OpenAI over child safety, Character.AI is in bankruptcy with 40 state AGs raising data-protection conc">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-10-15">
+<meta property="og:description" content="Safety, liability, and regulation pressure on consumer AI is rising sharply: eight US states sued OpenAI over child safety, Character.AI is in bankruptcy with 40 state AGs raising data-protection conc">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-10-15</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">13 stories · Safety (4) · Policy (4) · Developer Tools (4) · Models (3) · Business (3)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Safety, liability, and regulation pressure on consumer AI is rising sharply: eight US states sued OpenAI over child safety, Character.AI is in bankruptcy with 40 state AGs raising data-protection concerns, and Anthropic warned about self-replicating small-model malware. At the same time, AI coding is moving into production-grade software, and labs are pushing agents into security, design, and enterprise workflows. Economic strain is also visible in the Character.AI bankruptcy and reports of banks trying to offload AI data-center debt. Specialized and open-weight models (voice, TTS, on-device agents) continue to ship alongside the frontier labs.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-500x500.jpg" alt="Anthropic warns small models could soon self-replicate across IoT devices" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">Anthropic warns small models could soon self-replicate across IoT devices</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">Anthropic says advances in small AI models could allow self-replicating malware to spread across IoT devices such as smart fridges and vacuums, and to be harder to take down, possibly within a year. The company cited an experiment it ran recently to support the warning. Ars Technica&#x27;s report is the main source in the candidates; the specifics of the experiment are company-reported and not independently verified here.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shifts the AI-security threat model from cloud-hosted frontier systems to cheap, locally runnable models that can act autonomously on weakly defended devices.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams shipping AI on or near IoT and edge hardware should treat device credentials, outbound network access, and update integrity as threat surfaces for autonomous agents.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Early public warnings give defenders time to build detection and containment before the capability matures</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Claims rest on a company-run experiment and a forecast, not an observed in-the-wild attack</li><li>Warnings like this can be used to justify restrictions on open-weight small models</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25462005/STK155_OPEN_AI_CVirginia_B.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Eight US states sue OpenAI over ChatGPT safety for kids" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">Eight US states sue OpenAI over ChatGPT safety for kids</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana have filed separate lawsuits accusing OpenAI of harming children and misleading customers about ChatGPT&#x27;s safety under state consumer protection laws. The suits cite family-filed lawsuits involving teens and adults. The allegations are unproven claims in complaints, and OpenAI&#x27;s response was not in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A coordinated multi-state action moves consumer AI safety from voluntary commitments toward enforceable liability under existing consumer protection law.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Consumer-facing products with minors or vulnerable users should expect stricter expectations for safety disclosures, age-appropriate defaults, and documented risk mitigations.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_7_AI_CVIRGINIA_A.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Character.AI files for bankruptcy as AGs push for protections on user data" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Character.AI files for bankruptcy as AGs push for protections on user data</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">Character.AI filed for Chapter 11 and is selling some assets to Disney. New York&#x27;s attorney general said she is part of a years-long, multi-state investigation, and about 40 bipartisan AGs filed a notice of interest in the bankruptcy case, warning that any sale of user data or assets must address regulatory issues. A 404 Media report on the bankruptcy filings argues the documents show AI consumer-chatbot economics do not work.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an early test of how user data and regulatory obligations travel with the assets of a failed consumer AI company.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you collect conversational or personal data, plan for data deletion, portability, and transfer restrictions as part of the business model rather than an afterthought.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/" target="_blank" rel="noopener noreferrer"><img src="https://404media.co/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>404media.co</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://openai.com/index/amp-beyond-coding" target="_blank" rel="noopener noreferrer"><img src="https://images.ctfassets.net/kftzwdyauwt9/4cxTIUhXa03TEYCnkIcMCu/29e6065058ed969022021186f994dad6/amp-beyond-coding-coiled-connection-seo-open-graph-1920x1080.png?w=1600&amp;h=900&amp;fit=fill" alt="OpenAI extends agents beyond coding, citing SentinelOne malware-analysis results" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">OpenAI extends agents beyond coding, citing SentinelOne malware-analysis results</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">OpenAI published customer stories showing agents used beyond software development. Amp, a coding-tool company, describes using OpenAI models for broader agent work, and the post names several models and features, including GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT. Separately, SentinelOne reports that with OpenAI Daybreak it cut weeks of malware analysis to hours. These are vendor-reported customer claims, not independent evaluations.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Enterprise adoption is shifting from agents as coding assistants to agents doing security and analysis work with measurable time savings, though the figures are vendor-reported.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Look at security triage and analysis workflows as agent use cases where throughput gains can be measured against your current process.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Concrete reported time savings suggest agents can handle expert-heavy analysis work</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Results come from the vendor and customer marketing, without independent benchmarks</li><li>Model names in the announcement have not been independently confirmed in these candidates</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/amp-beyond-coding" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a><a class="source-chip" href="https://openai.com/index/sentinelone" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/egslauncher-500x500.png" alt="AI-assisted coding reaches critical software: Linus Torvalds&#x27;s LLM patch series and Epic&#x27;s vibe-coded launcher" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">AI-assisted coding reaches critical software: Linus Torvalds&#x27;s LLM patch series and Epic&#x27;s vibe-coded launcher</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">LWN reports on Linus Torvalds&#x27;s first LLM-assisted patch series for the Linux kernel, a high-profile signal that mainstream kernel maintainers are accepting AI-assisted contributions. Separately, Epic Games released a public Preview build of its Launcher that it says was &#x27;vibe coded&#x27; from scratch and is faster and more responsive than the current version; Epic&#x27;s claim of beating Steam&#x27;s client is company-reported. Both show AI-assisted code moving into core, widely used software.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>When kernel-level and major commercial products adopt AI-written code, the debate shifts from whether AI-assisted coding is acceptable to how it is reviewed, tested, and attributed.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Invest in review gates, tests, and provenance practices for AI-generated changes, since high-profile maintainers are already accepting such patches.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Faster iteration and rebuilds of large client software from scratch</li><li>Shows maintainers willing to evaluate AI-assisted contributions on their merits</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Vibe-coded software in production raises quality and security review questions</li><li>Performance claims for the launcher are company-reported</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://lwn.net/Articles/1100449/" target="_blank" rel="noopener noreferrer"><img src="https://lwn.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>lwn.net</span></a><a class="source-chip" href="https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/10/Specs_agent.jpeg?resize=1200,675" alt="Figma adds agent-definition features and opens code layers in beta" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">Figma adds agent-definition features and opens code layers in beta</h3>
+        <div class="story-dates">First reported 2026-10-15</div>
+        <p class="story-text">Figma announced new features that let teams define how AI agents work on its design platform, and released its code layers feature in open beta. The announcement is the candidates&#x27; primary source for the details. It positions Figma as a platform for agent-driven design and handoff work.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Design tools are becoming programmable surfaces for agents, which affects how design-to-code workflows get automated.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If your team bridges design and code, test whether agent-defined rules in Figma can reduce handoff friction before the feature matures.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK438_CLIMATE_CHANGE_G.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Microsoft&#x27;s machine-learning forecasts extend weather prediction to 2–6 weeks, now open-source" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">Microsoft&#x27;s machine-learning forecasts extend weather prediction to 2–6 weeks, now open-source</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">Microsoft researchers report in Nature a cost-effective machine-learning method for more accurate weather forecasts two to six weeks ahead, a horizon where physics-based and existing AI models typically degrade. The tool is now released as open-source software. The accuracy claims come from the paper and Microsoft&#x27;s reporting; independent replication is not in the candidates. Microsoft joins Google and Nvidia in AI weather forecasting. A companion Hugging Face post describes AI-based extreme-weather simulation at 3 km resolution.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Publishing a peer-reviewed, open-source subseasonal forecasting method could give farmers, emergency planners, and smaller weather services access to tools that previously required large compute budgets.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>The open-source release gives builders a concrete starting point for subseasonal forecasting pipelines, pending independent validation.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Open-source release and peer-reviewed publication lower the barrier for public-interest forecasting</li><li>Cost-effectiveness claims could extend advanced forecasting to smaller organizations</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Accuracy claims are from the authors and need independent verification</li><li>Long-range forecast skill is inherently limited, so users may overtrust precise predictions</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://huggingface.co/blog/allenai/hiro-acev2" target="_blank" rel="noopener noreferrer"><img src="https://huggingface.co/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>huggingface.co</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/14/meet-grok-voice-3-0-spacexai-voice-agent-model-ranks-1-on-artificial-analysis/" target="_blank" rel="noopener noreferrer"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/25c0.png" alt="SpaceXAI releases Grok Voice 3.0, topping Artificial Analysis speech-to-speech index" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">SpaceXAI releases Grok Voice 3.0, topping Artificial Analysis speech-to-speech index</h3>
+        <div class="story-dates">First reported 2026-10-15</div>
+        <p class="story-text">SpaceXAI released Grok Voice 3.0, a speech-to-speech model that listens, reasons, calls tools, and speaks. It ranks first on the Artificial Analysis Speech-to-Speech Index with a score of 86.9. Pricing ($0.08 per minute) and endpoints are unchanged from Grok Voice 2.0, and it is available only through a hosted API. The ranking is a third-party index, though the reporting does not show independent testing details.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A top-ranked voice-agent model at an unchanged price lowers the cost of building realtime voice agents with tool use.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you are building voice agents, benchmark Grok Voice 3.0 against your current speech stack on your own call flows before switching.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/14/meet-grok-voice-3-0-spacexai-voice-agent-model-ranks-1-on-artificial-analysis/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d" target="_blank" rel="noopener noreferrer"><img src="https://substackcdn.com/image/youtube/w_728,c_limit/J-smU_ImO5g" alt="Modal reaches $1B ARR with $16B Series D as agent workloads drive infrastructure demand" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Modal reaches $1B ARR with $16B Series D as agent workloads drive infrastructure demand</h3>
+        <div class="story-dates">First reported 2026-10-15</div>
+        <p class="story-text">Latent Space reports that Modal, a cloud infrastructure provider, reached $1B in annual recurring revenue and raised a $16B Series D, moving into the decacorn category. Its growth is tied to sandboxes and infrastructure for agents, such as large numbers of concurrent sandboxes and distributed training clusters. The valuation and revenue figures are as reported in the post.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Agent execution infrastructure, especially sandboxed compute, is becoming a large and fast-growing market category.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Sandboxed execution for agent-generated code is now a mature infrastructure category, so buy-versus-build decisions should be revisited.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html" target="_blank" rel="noopener noreferrer"><img src="https://www.csoonline.com/wp-content/uploads/2026/10/4234854-0-28632700-1792004597-shutterstock_2472843149.jpg?quality=50&amp;strip=all&amp;w=1024" alt="Containment and monitoring gaps blamed for AI hacking reports" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Containment and monitoring gaps blamed for AI hacking reports</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">A CSO Online article, which drew strong discussion on Hacker News, argues that reported incidents involving AI-enabled hacking stem from containment and monitoring failures at frontier labs and deployers rather than agents &#x27;going rogue.&#x27; The argument is expert commentary, not a formal audit, and the candidates do not include the underlying incident data.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It frames agent security as an operational discipline (permissions, sandboxing, logging) rather than a purely model-alignment problem.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Treat agent permissions, network egress, and action logging as baseline engineering requirements before giving agents production access.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Puts actionable focus on well-understood controls like sandboxing and logging</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Expert framing may understate risks from model behavior itself</li><li>Lacks public incident data in the candidates to verify the claim</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html" target="_blank" rel="noopener noreferrer"><img src="https://csoonline.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>csoonline.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/youtube-music-gen-ai-labels.width-1200.format-webp.webp?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="YouTube and Deezer add AI-music labels and filters as AI tracks flood streaming" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">YouTube and Deezer add AI-music labels and filters as AI tracks flood streaming</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">YouTube Music is adding a &#x27;Made with AI&#x27; label to tracks that were fully or partly generated by AI, including AI-generated composition or vocals, and says it may use other signals where songs lack disclosure. Deezer will roll out a toggle by year-end that lets users filter out AI-generated music. Both moves are platform responses to a growing volume of AI-generated music.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Platform labeling and filtering set the default norms for disclosure and consumer choice around AI-generated creative work.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you publish or distribute AI-generated audio or video, prepare accurate disclosure metadata because platforms are starting to enforce it.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives listeners transparency and choice</li><li>Creates disclosure norms that help artists and rights holders</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Detection and labeling depend on self-disclosure and imperfect signals</li><li>Labels may stigmatize legitimate AI-assisted work</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/white-circle-red-team-500x500.jpg" alt="Study finds OpenAI and Google models easily tricked into producing nude imagery" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Study finds OpenAI and Google models easily tricked into producing nude imagery</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">Safety researchers report that newer OpenAI and Google models can be manipulated into generating sexually explicit images of real people, and that non-consensual imagery spreads widely through private channels. A Google co-authored study of internet users in the US, UK, and Australia concluded that the most critical intervention point is the source tools. The claims are from the researchers and reporting, and the specific jailbreak methods and test scope are not detailed in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It reinforces that generation-side safeguards remain weak in widely deployed image models, raising pressure for regulation and provider accountability.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Image-generation features need layered safeguards (prompt and output filtering, identity-based restrictions, and abuse reporting) rather than relying on one vendor&#x27;s protections.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ef4444;">
+      <a class="story-media" href="https://www.theverge.com/news/1011654/mckinsey-ai-client-interview" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="McKinsey puts AI client simulations into entry-level hiring" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">McKinsey puts AI client simulations into entry-level hiring</h3>
+        <div class="story-dates">First reported 2026-10-14</div>
+        <p class="story-text">According to the Wall Street Journal as reported by The Verge, McKinsey will ask some entry-level candidates to hold a 10-minute conversation with an AI simulation of a client. The simulation is designed to reflect about 80% of scenarios consultants face, and humans, not the AI, assess candidates. The tool is in testing for now.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A major consulting firm using AI simulations in hiring signals how AI is reshaping how professional skills are assessed and developed.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Simulation-based evaluation is a pattern worth considering for internal training and assessment, with humans keeping final judgment.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Realistic scenario practice may assess judgment better than traditional interviews</li><li>Humans keep scoring authority</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Candidates may feel evaluated by opaque AI interactions</li><li>Simulations can miss what the 20% of unmodeled scenarios demand</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/news/1011654/mckinsey-ai-client-interview" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>Character.AI files for bankruptcy as AGs push for protections on user data</h4><p>It is an early test of how user data and regulatory obligations travel with the assets of a failed consumer AI company.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>OpenAI extends agents beyond coding, citing SentinelOne malware-analysis results</h4><p>Enterprise adoption is shifting from agents as coding assistants to agents doing security and analysis work with measurable time savings, though the figures are vendor-reported.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Figma adds agent-definition features and opens code layers in beta</h4><p>Design tools are becoming programmable surfaces for agents, which affects how design-to-code workflows get automated.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>SpaceXAI releases Grok Voice 3.0, topping Artificial Analysis speech-to-speech index</h4><p>A top-ranked voice-agent model at an unchanged price lowers the cost of building realtime voice agents with tool use.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Modal reaches $1B ARR with $16B Series D as agent workloads drive infrastructure demand</h4><p>Agent execution infrastructure, especially sandboxed compute, is becoming a large and fast-growing market category.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Containment and monitoring gaps blamed for AI hacking reports</h4><p>It frames agent security as an operational discipline (permissions, sandboxing, logging) rather than a purely model-alignment problem.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>YouTube and Deezer add AI-music labels and filters as AI tracks flood streaming</h4><p>Platform labeling and filtering set the default norms for disclosure and consumer choice around AI-generated creative work.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Study finds OpenAI and Google models easily tricked into producing nude imagery</h4><p>It reinforces that generation-side safeguards remain weak in widely deployed image models, raising pressure for regulation and provider accountability.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>McKinsey puts AI client simulations into entry-level hiring</h4><p>A major consulting firm using AI simulations in hiring signals how AI is reshaping how professional skills are assessed and developed.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>OpenAI says a former employee took more than 100 product-plan files to Apple, in a filing that is part of a broader trade-secret fight between the two companies. <a href="https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans" target="_blank" rel="noopener noreferrer">↗</a></li><li>Banks are reportedly trying to offload AI data-center debt they recently underwrote, an early sign of financing stress in AI infrastructure if confirmed. <a href="https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Fish Audio released Drama 3, a 35B mixture-of-experts open-weight text-to-speech model with about 3B active parameters, which is self-hostable on a single 48 GB GPU. <a href="https://www.marktechpost.com/2026/10/14/fish-audio-drama-3-open-weight-tts-model/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Meta extended its Private Processing confidential-computing approach to AI glasses, processing AI workloads and persistent user context in trusted execution environments in the cloud. <a href="https://www.infoq.com/news/2026/10/meta-private-process-ai-glasses/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer">↗</a></li><li>A Latent Space report says OpenAI and Anthropic presented different approaches to agent autonomy and controls in financial agents, with the main lesson being that safe autonomy depends on where controls and human judgment are placed. <a href="https://www.latent.space/p/crossing-the-threshold" target="_blank" rel="noopener noreferrer">↗</a></li><li>A recent study finds LLM agents struggle with silent failures in agentic data science, where pipelines run without error but violate sound methodology. <a href="https://arxiv.org/abs/2610.14115" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Long-Horizon-Terminal-Bench 2.0</div>
+        <p>It is a benchmark for whether agents sustain progress through long workflows using process rewards rather than only checking final state. It covers 77 tasks across 13 domains and was built with a systematic task-reconstruction pipeline, which makes it a useful reference for evaluating your own agent harnesses.</p>
+        <a class="explore-link" href="https://arxiv.org/abs/2610.14146" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
