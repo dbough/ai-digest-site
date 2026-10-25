@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-10-25</title>
+<meta name="description" content="Since the last briefing, the most substantive signals cluster around agents that work on real codebases: Google reports a model autonomously optimizing its own agent framework, Microsoft and Anthropic">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-10-25">
+<meta property="og:description" content="Since the last briefing, the most substantive signals cluster around agents that work on real codebases: Google reports a model autonomously optimizing its own agent framework, Microsoft and Anthropic">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-10-25</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">10 stories · Agents (4) · Models (3) · Coding (3) · Safety (3) · Developer Tools (2)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Since the last briefing, the most substantive signals cluster around agents that work on real codebases: Google reports a model autonomously optimizing its own agent framework, Microsoft and Anthropic released open-source infrastructure for running many or sandboxed agents, and Cognition shipped agent-driven vulnerability remediation. AI is also now cutting both ways on security, with a Wired report on AI-assisted exploitation of old PHP bugs. Outside engineering, the strongest discussion concerns whether AI&#x27;s economic gains are showing up beyond tech, and regulators are starting to require disclosure of AI-generated content. Most of the evidence here is company-reported or secondary, so the claims should be treated as early.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/10/google-argon-optimizes-adk/en/headerimage/functiongemma-1792855681633.jpeg" alt="Google&#x27;s Gemini 4 Argon runs an 11-hour unattended optimization pass on Agent Development Kit" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">Google&#x27;s Gemini 4 Argon runs an 11-hour unattended optimization pass on Agent Development Kit</h3>
+        <div class="story-dates">First reported 2026-10-24</div>
+        <p class="story-text">Google reported that an 11-hour unattended run of its Gemini 4 Argon model produced two accepted optimizations to the Agent Development Kit&#x27;s roughly 200K-line Python codebase. The changes reportedly cut in-memory session-preparation overhead by about 40% in long sessions and cold package import time by 21%. These figures are company-reported and come from one codebase, but they illustrate a concrete pattern of models doing sustained, multi-hour engineering work with human review at the end.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an example of a frontier model being used for long-running, autonomous improvement of production software rather than short code completions.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams maintaining large agent or framework codebases can consider scheduled, unattended model-driven optimization runs with strict acceptance tests as a workflow.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Measurable performance gains reported on a real, widely used codebase</li><li>Human review still gates which changes are accepted</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Figures are company-reported and from a single project</li><li>Results depend on the quality of tests and review that gate accepted changes</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6adbb8a7e6d0c133525c3e7c/master/pass/KernelPanic_The%20PHP%20Meltdown%20Shows%20How%20AI%20Makes%20Bugs%20More%20Exploitable.jpg" alt="AI tools speed up both vulnerability discovery and remediation as PHP and Node.js flaws emerge" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">AI tools speed up both vulnerability discovery and remediation as PHP and Node.js flaws emerge</h3>
+        <div class="story-dates">First reported 2026-10-24 · Latest update 2026-10-25</div>
+        <p class="story-text">Wired reported that security researchers used AI tools to uncover years-old vulnerabilities in PHP, and that AI-assisted attacks followed. In parallel, Cognition open-sourced a free set of agent skills (MIT licensed) for its Devin agent and other agents that read SKILL.md files, targeting PHP2Shell, an October 21 Node.js security release, and a CVSS 10.0 self-managed GitLab remote code execution bug. The skills package a remediation workflow covering inventory, approval, patching, testing, and one pull request per repository.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>The same AI capabilities that make old bugs easier to find and exploit are now being packaged to fix them, compressing the window between disclosure and patching.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams running PHP, Node.js, or self-managed GitLab should check whether these advisories apply to them and consider agent-driven patch workflows with tests and per-repo pull requests.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Open-source remediation skills lower the cost of patching many repositories</li><li>Automated inventory and testing can shorten exposure windows for critical advisories</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>AI lowers the skill barrier for attackers exploiting legacy bugs</li><li>Agent-generated patches still need human review and may introduce regressions</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/10/1WP-BLOG-BANNER-454-1-scaled.png" alt="Microsoft Research open-sources Agensh, a decentralized harness for up to 1,024 coding agents" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Microsoft Research open-sources Agensh, a decentralized harness for up to 1,024 coding agents</h3>
+        <div class="story-dates">First reported 2026-10-25</div>
+        <p class="story-text">Microsoft Research released Agensh, an open-source multi-agent harness that removes the central orchestrator common in agent frameworks. Workers choose their own subtasks, share findings, and merge code into a shared Git repository. The team reports scaling from 1 to 1,024 agents on the ProgramBench benchmark, with the largest run using 16 nodes; these results are company-reported, and the only coverage in the candidates is a secondary write-up.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an open-source attempt to coordinate very large numbers of coding agents without a single point of control, which is a open design question for agent systems.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Engineers experimenting with parallel coding agents can study Agensh&#x27;s coordination and Git-merge approach as a reference design, while verifying the benchmark results themselves.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/" target="_blank" rel="noopener noreferrer"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/25c0.png" alt="Anthropic open-sources sandbox-runtime for OS-level agent sandboxing without containers" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">Anthropic open-sources sandbox-runtime for OS-level agent sandboxing without containers</h3>
+        <div class="story-dates">First reported 2026-10-24</div>
+        <p class="story-text">Anthropic released sandbox-runtime (srt), the OS-level sandbox behind Claude Code&#x27;s sandboxed bash tool, as an Apache-2.0 npm package. It restricts which files a process can touch and which hosts it can reach, without spinning up a container, and it is not tied to Claude Code, so custom agents and local MCP servers can run inside it. The package is at an early version (0.0.81).</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Giving agents a lightweight, reusable permission boundary addresses one of the main practical risks of letting agents run shell commands.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers building agents that execute shell commands or local tools can evaluate sandbox-runtime as a lighter alternative to full containers for dev machines and CI.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Lightweight sandboxing without container overhead</li><li>Open-source and reusable beyond Claude Code</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Early-stage package (v0.0.81) with limited track record</li><li>OS-level restrictions may be less isolated than containers or VMs</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Pennsylvania requires labels on significantly AI-generated or AI-modified ads" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Pennsylvania requires labels on significantly AI-generated or AI-modified ads</h3>
+        <div class="story-dates">First reported 2026-10-24</div>
+        <p class="story-text">Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act, which requires any ad in still image, video, audio, or text form that has been significantly modified or generated by AI to carry a label in the same format as the ad. The law covers both large-company TV spots and small local advertisers, and Pennsylvania is described as one of the first states to require such disclosures.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an early state-level template for disclosure requirements on AI-generated commercial content, which other jurisdictions may copy.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams building generative ad or creative tools should plan for labeling metadata and format-matched disclosures if they serve Pennsylvania advertisers.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives consumers clearer information about AI-generated persuasion</li><li>Sets a concrete, format-matched standard other states may adopt</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Compliance burden may fall heavily on small businesses making simple ads</li><li>Definition of &#x27;significantly modified&#x27; may be hard to apply consistently</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2025/07/jack-dorsey.jpg?resize=1200,822" alt="Block&#x27;s new voice model sounds human and can run locally on a MacBook" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">Block&#x27;s new voice model sounds human and can run locally on a MacBook</h3>
+        <div class="story-dates">First reported 2026-10-24</div>
+        <p class="story-text">Block released a new voice model that TechCrunch describes as sounding eerily human, and Block says it can run locally on a MacBook M4 Max. Local operation would reduce dependence on cloud APIs for voice interfaces. Quality and benchmark claims are company-reported, and the candidate coverage is brief.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A high-quality voice model that runs on consumer hardware lowers the cost and privacy barrier for voice-based products.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers building voice interfaces can test whether local inference meets latency and quality needs before defaulting to cloud speech APIs.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg?resize=1200,900" alt="Study finds Grok and OpenAI models lean in opposite partisan directions on election picks" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Study finds Grok and OpenAI models lean in opposite partisan directions on election picks</h3>
+        <div class="story-dates">First reported 2026-10-24</div>
+        <p class="story-text">A new study reported by TechCrunch found that Grok recommends Republican candidates while OpenAI&#x27;s GPT favors Democrats across nearly 500 election races, with the two models disagreeing in more than 90% of them. The result raises concerns about political bias and about using chatbots as voting guidance. The study&#x27;s methodology and sample details are not included in the candidate coverage.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows that model-level political lean can produce materially different voter-facing recommendations, which matters for elections and public trust.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams deploying assistants that answer political or civic questions should test for partisan consistency and disclose limitations.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector" target="_blank" rel="noopener noreferrer"><img src="https://www.apollo.com/content/dam/apolloaem/apollo-default-page-share-image/apollo-og-image.png" alt="Apollo finds no clear AI payoff outside the tech sector so far" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Apollo finds no clear AI payoff outside the tech sector so far</h3>
+        <div class="story-dates">First reported 2026-10-24</div>
+        <p class="story-text">An Apollo Global Management daily note, widely discussed on Hacker News, argues there are no clear signs yet of AI productivity or financial payoff outside the technology sector. The piece adds to debate about whether AI investment is translating into broader economic returns. The candidate listing provides only the headline and discussion metrics, so the underlying data should be checked in the original.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Whether AI gains spread beyond tech shapes investment expectations, enterprise budgets, and the case for adoption outside software companies.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Founders selling AI tools to non-tech industries should be ready to show concrete productivity evidence rather than assuming broad diffusion.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector" target="_blank" rel="noopener noreferrer"><img src="https://apollo.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>apollo.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class" target="_blank" rel="noopener noreferrer"><img src="https://substackcdn.com/image/fetch/$s_!oz9x!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F999e3450-1df3-457d-8715-5e2e46d5121c_2886x1843.png" alt="Analysis asks how much of the creative-sector job loss is due to AI" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">Analysis asks how much of the creative-sector job loss is due to AI</h3>
+        <div class="story-dates">First reported 2026-10-24</div>
+        <p class="story-text">An Apricitas analysis, highly discussed on Hacker News, examines a roughly 200,000-job decline in U.S. media, film, and the arts and asks how much of it can be attributed to AI. The piece reframes a widely felt concern into a question of attribution, separating AI effects from broader industry trends. The candidate listing provides only the headline and discussion metrics, so the analysis&#x27;s methods should be checked directly.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an attempt to measure AI&#x27;s labor impact in a specific sector, which is central to the debate about who bears the costs of automation.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams building creative tools should be aware that workforce effects are being scrutinized and that customers may ask about displacement.</div>
+        <div class="pros-cons"><div class="cons"><h4>Cons</h4><ul><li>Attribution of job losses to AI versus other causes is difficult to establish</li><li>Headline job figures may not isolate AI-specific effects</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class" target="_blank" rel="noopener noreferrer"><img src="https://apricitas.io/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>apricitas.io</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" target="_blank" rel="noopener noreferrer"><img src="https://cdn.sanity.io/images/e4qjo92p/production/1796e3cccda1454e97d262833fb0bb0d6015032f-2786x1567.png?rect=0,53,2786,1463&amp;w=1200&amp;h=630&amp;fit=max&amp;auto=format" alt="Cerebras describes how it deploys trillion-parameter frontier models" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Cerebras describes how it deploys trillion-parameter frontier models</h3>
+        <div class="story-dates">First reported 2026-10-25</div>
+        <p class="story-text">Cerebras published a technical blog post on how it deploys trillion-parameter frontier models on its hardware. The post is a vendor account of inference infrastructure at very large scale, and its performance or cost claims are company-reported. It is relevant to anyone tracking how very large models are served in production.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Serving trillion-parameter models is a real bottleneck, and vendor deployment details indicate what inference capacity is becoming available.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Engineers evaluating inference providers for very large models can use the post as a reference for deployment architecture and tradeoffs.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" target="_blank" rel="noopener noreferrer"><img src="https://cerebras.ai/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>cerebras.ai</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>Google&#x27;s Gemini 4 Argon runs an 11-hour unattended optimization pass on Agent Development Kit</h4><p>It is an example of a frontier model being used for long-running, autonomous improvement of production software rather than short code completions.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Microsoft Research open-sources Agensh, a decentralized harness for up to 1,024 coding agents</h4><p>It is an open-source attempt to coordinate very large numbers of coding agents without a single point of control, which is a open design question for agent systems.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Anthropic open-sources sandbox-runtime for OS-level agent sandboxing without containers</h4><p>Giving agents a lightweight, reusable permission boundary addresses one of the main practical risks of letting agents run shell commands.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>Pennsylvania requires labels on significantly AI-generated or AI-modified ads</h4><p>It is an early state-level template for disclosure requirements on AI-generated commercial content, which other jurisdictions may copy.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Block&#x27;s new voice model sounds human and can run locally on a MacBook</h4><p>A high-quality voice model that runs on consumer hardware lowers the cost and privacy barrier for voice-based products.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Study finds Grok and OpenAI models lean in opposite partisan directions on election picks</h4><p>It shows that model-level political lean can produce materially different voter-facing recommendations, which matters for elections and public trust.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Apollo finds no clear AI payoff outside the tech sector so far</h4><p>Whether AI gains spread beyond tech shapes investment expectations, enterprise budgets, and the case for adoption outside software companies.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Analysis asks how much of the creative-sector job loss is due to AI</h4><p>It is an attempt to measure AI&#x27;s labor impact in a specific sector, which is central to the debate about who bears the costs of automation.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>Cerebras describes how it deploys trillion-parameter frontier models</h4><p>Serving trillion-parameter models is a real bottleneck, and vendor deployment details indicate what inference capacity is becoming available.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Community claims that five Qwen3.8-27B models match Fable 5 when run with a custom GVS5H harness are unverified and would need independent benchmarking to be credible. <a href="https://github.com/slee-persis/GVS5H" target="_blank" rel="noopener noreferrer">↗</a></li><li>A quantized 2-bit Qwen3.8-27B build (Underdog Saluki 27B) claims to keep tool calling intact at about 7.9 GB, based on its makers&#x27; own 120-task benchmark. <a href="https://www.marktechpost.com/2026/10/24/underdog-saluki-27b-coding-guide-llama-cpp/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A Hacker News-discussed AI-assisted paper cited a TorrentFreak article that does not exist, another example of unverified citations entering published work. <a href="https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Anthropic sandbox-runtime (srt)</div>
+        <p>It is a concrete, open-source way to restrict what an agent&#x27;s shell commands can read, write, and reach without containers. Studying its file and network policy model is useful for anyone running agents or MCP servers on developer machines or in CI.</p>
+        <a class="explore-link" href="https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
