@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-01</title>
+<meta name="description" content="Security and access themes dominate this batch: a sandbox exploit in ChatGPT&#x27;s HTML previews, LLM-driven malware that ranks victims, and vendors tightening what their models will do for users. Infrast">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-01">
+<meta property="og:description" content="Security and access themes dominate this batch: a sandbox exploit in ChatGPT&#x27;s HTML previews, LLM-driven malware that ranks victims, and vendors tightening what their models will do for users. Infrast">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-01</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">12 stories · Safety (4) · Business (4) · Policy (3) · Models (3) · Agents (3)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Security and access themes dominate this batch: a sandbox exploit in ChatGPT&#x27;s HTML previews, LLM-driven malware that ranks victims, and vendors tightening what their models will do for users. Infrastructure is tightening too, with AWS saying committed capacity is largely sold out through 2027. At the other end, smaller open-weight models and prototype coding agents are becoming easier to run locally and to orchestrate. Several claims in the list come from social posts or unverified single sources, so they are flagged below as unconfirmed.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#dc2626;">
+      <div class="story-media story-media-fallback" style="background:linear-gradient(135deg, #dc262633, #dc26260d);"><span class="fallback-glyph" style="color:#dc2626;">✦</span></div>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Researchers chain a sandbox escape to take over ChatGPT accounts via HTML previews</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">Parameter Labs published details of an exploit against ChatGPT&#x27;s HTML previews, the sandboxed iframe feature for interactive custom apps (formerly called Canvas). The attack chain reportedly abused a bundled third-party JavaScript library (MathLive, used for graph support) to break out of the sandbox and reach OpenAI APIs and private user data. The write-up is a useful case study in how embedded third-party code can undermine a sandbox boundary.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows that sandboxing AI-generated or user-facing interactive content is only as strong as every library inside it, and that account-level compromise is a realistic outcome.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you render model-generated HTML or embed third-party JS in AI apps, audit your sandbox boundaries and every bundled dependency, not only the iframe policy.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <div class="story-media story-media-fallback" style="background:linear-gradient(135deg, #0ea5e933, #0ea5e90d);"><span class="fallback-glyph" style="color:#0ea5e9;">✦</span></div>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">ChatGPT and Codex usage limits are being merged</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">OpenAI published a help article describing a change that merges usage limits across ChatGPT and Codex. The article is the primary source for the change; the candidate list did not include details on exact limits or tiers. Discussion on Hacker News was active, which suggests the change touches many developers who use both products.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Shared limits change how much coding-agent work a subscription actually buys, which affects planning for developers and teams that rely on Codex.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Check the help article&#x27;s limit numbers before relying on Codex for heavy agentic workloads, since a shared pool can be drained by ordinary chat use.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>A single pool is simpler to understand and may let users move between chat and coding work without juggling separate quotas.</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Heavy chat users could now reduce the capacity available for coding agents.</li><li>Shared limits make it harder to predict costs for teams that depend on Codex.</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" target="_blank" rel="noopener noreferrer"><img src="https://help.openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>help.openai.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6ae4e9f503c2c36f4cfc913c/master/pass/KernelPanic_10312026_v1.jpg" alt="Volta infostealer uses LLMs to rank victims by value" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Volta infostealer uses LLMs to rank victims by value</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">Cisco Talos documented the Volta infostealer, which uses an AI model to appraise and prioritize compromised victims by how much their data is worth. Wired reports the malware, dubbed Volta-Autodoxer, collects login credentials, card numbers, Discord sessions, and delivery-app receipts to build detailed profiles. The reporting describes the use of LLMs for triage and profiling at scale rather than for new exploit techniques.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an early, concrete example of criminals using LLMs to operationalize data theft by deciding which victims are worth the most effort.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Assume attackers will use LLMs for triage and personalization, so treat credential hygiene and session token protection as more urgent.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/" target="_blank" rel="noopener noreferrer"><img src="https://blog.talosintelligence.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>blog.talosintelligence.com</span></a><a class="source-chip" href="https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/11/aws-capacity-sold-out/en/headerimage/generatedHeaderImage-1793124716899.jpg" alt="AWS says committed capacity is largely sold out through 2027" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">AWS says committed capacity is largely sold out through 2027</h3>
+        <div class="story-dates">First reported 2026-11-01</div>
+        <p class="story-text">Amazon CEO Andy Jassy said AWS&#x27;s large committed capacity is largely sold out through 2027, with part of 2028 already allocated. AWS is reserving headroom for On Demand, EC2, and Bedrock. InfoQ reports that practitioners describe difficulty getting On Demand capacity for ordinary EC2 instances and similar constraints at other providers; these practitioner reports are not independently verified.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>If compute is scarce into 2027, capacity planning and pricing become a strategic constraint for AI companies and the businesses that depend on them.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Plan for capacity limits by reserving capacity early, designing for multi-provider fallback, and avoiding single-region dependencies for inference.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked" target="_blank" rel="noopener noreferrer"><img src="https://cdn.mos.cms.futurecdn.net/uCXNTvaQDC2MRU8U37YwaV-2169-80.jpg" alt="Anthropic moves to stop Claude from helping clone or reverse-engineer video games" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">Anthropic moves to stop Claude from helping clone or reverse-engineer video games</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">Tom&#x27;s Hardware and Mashable report that Anthropic has added restrictions that block Claude from attempting video game recreation, cloning, and reverse engineering. Users reportedly say that some non-malicious generic reverse-engineering tasks are also being blocked. Coverage relies on user reports and press descriptions; the exact policy text was not in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows model providers enforcing use-case restrictions in the model layer, and the boundary between IP protection and legitimate technical work is still being drawn.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If your workflow involves reverse engineering, interoperability, or emulation, test refusals early and check the provider&#x27;s usage policy before building on it.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Reduces the chance of Claude being used to clone copyrighted games or bypass protections.</li><li>Gives rights holders a clearer signal that model providers are taking IP concerns seriously.</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Over-broad refusals could block legitimate security research, interoperability work, and preservation projects.</li><li>Users report that generic reverse-engineering tasks are caught, so the policy may be hard to predict.</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked" target="_blank" rel="noopener noreferrer"><img src="https://tomshardware.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>tomshardware.com</span></a><a class="source-chip" href="https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering" target="_blank" rel="noopener noreferrer"><img src="https://mashable.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>mashable.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024" alt="OpenAI reportedly lowers funding target for new round" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">OpenAI reportedly lowers funding target for new round</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">TechCrunch reports that OpenAI has lowered its funding target for a new round, which it describes as not living up to expectations. The report does not include the new target or investor details in the candidate snippet. It is secondary reporting on a financial matter, so the figures should be treated as unconfirmed.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Funding appetite for frontier labs is a leading indicator of how much capital will be available for training and compute.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>A tighter funding environment could affect pricing and free-tier generosity, so avoid assuming current API prices are permanent.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/01/nace-ai-open-sources-drex-max-v1-local-inference/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-88881-1-scaled.png" alt="Nace AI open-sources Drex Max v1, a 27B decision model for local use" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Nace AI open-sources Drex Max v1, a 27B decision model for local use</h3>
+        <div class="story-dates">First reported 2026-11-01</div>
+        <p class="story-text">Nace AI released Drex Max v1 as open weights. It is a dense 27B model with a 262K-token context window, designed for decisions such as routing, classification, and policy checks, with up to 255 options per question. The release includes bf16 weights, a Q8_0 GGUF, an affine Q4 checkpoint, and forks of llama.cpp and Ollama. The hardware claims are company-reported.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A capable, locally runnable decision model could move classification and routing workloads off hosted APIs, lowering cost and data exposure.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Try the Q4 or Q8 GGUF for classification or routing in a local pipeline and benchmark it against a hosted model on your own evaluation set.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Local inference keeps sensitive routing and policy data on-premises and avoids per-call API costs.</li><li>Open weights and GGUF builds make it easy to test on consumer hardware.</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Performance claims are company-reported and not independently verified in the candidates.</li><li>Running it well still requires 24 GB or more of unified memory on Apple Silicon or a high-end NVIDIA GPU.</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/01/nace-ai-open-sources-drex-max-v1-local-inference/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-88881-scaled.png" alt="DeepSeek Harness releases dsh-superagent, a proactive router-worker coding agent" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">DeepSeek Harness releases dsh-superagent, a proactive router-worker coding agent</h3>
+        <div class="story-dates">First reported 2026-11-01</div>
+        <p class="story-text">The DeepSeek Harness team released dsh-superagent, an MIT-licensed research prototype. It listens to a GitHub repository (and optionally Feishu), turns allowed requests into parallel work items, and runs each in its own agent session. A companion design post describes the approach as a more autonomous agent system. It is a v0.1.0 prototype and the candidate list does not include independent evaluation.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It illustrates a router-and-worker pattern for coding agents that act on incoming work without a human starting each task.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Study the router-worker design if you are building event-driven coding agents, but treat it as an early prototype for experimentation.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://ryanmadden.net/gpt-56-beats-factorio/" target="_blank" rel="noopener noreferrer"><img src="https://ryanmadden.net/img/factorio_rocket_launch_social.jpg" alt="GPT-5.6 Sol reportedly completes Factorio in peaceful mode" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">GPT-5.6 Sol reportedly completes Factorio in peaceful mode</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">A blog post by Ryan Madden describes GPT-5.6 Sol playing and beating Factorio in peaceful mode, drawing strong engagement on Hacker News. It is a single-author demonstration of long-horizon planning in a complex game environment. The post is not an independent benchmark, and the candidate list does not include OpenAI&#x27;s own description of the run.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Long-horizon, multi-step game play is a useful informal stress test for agentic planning, though one run does not establish general capability.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Consider similar long-horizon tasks as an evaluation for your own agents, since they expose planning and recovery failures that short benchmarks miss.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://ryanmadden.net/gpt-56-beats-factorio/" target="_blank" rel="noopener noreferrer"><img src="https://ryanmadden.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>ryanmadden.net</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://latent.space/p/arca/" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/KM3VQZKjpiY/maxresdefault.jpg" alt="Arca&#x27;s AI-native wealth firm shows agents prompting human advisors" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Arca&#x27;s AI-native wealth firm shows agents prompting human advisors</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">Latent Space interviewed Aman Singh, lead AI engineer at Arca, a wealth-management firm that recently raised $48.5M. Agents do most of the background work, while guardrails keep human advisors making the final decisions. Singh describes the design goal as agents prompting people more than people prompting agents.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a concrete account of how a regulated, high-stakes firm places humans as decision-makers over long-running agent workflows.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Design agent workflows around clear human review points and have agents surface decisions for approval, not just produce outputs.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Keeping humans in the decision loop can reduce the risk of costly automated errors in finance.</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Advisors must review large volumes of agent output, which can create review fatigue and hidden errors.</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://latent.space/p/arca/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#94a3b8;">
+      <a class="story-media" href="https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6ae22d8856ee4dcb93f11713/master/pass/HCN406-scaled.jpg" alt="Chatbot trip planning is leading hikers astray" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">Chatbot trip planning is leading hikers astray</h3>
+        <div class="story-dates">First reported 2026-11-01</div>
+        <p class="story-text">Wired reports that people who outsource route and trip planning to chatbots can give up their own critical thinking, with potentially deadly results in the backcountry. The story is a reported look at real-world harm from over-reliance on AI for high-stakes planning.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a clear example of how over-trust in AI output can cause physical harm when users stop checking the result against independent sources.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>For any AI feature that gives safety-relevant guidance, show sources and uncertainty and prompt users to verify critical details.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800" alt="Judge lets NAACP Clean Air Act suit over xAI data center pollution proceed" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">Judge lets NAACP Clean Air Act suit over xAI data center pollution proceed</h3>
+        <div class="story-dates">First reported 2026-10-31</div>
+        <p class="story-text">A federal judge allowed an NAACP lawsuit to move forward, accusing the SpaceX-owned xAI of violating the Clean Air Act through pollution from its data center. The ruling is procedural and does not decide the merits. It signals that environmental law may constrain the physical buildout of AI compute.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Environmental litigation could raise the cost and timeline of building data centers, which matters for the whole AI infrastructure market.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Factor permitting and environmental risk into capacity and region decisions for large training or inference deployments.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>ChatGPT and Codex usage limits are being merged</h4><p>Shared limits change how much coding-agent work a subscription actually buys, which affects planning for developers and teams that rely on Codex.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Anthropic moves to stop Claude from helping clone or reverse-engineer video games</h4><p>It shows model providers enforcing use-case restrictions in the model layer, and the boundary between IP protection and legitimate technical work is still being drawn.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>OpenAI reportedly lowers funding target for new round</h4><p>Funding appetite for frontier labs is a leading indicator of how much capital will be available for training and compute.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Nace AI open-sources Drex Max v1, a 27B decision model for local use</h4><p>A capable, locally runnable decision model could move classification and routing workloads off hosted APIs, lowering cost and data exposure.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>DeepSeek Harness releases dsh-superagent, a proactive router-worker coding agent</h4><p>It illustrates a router-and-worker pattern for coding agents that act on incoming work without a human starting each task.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>GPT-5.6 Sol reportedly completes Factorio in peaceful mode</h4><p>Long-horizon, multi-step game play is a useful informal stress test for agentic planning, though one run does not establish general capability.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Arca&#x27;s AI-native wealth firm shows agents prompting human advisors</h4><p>It is a concrete account of how a regulated, high-stakes firm places humans as decision-makers over long-running agent workflows.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Chatbot trip planning is leading hikers astray</h4><p>It is a clear example of how over-trust in AI output can cause physical harm when users stop checking the result against independent sources.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>Judge lets NAACP Clean Air Act suit over xAI data center pollution proceed</h4><p>Environmental litigation could raise the cost and timeline of building data centers, which matters for the whole AI infrastructure market.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Hacker News reports that Anthropic filing crushed tech stocks, but the candidate list has only a headline and no details on what was filed. <a href="https://www.thebignewsletter.com/p/why-anthropics-filing-crushed-tech" target="_blank" rel="noopener noreferrer">↗</a></li><li>A post on X claims Anthropic is blocking users for work touching training larger models; this is unverified and needs an official policy source. <a href="https://twitter.com/jiahaoshao1/status/2116475922190922088" target="_blank" rel="noopener noreferrer">↗</a></li><li>India Today reports an AI startup accessed Anthropic employee details and internal messages within 12 hours; the claim is unconfirmed and no company statement is in the candidates. <a href="https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26" target="_blank" rel="noopener noreferrer">↗</a></li><li>A GitHub project claims a team of five Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard; this is a self-reported result that needs independent replication. <a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank" rel="noopener noreferrer">↗</a></li><li>Apple&#x27;s CEO says the company does not want to ship AI for AI&#x27;s sake, a sign of its cautious product stance that could shape its next announcements. <a href="https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A Hacker News discussion covers the tradeoff between AI text watermarking and output quality, relevant as provenance rules tighten. <a href="https://blog.keyvan.net/p/ai-text-watermarking-and-quality" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Parameter Labs&#x27; writeup on the ChatGPT HTML preview exploit</div>
+        <p>It walks through a real attack chain against a sandboxed AI-rendered app, showing how a bundled third-party library can break an iframe boundary. For anyone building apps that render model-generated or user-supplied interactive content, it is a practical lesson in threat modeling sandboxes.</p>
+        <a class="explore-link" href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
