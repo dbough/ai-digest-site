@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-03</title>
+<meta name="description" content="Financial and infrastructure pressure dominated the past day. Anthropic&#x27;s IPO filing exposed large revenue and compute commitments, while Oracle&#x27;s financing, Grok usage throttling, and reports of very">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-03">
+<meta property="og:description" content="Financial and infrastructure pressure dominated the past day. Anthropic&#x27;s IPO filing exposed large revenue and compute commitments, while Oracle&#x27;s financing, Grok usage throttling, and reports of very">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-03</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">12 stories · Business (4) · Policy (4) · Models (4) · Research (3) · Developer Tools (3)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Financial and infrastructure pressure dominated the past day. Anthropic&#x27;s IPO filing exposed large revenue and compute commitments, while Oracle&#x27;s financing, Grok usage throttling, and reports of very high agent token spending pointed to how expensive AI buildout has become. On the capability side, the most-discussed research showed LLMs reading and editing neural network weights, and Anthropic warned it is close to recursive self-improvement. Developer infrastructure also moved forward, with OpenAI&#x27;s Git backend for Codex-scale development and a PyTorch-on-TPU project. Legal and community pushback on data, scraping, and data centers is rising in parallel.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html" target="_blank" rel="noopener noreferrer"><img src="https://image.cnbcfm.com/api/v1/image/108369526-1790698647709-gettyimages-2297195052-AFP_C9PK8G7.jpeg?v=1790698665&amp;w=1920&amp;h=1080" alt="Anthropic&#x27;s IPO filing reveals $17B Q3 revenue and ~$895B in compute commitments" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="5/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span></span>
+          <span class="meter-label">5/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Anthropic&#x27;s IPO filing reveals $17B Q3 revenue and ~$895B in compute commitments</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">A revised S-1 filing reported by CNBC and the FT shows Anthropic with about $17B in Q3 revenue and roughly $895–900B in spending commitments ahead of a planned IPO. Hacker News discussion also cited reporting that its internal AI usage, at retail token prices, now exceeds its employee payroll. Critics argue the SEC should block the listing to protect the public, and one commentary piece claims its growth has flattened. These are company filing figures as reported by the press, and the growth-flattening claim is an opinion rather than verified data.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>The filing puts hard numbers on the scale of commitments behind frontier AI and tests whether the economics of the leading labs can support their infrastructure bets.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Pricing, rate limits, and vendor stability for frontier APIs depend on these commitments, so teams should watch how the company&#x27;s financial disclosures change its pricing and capacity plans.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Public disclosure gives investors, customers, and regulators audited-style visibility into a major AI lab&#x27;s economics</li><li>Revenue growth alongside large commitments suggests real demand for frontier models</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Commitments of this size create dependence on continued funding and may strain the company if revenue growth slows</li><li>Critics argue the public should be protected from an IPO that rests on heavy infrastructure spending</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html" target="_blank" rel="noopener noreferrer"><img src="https://cnbc.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>cnbc.com</span></a><a class="source-chip" href="https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f" target="_blank" rel="noopener noreferrer"><img src="https://ft.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>ft.com</span></a><a class="source-chip" href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/" target="_blank" rel="noopener noreferrer"><img src="https://techpolicy.press/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techpolicy.press</span></a><a class="source-chip" href="https://www.regenerator1.com/p/anthropics-growth-just-flattened" target="_blank" rel="noopener noreferrer"><img src="https://regenerator1.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>regenerator1.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/" target="_blank" rel="noopener noreferrer"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/7c05f6ee-ac6d-4327-b763-7d43c0fa8d35/image.png?t=1793682395" alt="Anthropic warns it is very close to recursive self-improvement capability" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Anthropic warns it is very close to recursive self-improvement capability</h3>
+        <div class="story-dates">First reported 2026-11-02 · Latest update 2026-11-03</div>
+        <p class="story-text">TechCrunch reports that Anthropic has warned it is very close to a capability it describes as recursive self-improvement (RSI), where AI gets good enough at training itself to accelerate its own progress. The article frames RSI as the threshold that safety advocates have long considered a point of no return. The details are as reported by TechCrunch, and the candidate list does not include Anthropic&#x27;s original statement, so the exact claim and its supporting evidence should be verified against the primary source.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>If a leading lab states it is near self-improving AI, safety, governance, and capability timelines all shift, and the claim will shape how labs and regulators behave.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Builders should expect faster capability jumps and more pressure on evaluation and access controls for models used in automated research or training pipelines.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Public warnings can prompt safety investment and government attention before capabilities spread</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Warnings from companies that benefit from hype can be hard to separate from marketing or fundraising context</li><li>Self-improvement claims without independent evaluation are hard to assess</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/" target="_blank" rel="noopener noreferrer"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/7c05f6ee-ac6d-4327-b763-7d43c0fa8d35/image.png?t=1793682395" alt="&quot;Weight Space Programming&quot;: LLMs can read and write neural network weights" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">&quot;Weight Space Programming&quot;: LLMs can read and write neural network weights</h3>
+        <div class="story-dates">First reported 2026-11-02 · Latest update 2026-11-03</div>
+        <p class="story-text">A widely discussed write-up (&quot;Astra&quot;) reports that a capable LLM can read and write neural network weights directly to improve Qwen, bypassing some of the autonomous-experimentation loops that earlier work like Karpathy&#x27;s autoresearch relied on. Latent Space calls it a blockbuster paper and frames it as cutting autoresearch out of the recursive self-improvement loop. A separate critical analysis argues LLMs are not superhuman at reading and writing weights, which tempers the headline. The results are self-reported by the authors and not yet independently replicated in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>If models can operate on weights directly, the route to model improvement becomes more automated, and the skeptical counterpoint shows how far current capability really extends.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Engineers doing fine-tuning or model editing should watch for tooling that lets LLMs propose weight-level changes, and should treat early claims as needing reproduction.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Could make model adaptation cheaper and faster than gradient-based fine-tuning for some tasks</li><li>Opens a new research direction in interpretability and model editing</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>A critical analysis argues LLMs are not superhuman at this task, so gains may be narrower than the headline suggests</li><li>Automated weight editing raises safety and reproducibility concerns</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" rel="noopener noreferrer"><img src="https://rikiyat.github.io/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>rikiyat.github.io</span></a><a class="source-chip" href="https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a><a class="source-chip" href="https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/" target="_blank" rel="noopener noreferrer"><img src="https://seangoedecke.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>seangoedecke.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/02/openai-pando-git-backend-monorepo/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-10001-scaled.png" alt="OpenAI details Pando, its Git backend built for Codex-scale development" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">OpenAI details Pando, its Git backend built for Codex-scale development</h3>
+        <div class="story-dates">First reported 2026-11-02 · Latest update 2026-11-03</div>
+        <p class="story-text">OpenAI published how it built Pando, a Git-compatible backend that now serves all development in its monorepo. Engineers and Codex agents keep using the standard Git client and protocol, and OpenAI reports median push latency fell nearly 80% and that the system handles nearly a petabyte of Git data per day. MarkTechPost&#x27;s summary repeats these figures, which come from OpenAI&#x27;s own report and are not independently verified.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows the version-control layer is becoming a bottleneck for agent-driven development, and that labs are rebuilding infrastructure for the volume of commits agents produce.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams running many coding agents against one repository should expect Git hosting limits to matter, and can look at Pando&#x27;s design choices for handling high-concurrency pushes.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Keeps the standard Git client and protocol, so existing workflows are unaffected</li><li>Demonstrates a concrete scaling pattern for agentic coding workloads</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Performance figures are company-reported, and the system is not available as a product</li><li>Most organizations will not operate at OpenAI&#x27;s monorepo scale</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/scaling-git-at-openai" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/02/openai-pando-git-backend-monorepo/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/en/headerimage/torchtpu-1793636927771.jpeg" alt="Google and Meta open-source TorchTPU for native PyTorch on TPUs" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Google and Meta open-source TorchTPU for native PyTorch on TPUs</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">Google, in collaboration with Meta, has open-sourced TorchTPU, a native PyTorch backend for Google TPUs. It is designed to run PyTorch workloads on TPU hardware with minimal code changes, supporting eager and compiled execution, distributed computing, and hardware-specific optimizations. The details come from the project&#x27;s announcement as covered by InfoQ.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Better PyTorch support on TPUs reduces lock-in to CUDA-only tooling and gives labs and developers a more realistic choice of accelerator.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams with PyTorch codebases can evaluate TPU capacity with fewer code changes, though performance and feature parity should be tested on their own workloads.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Lowers switching costs between accelerators for PyTorch users</li><li>Open source with backing from two large AI companies</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Real-world maturity and performance parity with CUDA are not established in the candidate coverage</li><li>Ecosystem support for custom kernels may still lag</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html" target="_blank" rel="noopener noreferrer"><img src="https://image.cnbcfm.com/api/v1/image/108468745-1793103926982-gettyimages-2234722679-_73a3321_cmlbiuj4.jpeg?v=1793642583&amp;w=1920&amp;h=1080" alt="Agent compute costs come under scrutiny: Grok limits cut, $200K token spending, and Oracle&#x27;s $20B raise" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Agent compute costs come under scrutiny: Grok limits cut, $200K token spending, and Oracle&#x27;s $20B raise</h3>
+        <div class="story-dates">First reported 2026-11-02 · Latest update 2026-11-03</div>
+        <p class="story-text">Several reports point to the cost of running AI agents at scale. Elon Musk has throttled Grok Bot limits, citing &#x27;unsustainably high&#x27; costs. Y Combinator&#x27;s Garry Tan said he spends up to $200K a year on tokens from heavy agent use. Oracle filed to sell $20B in new stock and bonds to finance its AI buildout, and a wider chip stock selloff was reported alongside a sharp fall in Intel shares. Together these show financing and per-task compute costs becoming a constraint, though the individual figures come from press reports.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Agentic workloads consume far more tokens than chat, so cost per task is becoming a limiting factor for product design and infrastructure financing.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Agent designs that loop through many model calls need explicit cost budgets, caching, and routing to cheaper models, because usage-based pricing can change quickly.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Cost pressure pushes teams toward more efficient agent architectures and smaller models</li><li>Heavy usage by individuals shows real productivity value for some workflows</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Unsustainable compute costs may force usage limits or price increases for users</li><li>Heavy financing for AI buildout raises the risk of a correction if demand does not keep pace</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html" target="_blank" rel="noopener noreferrer"><img src="https://cnbc.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>cnbc.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11" target="_blank" rel="noopener noreferrer"><img src="https://businessinsider.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>businessinsider.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <div class="story-media story-media-fallback" style="background:linear-gradient(135deg, #dc262633, #dc26260d);"><span class="fallback-glyph" style="color:#dc2626;">✦</span></div>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">OpenAI expands security bug bounties and plans an AI-assisted security sprint</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">OpenAI is raising Security Bug Bounty rewards and adding report-quality, loyalty, and priority campaign bonuses for independent researchers. It also announced a forthcoming internal security sprint with Cathedral Systems to test and harden its defenses using AI. These are OpenAI&#x27;s own announcements, and no outcomes are reported yet.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Larger bounties and AI-assisted internal testing signal how labs expect security research to scale as models get better at finding vulnerabilities.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers building on OpenAI&#x27;s platform can expect the security program to change how vulnerabilities are reported and fixed, and security teams may want to track bounty scope updates.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Higher rewards attract more independent researchers to find issues</li><li>Using AI for internal security testing can find problems faster</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Bounty programs depend on the quality of reports and triage capacity</li><li>Details of the security sprint and its results are not yet public</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a><a class="source-chip" href="https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Anthropic restricts Claude from re-creating existing video games" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Anthropic restricts Claude from re-creating existing video games</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">Anthropic added system prompt instructions to Claude Code that tell it to build original games and games from users&#x27; own designs, but not to clone existing games. A user spotted the change around October 27, and The Verge and Ars Technica reported on it. Anthropic says it will still allow game creation, while the rule targets direct clones. Coverage notes that the change is unlikely to stop the broader wave of AI-assisted game porting and decompilation.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows coding-agent providers beginning to set content boundaries on what their tools will generate, which has legal and IP implications.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams relying on coding agents for reverse engineering or porting should expect refusals or changed behavior for certain categories of work.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Could reduce liability for copyright infringement</li><li>Keeps legitimate original game development available</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Prompt-level rules are easy to route around and may not stop the broader trend</li><li>Boundaries are set by the vendor and may be unclear or inconsistently applied</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_A.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="OpenAI&#x27;s Grid Protectors Program pitches data center power as grid support" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">OpenAI&#x27;s Grid Protectors Program pitches data center power as grid support</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">OpenAI announced a Grid Protectors Program with utilities, starting with a pilot at a planned data center in Effingham County, Georgia. The company says the site could free up to 1,000 megawatts during extreme weather or emergencies, enough for about 700,000 homes&#x27; air conditioners. The Verge notes this comes amid local opposition to data centers across the US. The power figures are OpenAI&#x27;s own projections.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Data center siting and power costs are becoming political issues, and labs are proposing grid commitments to win local approval.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Infrastructure teams should expect data center capacity and power pricing to be shaped by utility agreements and local permitting, not just by chip supply.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Offers a possible grid-reliability benefit during emergencies</li><li>Creates a template for utilities and data center developers</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Company-reported capacity figures have not been independently verified</li><li>Local residents report having little input into large projects, and opposition is growing</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/grid-protectors-program" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2289911637.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="New York Times and other publishers sue Brave over alleged AI scraping" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">New York Times and other publishers sue Brave over alleged AI scraping</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">The New York Times, the Chicago Tribune, the Orlando Sentinel, and the New York Daily News have sued Brave Software. The complaints allege Brave scraped copyrighted content, bypassed paywalls, and sold paid access to its index to AI companies, including Anthropic and Perplexity, which use it for training and responses. These are allegations in complaints, and Brave has not been heard from in these candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>The suit targets the intermediary layer that supplies content to AI companies, which could reshape how training and retrieval data is licensed.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams building retrieval or search features should audit where their web content comes from and whether the sources have licensing terms.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Clarifies that paywall circumvention and resale of scraped data can create legal exposure</li><li>Could push AI companies toward licensed content deals</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Allegations are unproven, and the outcome could be narrow</li><li>Heavier enforcement could raise costs or limit access for smaller AI and search developers</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://deploymentsafety.openai.com/gpt-rosalind-6" target="_blank" rel="noopener noreferrer"><img src="https://deploymentsafety.openai.com/assets/deploymentsafety-social.png" alt="OpenAI releases GPT-6.1 variants and a new default model in the llm CLI" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">OpenAI releases GPT-6.1 variants and a new default model in the llm CLI</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">Simon Willison&#x27;s llm 0.37 adds gpt-6.1-sol and gpt-6.1-terra, adds a command to configure additional OpenAI-compatible endpoints, and switches the default model to gpt-6-luna at half the price of the prior default, gpt-5.6-luna. OpenAI also published a GPT-Rosalind-6 system card addendum. The model names and pricing come from the release notes as relayed by a developer tool, so confirm them against OpenAI&#x27;s model documentation.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows the GPT-6 family expanding into tiered variants with lower-cost defaults, which affects everyday developer cost and model choice.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers using llm or similar tools should check model defaults and costs, and consider the new OpenAI-compatible endpoint support for other providers.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Lower default pricing makes casual and automated use cheaper</li><li>Easier configuration of OpenAI-compatible endpoints</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Model variant naming and capabilities are not explained in the candidates</li><li>Frequent default changes can break reproducibility</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://simonwillison.net/2026/Nov/2/llm/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a><a class="source-chip" href="https://deploymentsafety.openai.com/gpt-rosalind-6" target="_blank" rel="noopener noreferrer"><img src="https://deploymentsafety.openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>deploymentsafety.openai.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-88881-4-scaled.png" alt="Deep Principle releases Hydrogen-1.0, a 753B open-weight scientific model" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Deep Principle releases Hydrogen-1.0, a 753B open-weight scientific model</h3>
+        <div class="story-dates">First reported 2026-11-02</div>
+        <p class="story-text">Deep Principle released Hydrogen-1.0, an open-weight model for chemistry, materials science, and life sciences. It is built by post-training Z.ai&#x27;s GLM-5.3 on domain data, lab records, and agent discovery trajectories. It is a 753B-parameter MoE with about 40B active parameters, a 1M-token context, and MIT-licensed weights. The company reports a FrontierScience-Research win over GPT-6-Astra, which is a company-reported benchmark result.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Open-weight, domain-specialized scientific models give research groups an alternative to closed models for lab workflows.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Scientific software teams can test the open weights on their own tasks, keeping in mind the hardware needs of a model this size.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Open MIT-licensed weights allow local deployment and customization</li><li>Domain post-training on lab data may help on specialized tasks</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Benchmark claims are self-reported and not independently verified in the candidates</li><li>Running a 753B model requires substantial multi-GPU infrastructure</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>OpenAI expands security bug bounties and plans an AI-assisted security sprint</h4><p>Larger bounties and AI-assisted internal testing signal how labs expect security research to scale as models get better at finding vulnerabilities.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Anthropic restricts Claude from re-creating existing video games</h4><p>It shows coding-agent providers beginning to set content boundaries on what their tools will generate, which has legal and IP implications.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>OpenAI&#x27;s Grid Protectors Program pitches data center power as grid support</h4><p>Data center siting and power costs are becoming political issues, and labs are proposing grid commitments to win local approval.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>New York Times and other publishers sue Brave over alleged AI scraping</h4><p>The suit targets the intermediary layer that supplies content to AI companies, which could reshape how training and retrieval data is licensed.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>OpenAI releases GPT-6.1 variants and a new default model in the llm CLI</h4><p>It shows the GPT-6 family expanding into tiered variants with lower-cost defaults, which affects everyday developer cost and model choice.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Deep Principle releases Hydrogen-1.0, a 753B open-weight scientific model</h4><p>Open-weight, domain-specialized scientific models give research groups an alternative to closed models for lab workflows.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Apple is reportedly developing an AI home robot (code-named J595, possibly HomeView Ultra) for a possible 2027 launch around $1,000, according to The Information as relayed by Ars Technica. <a href="https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Meta has reportedly built its first humanoid robot, per The Rundown AI; details are limited in the candidate coverage. <a href="https://www.therundown.ai/articles/meta-builds-its-first-humanoid-robot" target="_blank" rel="noopener noreferrer">↗</a></li><li>Zyphra Hierarchical Attention (ZHA) retrofits sparse attention onto frozen pretrained models with about 4B distillation tokens, staying close to dense attention on Qwen3.6-35B-A3B in company-reported tests. <a href="https://www.marktechpost.com/2026/11/02/zyphra-hierarchical-attention-zha-sparse-attention/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A Bloomberg feature reports that many San Francisco tech workers are being left out of the AI wealth boom as OpenAI and Anthropic IPO plans advance, a human-impact story about the labor market. <a href="https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near" target="_blank" rel="noopener noreferrer">↗</a></li><li>An arXiv paper on agentic backdoors via pretraining poisoning is drawing attention on Hacker News and could matter for supply-chain security of foundation models. <a href="https://arxiv.org/abs/2610.37741" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Weight Space Programming (the &quot;Astra&quot; write-up)</div>
+        <p>It shows an LLM reading and writing neural network weights directly, which challenges the usual split between training pipelines and model use. Read it alongside the critical analysis of its limits to see how to evaluate capability claims that are still early.</p>
+        <a class="explore-link" href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
