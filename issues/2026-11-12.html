@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-12</title>
+<meta name="description" content="Three threads stand out: lab and infrastructure companies are moving toward public markets and deeper capital ties (Anthropic&#x27;s IPO roadshow, TSMC&#x27;s stakes in Anthropic and OpenAI, a reported $10B Ope">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-12">
+<meta property="og:description" content="Three threads stand out: lab and infrastructure companies are moving toward public markets and deeper capital ties (Anthropic&#x27;s IPO roadshow, TSMC&#x27;s stakes in Anthropic and OpenAI, a reported $10B Ope">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-12</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">10 stories · Policy (4) · Business (3) · Models (2) · Developer Tools (2) · Enterprise (2)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Three threads stand out: lab and infrastructure companies are moving toward public markets and deeper capital ties (Anthropic&#x27;s IPO roadshow, TSMC&#x27;s stakes in Anthropic and OpenAI, a reported $10B OpenAI quarter), specialized low-cost &quot;decision&quot; models are emerging as a distinct API category for agent routing and policy checks, and agents are running into access limits from businesses that don&#x27;t want them acting on customers&#x27; behalf (United). Nvidia&#x27;s CEO departure is a leadership shock at the center of AI hardware, though the most serious allegations are still being reported rather than verified.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://latent.space/p/ainews-d-day-decision-models-day/" target="_blank" rel="noopener noreferrer"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/b8ccf47f-9414-4c90-bbb5-0fcb2b0ac850/image.png?t=1794461003" alt="Google launches Gemini Decisions API with Gemini Decision 1" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Google launches Gemini Decisions API with Gemini Decision 1</h3>
+        <div class="story-dates">First reported 2026-11-11 · Latest update 2026-11-12</div>
+        <p class="story-text">Google launched the Gemini Decisions API, powered by Gemini Decision 1, a model that does not generate text. It scores up to 1,000 typed questions (yes/no, choice, rubric scoring) against one shared input and returns calibrated probabilities, with a 256K-token shared context. Google prices it at $0.10 per million input tokens with output free; Latent Space reports roughly 200ms end-to-end latency, and those performance figures are company-reported. It arrives in a category that OpenAI&#x27;s GPT-6 Luna and the Jev model from TypeSafe AI already occupy, which is why it&#x27;s being framed as a new &quot;system one&quot; model class.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It establishes non-generative, structured decision models as a product category, giving agent builders a cheap, fast alternative to calling a full reasoning LLM for routing and policy checks.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Use it for the small branching calls inside agents, such as tool selection, routing, guardrails, and grading, where a calibrated probability is more useful than a generated answer.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Much cheaper and faster than reasoning LLMs for narrow classification-style calls</li><li>Calibrated probabilities make thresholds and fallbacks easier to design</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Performance and latency numbers are company-reported so far</li><li>Google-hosted only, and it&#x27;s a new API that teams will have to evaluate against OpenAI and Jev alternatives</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener noreferrer"><img src="https://blog.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>blog.google</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a><a class="source-chip" href="https://latent.space/p/ainews-d-day-decision-models-day/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a><a class="source-chip" href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2301620664.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Nvidia CEO Jensen Huang resigns after board action over affair reports" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="5/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span></span>
+          <span class="meter-label">5/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Nvidia CEO Jensen Huang resigns after board action over affair reports</h3>
+        <div class="story-dates">First reported 2026-11-11 · Latest update 2026-11-12</div>
+        <p class="story-text">Nvidia&#x27;s board separated from co-founder and CEO Jensen Huang after reports of two extramarital affairs, one involving a woman alleged to be a Chinese intelligence agent and one involving an Nvidia executive who reported to him. Nvidia&#x27;s press release announced his resignation as CEO, president, and board member, effective immediately, with CFO Colette Kress named interim CEO, and said the corporate structure is also changing. Reporting from TechCrunch, The Verge, and Wired covers the timeline and congressional requests for a briefing; CSET cautions that the public record remains incomplete and that the allegations do not establish improper transfer of technology.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Nvidia supplies much of the chip infrastructure for frontier AI, so leadership instability at the company touches training costs, supply, and U.S.–China competition.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Watch for any near-term changes in Nvidia&#x27;s roadmap, pricing, or developer-facing programs during the interim leadership period, though none are announced in these sources.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://www.wired.com/story/nvidia-ceo-jensen-huang-steps-down/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://cset.georgetown.edu/article/espionage-ai-and-the-risks-of-strategic-overreaction/" target="_blank" rel="noopener noreferrer"><img src="https://cset.georgetown.edu/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>cset.georgetown.edu</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/TSMC-Fab-18-500x500.jpg" alt="Anthropic advances IPO roadshow as TSMC plans $1B in Anthropic and OpenAI" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Anthropic advances IPO roadshow as TSMC plans $1B in Anthropic and OpenAI</h3>
+        <div class="story-dates">First reported 2026-11-11 · Latest update 2026-11-12</div>
+        <p class="story-text">Anthropic launched its IPO roadshow, and the accompanying video includes previously unreleased details on its business. Co-founder Tom Brown describes training and serving Claude across four chip families: AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs. Separately, Reuters reports (via Ars Technica) that TSMC&#x27;s board approved up to $500M in OpenAI preferred stock and $500M in Anthropic common shares at the expected IPO price. The IPO details are as reported in the roadshow and press coverage, not audited filings.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A public Anthropic offering and a foundry giant taking direct stakes in two leading labs tie frontier model economics more tightly to chip supply and public-market scrutiny.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>The multi-chip serving disclosure suggests Claude capacity and pricing will depend on hardware diversity, which matters if you&#x27;re choosing a provider for latency or availability.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Public-market capital may fund compute expansion and more stable supply</li><li>Multi-vendor chip strategy reduces dependence on any single supplier</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Public listing adds pressure on margins and growth reporting</li><li>Chip-maker stakes in model labs could create conflicts for supply relationships</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://ipo.anthropic.com/us/" target="_blank" rel="noopener noreferrer"><img src="https://ipo.anthropic.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>ipo.anthropic.com</span></a><a class="source-chip" href="https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a><a class="source-chip" href="https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/signal_icon-500x500.jpg" alt="Google DeepMind uses agentic AI to formally verify key Signal protocol guarantees" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">Google DeepMind uses agentic AI to formally verify key Signal protocol guarantees</h3>
+        <div class="story-dates">First reported 2026-11-11</div>
+        <p class="story-text">Google DeepMind researchers used agentic AI to formally verify several of the Signal protocol&#x27;s core cryptographic guarantees. The project took about four weeks as a proof of concept. Ars Technica frames it as independent validation of the cryptography behind Signal, Google Messages, and WhatsApp, and as a demonstration of DeepMind&#x27;s formal verification capabilities.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows AI agents producing machine-checked proofs for security-critical code, which could make rigorous verification of cryptographic and safety-critical software far cheaper.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Formal verification is becoming more reachable for teams with high-assurance requirements, and agent-driven proof work is a pattern to track for security-critical code.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Machine-checked proofs add strong assurance to widely used protocols</li><li>A four-week timeline suggests verification work could scale faster than before</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Proof-of-concept scope covers only some guarantees of the protocol</li><li>Verification proves properties of the specified model, not necessarily the full deployed implementation</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener noreferrer"><img src="https://lh3.googleusercontent.com/VPOhADdGu1T7kK_gWBiGzyVawQbKCjpL3-B0L0wxpYCyr8cHxviYmo9Hghy4f1laeIo2YKwuz8E07TR9HWWk2b0EONi0uvju-8TDLHX6YWHG4dXe3w=w528-h297-n-nu-rw-lo" alt="Google DeepMind releases AlphaGenome 2 for cell-type-specific DNA variant effects" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Google DeepMind releases AlphaGenome 2 for cell-type-specific DNA variant effects</h3>
+        <div class="story-dates">First reported 2026-11-11</div>
+        <p class="story-text">Google DeepMind released AlphaGenome 2, a conditional sequence-to-function model that reads a 1 Mb DNA window plus a target cell state to predict variant effects in specific cell types. Its predecessor averaged across bulk tissues, while this version distinguishes closely related cell types and adapts to unseen single-cell datasets without fine-tuning. It is available through an API for non-commercial research, and the performance claims come from DeepMind&#x27;s own reporting.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Cell-type resolution moves genomic prediction closer to the biological context where disease mechanisms actually operate, which could speed hypothesis generation for drug targets.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Researchers and bioinformatics teams can test it through the hosted API, though the non-commercial license limits production use.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Cell-type-specific predictions are more biologically precise than bulk-tissue averages</li><li>Works on unseen single-cell datasets without fine-tuning</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Predictions still need experimental validation before clinical use</li><li>API is non-commercial and hosted only for now</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener noreferrer"><img src="https://deepmind.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>deepmind.google</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-variant-effects/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2024/05/openAI-spiral-rose.jpg?resize=1200,675" alt="OpenAI&#x27;s quarterly revenue reportedly tops $10B for the first time" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">OpenAI&#x27;s quarterly revenue reportedly tops $10B for the first time</h3>
+        <div class="story-dates">First reported 2026-11-11</div>
+        <p class="story-text">OpenAI&#x27;s quarterly revenue reportedly crossed $10 billion for the first time, according to TechCrunch. That is roughly a 50% increase from the $6.7 billion reported for the prior quarter. The figure comes from reporting rather than an official company release in these candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>If confirmed, it signals that enterprise and consumer AI revenue is scaling fast enough to shape the economics of the whole frontier-model market.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Sustained revenue growth at this scale suggests API pricing and product continuity are likely to remain stable for now, though this is not a pricing announcement.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23176430/1237621702.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="United Airlines blocks unauthorized AI agents from booking flights" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">United Airlines blocks unauthorized AI agents from booking flights</h3>
+        <div class="story-dates">First reported 2026-11-11</div>
+        <p class="story-text">United Airlines said it will not let personal AI assistants book tickets on its site, citing privacy, unintended purchases, and regulatory concerns. According to The Wall Street Journal (via The Verge), the airline has not yet seen many customers try to book through agents, though it is concerned that agents could expose information or skirt federal requirements for passenger information. The policy was widely discussed on Hacker News.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an early example of a major consumer company explicitly gating third-party agents, which could make agent access to commerce a negotiated, permissioned channel rather than open web automation.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you&#x27;re building agents that act on external websites, plan for sites that block or restrict automated booking, and design for official partner APIs where they exist.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Protects customers from agents making purchases they didn&#x27;t intend</li><li>Helps the airline meet passenger-information and security obligations</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Could push agent commerce toward closed partner channels and limit consumer choice</li><li>Blanket bans may frustrate users who want assistive tools and accessibility-driven automation</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/" target="_blank" rel="noopener noreferrer"><img src="https://cbsnews.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>cbsnews.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html" target="_blank" rel="noopener noreferrer"><img src="https://www.allthingsdistributed.com/images/aws-emulator-header.jpg" alt="AWS releases official open-source local emulator for its services, built largely by agents" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">AWS releases official open-source local emulator for its services, built largely by agents</h3>
+        <div class="story-dates">First reported 2026-11-11</div>
+        <p class="story-text">AWS published aws-emulator, an official tool for running tests against a local clone of many AWS services without a paid cloud account. It is written in Rust and was built by a large number of coding agents, with 29,684 commits in the first three weeks according to Simon Willison, citing a guest post by Swami Sivasubramanian on Werner Vogels&#x27; blog. It currently requires Docker on macOS and Windows, which Willison notes is a limitation.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a notable real-world case of agent-written infrastructure software from a major cloud provider, and it lowers the cost of testing cloud-dependent code.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Try it in CI for AWS-dependent test suites to avoid paid API keys and speed up local iteration, but note the Docker requirement on non-Linux systems.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Free local testing reduces cloud costs and speeds up test loops</li><li>Official status means it is more likely to track AWS API changes</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Docker dependency on macOS and Windows adds setup friction</li><li>Agent-written codebases raise open questions about long-term maintainability and review depth</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://github.com/aws/aws-emulator" target="_blank" rel="noopener noreferrer"><img src="https://github.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>github.com</span></a><a class="source-chip" href="https://simonwillison.net/2026/Nov/11/aws-emulator/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a><a class="source-chip" href="https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html" target="_blank" rel="noopener noreferrer"><img src="https://allthingsdistributed.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>allthingsdistributed.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <div class="story-media story-media-fallback" style="background:linear-gradient(135deg, #dc262633, #dc26260d);"><span class="fallback-glyph" style="color:#dc2626;">✦</span></div>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">OpenAI commits $2M to research on AI and children&#x27;s safety</h3>
+        <div class="story-dates">First reported 2026-11-12</div>
+        <p class="story-text">OpenAI announced a $2 million commitment to research on AI and children&#x27;s safety under a &quot;children-first&quot; declaration. The funding supports shared tools to measure both the risks and the opportunities AI presents to young people. Details beyond the funding commitment are not in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Shared measurement tools for child-related AI risk could give regulators, educators, and developers a common baseline, though the amount is modest relative to the scale of the issue.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Expect emerging evaluation benchmarks for minors&#x27; safety, which may become requirements for consumer-facing apps that serve young users.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Funds independent research into an under-studied risk area</li><li>Shared measurement tools could standardize how risk is assessed</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Industry-funded research can raise questions about independence</li><li>$2M is small against the scope of the problem, and the candidates include no detail on governance</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/children-first-declaration" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#94a3b8;">
+      <a class="story-media" href="https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/bigwalkdebate-500x500.png" alt="Indie game Big Walk&#x27;s late AI disclosure sparks controversy" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Indie game Big Walk&#x27;s late AI disclosure sparks controversy</h3>
+        <div class="story-dates">First reported 2026-11-11</div>
+        <p class="story-text">House House, developer of the co-op puzzle game Big Walk, publicly and belatedly disclosed minimal AI use in the game. The disclosure followed private discussions among Independent Games Festival Awards judges and jury members, and it has provoked a broader debate in indie game development over how AI usage is disclosed to players and awards bodies.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a concrete test of norms for disclosing AI use in creative work, and it is likely to influence how awards, storefronts, and players treat AI-assisted products.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you ship creative or consumer software, plan clear and early disclosure of AI-generated or AI-assisted components.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>OpenAI&#x27;s quarterly revenue reportedly tops $10B for the first time</h4><p>If confirmed, it signals that enterprise and consumer AI revenue is scaling fast enough to shape the economics of the whole frontier-model market.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>United Airlines blocks unauthorized AI agents from booking flights</h4><p>It is an early example of a major consumer company explicitly gating third-party agents, which could make agent access to commerce a negotiated, permissioned channel rather than open web automation.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>AWS releases official open-source local emulator for its services, built largely by agents</h4><p>It is a notable real-world case of agent-written infrastructure software from a major cloud provider, and it lowers the cost of testing cloud-dependent code.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>OpenAI commits $2M to research on AI and children&#x27;s safety</h4><p>Shared measurement tools for child-related AI risk could give regulators, educators, and developers a common baseline, though the amount is modest relative to the scale of the issue.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Indie game Big Walk&#x27;s late AI disclosure sparks controversy</h4><p>It is a concrete test of norms for disclosing AI use in creative work, and it is likely to influence how awards, storefronts, and players treat AI-assisted products.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Google&#x27;s Tabletop experiment lets users vibecode custom collaboration hubs, but it is currently a waitlisted experiment. <a href="https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability" target="_blank" rel="noopener noreferrer">↗</a></li><li>Huawei released MACaQ, its internal quantizer for local inference, a possible signal of growing domestic tooling for efficient model deployment. <a href="https://github.com/huawei-csl/MACaQ" target="_blank" rel="noopener noreferrer">↗</a></li><li>Codex can now route inference through Amazon Bedrock with supported OpenAI models, which matters for enterprises that want coding agents inside existing IAM and governance. <a href="https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Atuin Threads aims to sync agent sessions across every machine, an early sign of tooling for managing coding-agent history. <a href="https://blog.atuin.sh/threads-agent-sessions/" target="_blank" rel="noopener noreferrer">↗</a></li><li>CoreWeave is asking customers for up-front payments and shorter contracts to fund AI capacity growth, a sign of how financing terms are shifting in the infrastructure layer. <a href="https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Meta is losing Santosh Janardhan, its longtime head of infrastructure, which could matter for the company&#x27;s large-scale AI compute plans. <a href="https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Gemini Decision 1 and the &quot;system one&quot; decision-model pattern</div>
+        <p>Decision models return calibrated probabilities or structured choices instead of generated text, and they are much faster and cheaper than reasoning LLMs. Working through the Gemini Decisions API alongside the Jev-style question types lets you learn where a fast decision call can replace a full LLM call inside an agent, such as routing, tool selection, and guardrails.</p>
+        <a class="explore-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
