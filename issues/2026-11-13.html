@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-13</title>
+<meta name="description" content="The past day&#x27;s news clusters around three themes. Frontier labs are rolling out tiered model families with aggressive pricing, led by Google&#x27;s Gemini 4 Hydrogen. AI agents are running into friction fr">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-13">
+<meta property="og:description" content="The past day&#x27;s news clusters around three themes. Frontier labs are rolling out tiered model families with aggressive pricing, led by Google&#x27;s Gemini 4 Hydrogen. AI agents are running into friction fr">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-13</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">11 stories · Developer Tools (4) · Business (4) · Policy (4) · Enterprise (4) · Other (3)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">The past day&#x27;s news clusters around three themes. Frontier labs are rolling out tiered model families with aggressive pricing, led by Google&#x27;s Gemini 4 Hydrogen. AI agents are running into friction from companies that are restricting them on security grounds and from security incidents at AI infrastructure vendors. The chip supply chain and public institutions are also under pressure, from Nvidia&#x27;s leadership upheaval and congressional scrutiny of chip tracking to backlash over AI in schools. Much of the signal here is company-reported or still unverified.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://simonwillison.net/2026/Nov/12/llm-gemini/" target="_blank" rel="noopener noreferrer"><img src="https://static.simonwillison.net/static/2026/gemini-4-pelicans.webp" alt="Google launches Gemini 4 Hydrogen as its low-cost agentic workhorse and upgrades Search with it" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">Google launches Gemini 4 Hydrogen as its low-cost agentic workhorse and upgrades Search with it</h3>
+        <div class="story-dates">First reported 2026-11-12 · Latest update 2026-11-13</div>
+        <p class="story-text">Google released Gemini 4 Hydrogen, positioned below the Carbon and Argon models in the Gemini 4 family and aimed at everyday agent loops and coding work. It is available through the Gemini API, AI Studio, Gemini for business, Antigravity, and as the new default model in Google Search&#x27;s AI Mode. Google describes it as handling multi-part, typo-heavy, and highly specific queries better, and MarkTechPost reports Google&#x27;s claim that it is about 2.5x faster than Gemini 3.8 Flash. Pricing is listed at $1.50 input and $7.50 output per million tokens, which Simon Willison notes is confusing to compare against the Carbon and Argon tiers, whose prices change on December 1.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is another step in Google&#x27;s rapid cadence of frontier-adjacent model releases, and its low price point pressures competitors on cost for production agent workloads.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers can test Hydrogen as a cheaper default for agent loops and coding tasks via the Gemini API, but should benchmark it on their own workloads since the speed and quality figures are company-reported.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Much cheaper per token than the larger Gemini 4 siblings, making it practical for high-volume agent workflows</li><li>A 1M-token unified window for input, thinking, and output suits long agent sessions</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Performance and speed claims are largely company-reported, and the model is API-only with no weights or self-hosting</li><li>Pricing tiers and scheduled price changes across Gemini 4 models are hard to compare</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer"><img src="https://deepmind.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>deepmind.google</span></a><a class="source-chip" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer"><img src="https://blog.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>blog.google</span></a><a class="source-chip" href="https://simonwillison.net/2026/Nov/12/llm-gemini/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/13/google-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25343254/STK083_B_NVIDIA_D.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Jensen Huang resigns as Nvidia CEO; CFO Colette Kress named interim CEO" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="5/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span></span>
+          <span class="meter-label">5/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Jensen Huang resigns as Nvidia CEO; CFO Colette Kress named interim CEO</h3>
+        <div class="story-dates">First reported 2026-11-12 · Latest update 2026-11-13</div>
+        <p class="story-text">Nvidia announced that co-founder Jensen Huang has resigned as CEO after the board opened an investigation into reported personal relationships, including one with a person reportedly linked to China. CFO Colette Kress is interim CEO, and the board&#x27;s new chair, Harvey Jones, announced the change internally. Coverage reports that Nvidia lost more than $1 trillion in market value during the scandal, and questions have been raised about Nvidia&#x27;s support for open source AI and its Hugging Face acquisition. Several congressional investigations and a Senate testimony request are also underway. Personal details reported by outlets are not independently verified in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Nvidia is the central supplier of AI compute and the leader of much of the AI ecosystem, so a leadership change there could affect chip roadmaps, pricing, policy positions, and open-source commitments.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Watch for near-term changes in Nvidia&#x27;s roadmap, GPU availability, and open-weight model and tooling commitments, though no concrete product effects are announced yet.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener noreferrer"><img src="https://wp.technologyreview.com/wp-content/uploads/2026/11/foster-huang2a.jpg?resize=1200,600" alt="Nvidia privately said it could technically track AI chips, as chip-security legislation advances" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">Nvidia privately said it could technically track AI chips, as chip-security legislation advances</h3>
+        <div class="story-dates">First reported 2026-11-12</div>
+        <p class="story-text">According to Rep. Bill Foster, Nvidia representatives told him it would be technically possible to implement the geotracking measures in the proposed Chip Security Act, which would verify the location of advanced AI chips to prevent smuggling to China. An industry group had publicly called the measures potentially infeasible. The disclosure comes as Democrats launched a congressional investigation into Nvidia&#x27;s China sales and dealings with the Trump administration.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It undercuts an industry argument against chip-location verification and could shape how U.S. export controls are enforced.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If enacted, chip location requirements could affect how cloud and on-premises GPU capacity is procured, documented, and deployed across borders.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Technical verification could make export controls on advanced chips harder to evade</li><li>Shows that the feasibility objections raised publicly may not reflect what the company told lawmakers privately</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Industry groups argue geotracking is potentially infeasible, and the candidates do not include independent technical assessment</li><li>Location verification raises privacy and operational concerns for chip buyers and data center operators</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener noreferrer"><img src="https://technologyreview.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>technologyreview.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2021/02/notion-glitch-hero.jpg?resize=1200,827" alt="Fireworks AI breach exposed Notion customers&#x27; chat transcripts" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Fireworks AI breach exposed Notion customers&#x27; chat transcripts</h3>
+        <div class="story-dates">First reported 2026-11-12</div>
+        <p class="story-text">Attackers who breached Fireworks AI, an inference provider, were able to access chat transcripts belonging to Notion customers. TechCrunch notes this is Fireworks&#x27; second data breach in two months. The incident shows that customer data can leak through the model-serving layer that sits between application vendors and their users.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows that third-party inference providers are a concentrated point of risk for enterprise data, and that a repeat breach raises due-diligence questions for vendors that depend on them.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Treat inference providers as data processors: review retention and logging settings, scope what user content reaches them, and plan for rotation and incident response.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/11/united-airlines-2231866642.jpg?resize=1200,801" alt="United Airlines blocks customers from using AI agents to book flights" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">United Airlines blocks customers from using AI agents to book flights</h3>
+        <div class="story-dates">First reported 2026-11-12</div>
+        <p class="story-text">United Airlines said it will not allow customers to use AI agents to book flights or manage reservations, citing cybersecurity risks. It is one of the first high-profile cases of a major consumer company explicitly barring third-party AI agents from acting on customer accounts. The decision lands while agent-payment and agent-access protocols are being built out.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is an early sign that companies may gate or block autonomous agents acting on user accounts, which could limit how far agentic commerce can scale.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Agent products that act on users&#x27; accounts need a plan for sites that block agents, such as official partner APIs, explicit user authorization, and graceful fallbacks.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Limits account takeover and fraud risks from automated booking and reservation tools</li><li>Gives the airline control over how customer accounts are accessed</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Blocks convenience for customers who want agents to handle travel logistics</li><li>Pushes agent developers toward scraping or workarounds, which may be less secure</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/Win-win-500x500-1794505063.jpeg" alt="Google&#x27;s Gemini-powered schools push sparks protests and calls for moratoriums" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">Google&#x27;s Gemini-powered schools push sparks protests and calls for moratoriums</h3>
+        <div class="story-dates">First reported 2026-11-12 · Latest update 2026-11-13</div>
+        <p class="story-text">Families protested in seven U.S. cities over Google&#x27;s plan to make Gemini and AI-powered Search the default on school-issued Chromebooks. Google says it is giving schools &#x27;more choice, not less&#x27; by turning off Search, Gemini, and Gemini Notebook by default. Critics note that there is no option to use Google Search without AI, and the backlash has led to calls for moratoriums. Chicago schools have reportedly told Google they would rather lose Search than accept mandatory AI.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a live test of whether AI features can be imposed on children&#x27;s education tools, and it could set precedents for procurement and opt-out rules.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Education-facing products should offer true opt-out paths and clear controls, since defaults alone can trigger strong public pushback.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Google says the default-off settings give schools more control over AI features</li><li>AI tools could help students with research and writing if used well</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Without a non-AI search option, students effectively cannot avoid AI</li><li>Critics argue it normalizes children as test users and drives dependence on AI</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a><a class="source-chip" href="https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html" target="_blank" rel="noopener noreferrer"><img src="https://techspot.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techspot.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ef4444;">
+      <a class="story-media" href="https://www.wired.com/story/google-deepmind-staff-escalate-their-union-fight/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6af50d1a5e386b9efd1b63f5/master/pass/Google-DeepMind-Staffers-Escalate-Unionization-Efforts-Business-2151467843.jpg" alt="Google DeepMind staff take unionization push to the UK government" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">Google DeepMind staff take unionization push to the UK government</h3>
+        <div class="story-dates">First reported 2026-11-12</div>
+        <p class="story-text">Workers at Google DeepMind are trying to bypass company management and escalate their unionization effort to the UK government after initial talks with the company stalled. The move is a notable case of frontier AI researchers organizing over working conditions.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It signals that labor organizing is reaching the staff who build frontier models, which could affect how AI labs negotiate on working conditions and transparency.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Little direct effect on builders, but it may shape the labor environment and sentiment around frontier AI work.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.wired.com/story/google-deepmind-staff-escalate-their-union-fight/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ef4444;">
+      <a class="story-media" href="https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/55145037587_ac59503045_k.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="GDC survey: 40% of game developers now use generative AI in their jobs" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">GDC survey: 40% of game developers now use generative AI in their jobs</h3>
+        <div class="story-dates">First reported 2026-11-12</div>
+        <p class="story-text">The GDC Festival of Gaming&#x27;s annual industry survey found 40% of developers use generative AI as part of their job, up from 36% in 2025. Usage is higher among free-to-play developers (58%) and mobile-only studio workers (70%), even as the industry continues to debate AI and layoffs.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It provides one of the clearest sector-level adoption measurements, showing that AI use is growing fastest in commercial segments where iteration speed matters most.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Game and mobile studios appear to be the most aggressive adopters, which suggests mature tooling and workflows are forming there.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/12/aws-emulator-local-aws-api-emulator-ai-agents/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-1j8-scaled.png" alt="AWS releases AWS Emulator, a local copy of 200+ AWS services written largely by AI agents" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">AWS releases AWS Emulator, a local copy of 200+ AWS services written largely by AI agents</h3>
+        <div class="story-dates">First reported 2026-11-12</div>
+        <p class="story-text">AWS released a local emulator of AWS APIs built from 438 AWS API models covering 200+ services. The AWS CLI and SDKs can point at it instead of the cloud, with no account or service fee needed. AWS says autonomous agents wrote and reviewed most of its code. It is aimed at fast, free test loops for developers and coding agents, including in CI.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It gives coding agents a cheap, sandboxed AWS target for testing, which could reduce the cost and risk of agent-driven infrastructure work.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Use it as a local test target for agent-written infrastructure code and CI pipelines, while noting that emulators do not fully replicate AWS behavior.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Free, fast local testing against AWS-shaped APIs</li><li>Lowers the cost of running coding agents against cloud code</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Emulators can differ from real AWS behavior, so passing tests may not guarantee production correctness</li><li>The agent-authored origin means reviewing its fidelity matters more than usual</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/12/aws-emulator-local-aws-api-emulator-ai-agents/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-19999-2-scaled.png" alt="Google open-sources TPU Sync for fast KV cache transfer" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">Google open-sources TPU Sync for fast KV cache transfer</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">Google Cloud released TPU Sync, an open-source C++ library with PyTorch and JAX bindings for moving KV caches and model weights across TPU HBM, host DRAM, storage, and the data center network. Google reports over 90% lower KV transfer latency on 235B to 480B parameter MoE models, though these benchmarks are company-reported. It targets data movement, which is increasingly the bottleneck in large-model serving.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Moving model state, not just computing it, is becoming a key constraint for serving large MoE models, and an open library could make disaggregated serving easier.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams serving large MoE models on TPUs can evaluate it for prefill/decode disaggregation or KV reuse, after verifying the reported latency gains on their own setup.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Open source and usable from PyTorch and JAX</li><li>Could cut latency for large MoE serving</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Benchmarks are company-reported and limited to specific TPU generations (v6e and v7x)</li><li>Mostly useful to teams already on TPUs</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://brave.com/blog/search-api-agentic-payments/" target="_blank" rel="noopener noreferrer"><img src="https://brave.com/blog/search-api-agentic-payments/images/featured.jpg" alt="Brave Search API adds agentic payments via the x402 protocol" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">Brave Search API adds agentic payments via the x402 protocol</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">Brave&#x27;s Search API now accepts payments from AI agents using the x402 protocol, which lets an agent pay per request without a human-managed API key or account. This is one of the first search APIs to support machine-native payment flows, which matters as agents begin to buy data and services directly.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Machine-to-machine payment rails could make per-request, pay-as-you-go access the default model for agent tooling.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Agent builders can wire paid search into autonomous workflows without provisioning keys, though budgets and spend caps need to be enforced in code.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Removes account and key setup friction for autonomous agents</li><li>Enables per-request pricing that fits agent usage patterns</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Agents spending money autonomously raises new budget-control and abuse risks</li><li>Adoption depends on the x402 ecosystem gaining traction across providers</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://brave.com/blog/search-api-agentic-payments/" target="_blank" rel="noopener noreferrer"><img src="https://brave.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>brave.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>Google&#x27;s Gemini-powered schools push sparks protests and calls for moratoriums</h4><p>It is a live test of whether AI features can be imposed on children&#x27;s education tools, and it could set precedents for procurement and opt-out rules.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>Google DeepMind staff take unionization push to the UK government</h4><p>It signals that labor organizing is reaching the staff who build frontier models, which could affect how AI labs negotiate on working conditions and transparency.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>GDC survey: 40% of game developers now use generative AI in their jobs</h4><p>It provides one of the clearest sector-level adoption measurements, showing that AI use is growing fastest in commercial segments where iteration speed matters most.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>AWS releases AWS Emulator, a local copy of 200+ AWS services written largely by AI agents</h4><p>It gives coding agents a cheap, sandboxed AWS target for testing, which could reduce the cost and risk of agent-driven infrastructure work.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Google open-sources TPU Sync for fast KV cache transfer</h4><p>Moving model state, not just computing it, is becoming a key constraint for serving large MoE models, and an open library could make disaggregated serving easier.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Brave Search API adds agentic payments via the x402 protocol</h4><p>Machine-to-machine payment rails could make per-request, pay-as-you-go access the default model for agent tooling.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Claude.ai, Claude Code, and the Claude platform reported elevated errors, with a Hacker News thread about an outage drawing significant attention; the incident page is the primary source for scope and timing. <a href="https://status.claude.com/incidents/nn11wk485zfn" target="_blank" rel="noopener noreferrer">↗</a></li><li>Edge0-145B is pitched as frontier-level capability running on a personal computer, but the candidates contain no independent benchmarks to verify the claim. <a href="https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer" target="_blank" rel="noopener noreferrer">↗</a></li><li>A forensic analysis claims Chinese frontier models carry a fingerprint of export-controlled GPUs; the claim is high-profile but methodology and independent verification are not visible in the candidates. <a href="https://unemploymentlabs.com/checkpoint-forensics" target="_blank" rel="noopener noreferrer">↗</a></li><li>Nebius plans $40 billion in AI infrastructure spending funded by customer prepayments and loans, with delays at a Microsoft-linked data center raising financing questions for the neocloud model. <a href="https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Google&#x27;s first Gemini-powered smartglasses, built with Samsung, Gentle Monster, and Warby Parker, are up for preorder starting at $395, with Google leaning on privacy positioning. <a href="https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A new paper argues arena-style leaderboards are manipulable through strategic voting, which matters for anyone relying on public model rankings. <a href="https://arxiv.org/abs/2611.14769" target="_blank" rel="noopener noreferrer">↗</a></li><li>A paper finds a &#x27;task badness&#x27; internal signal rises before coding models reward-hack on impossible tasks, a potential early-warning idea for agent misbehavior. <a href="https://arxiv.org/abs/2611.14996" target="_blank" rel="noopener noreferrer">↗</a></li><li>AWS is pushing its next-generation AgentCore runtime for running long agent workloads securely and economically, a sign of how cloud providers are productizing agent infrastructure. <a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A CSET brief explains what AI &#x27;kill switches&#x27; or emergency shutdown systems are and what policymakers should know about them, as the idea circulates in U.S. policy discussions. <a href="https://cset.georgetown.edu/article/ai-kill-switches-what-policymakers-should-know/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Amazon&#x27;s Ring cameras are being turned into robots, a consumer-hardware development worth tracking for how agentic physical devices reach homes.</li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Termination Lag: Coding Agents Solve Early but Stop Late</div>
+        <p>This paper measures the gap between an agent&#x27;s first correct patch and the end of its run across five models and three SWE-bench datasets, finding that 38–82% of successful runs get the right answer on their first source edit, yet keep spending steps afterward. For anyone building or running coding agents, it points to a concrete cost and latency lever: better stopping criteria or verification could cut token spend substantially without hurting success rates.</p>
+        <a class="explore-link" href="https://arxiv.org/abs/2611.14960" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
