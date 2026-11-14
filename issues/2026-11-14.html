@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-14</title>
+<meta name="description" content="AI agents are moving from demos into money and infrastructure: OpenAI is letting agents make purchases with user approval, Anthropic is pushing consumer and parallel-worker agents, and the FAA is expa">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-14">
+<meta property="og:description" content="AI agents are moving from demos into money and infrastructure: OpenAI is letting agents make purchases with user approval, Anthropic is pushing consumer and parallel-worker agents, and the FAA is expa">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-14</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">14 stories · Business (6) · Developer Tools (5) · Models (5) · Agents (4) · Policy (3)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">AI agents are moving from demos into money and infrastructure: OpenAI is letting agents make purchases with user approval, Anthropic is pushing consumer and parallel-worker agents, and the FAA is expanding an AI advisory tool across all US airspace. Local and open-model tooling is also maturing, with llama.cpp and ggml reaching 1.0 and new open-weight releases. Meanwhile, leadership turmoil at Nvidia, the company that supplies most AI compute, is raising questions about funding and chip supply that could ripple through the startup ecosystem.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_B.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="OpenAI launches ChatGPT Wallet so agents can buy things with user approval" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">OpenAI launches ChatGPT Wallet so agents can buy things with user approval</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">OpenAI introduced ChatGPT Wallet, a payment layer that lets agents on its platforms, including its Dots agents, complete purchases on a user&#x27;s behalf. Per The Verge, the wallet is rolling out to US Pro subscribers with eligible US-issued cards, and agents must check in with the user before each checkout; every purchase requires biometric verification. TechCrunch describes it as a limited rollout, and OpenAI says it relies on existing card protections.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Giving agents payment authority is one of the clearest steps yet toward agents that take consequential real-world actions, and it sets a template for how approval and fraud controls will work.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you build agentic commerce or checkout flows, expect user-approval gates and biometric confirmation to become the baseline expectation for agent-initiated payments.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Per-purchase user approval and biometric checks limit unauthorized spending</li><li>Uses existing card protections, so consumers don&#x27;t need a new liability model</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Rollout is limited to US Pro subscribers, so broad impact is still unproven</li><li>Agent-initiated purchases raise open questions about errors, disputes, and fraud at scale</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/introducing-chatgpt-wallet" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_VST_111326_Site.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Jensen Huang resigns as Nvidia CEO, raising funding and policy questions" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Jensen Huang resigns as Nvidia CEO, raising funding and policy questions</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">Nvidia CEO Jensen Huang resigned, following reporting about an affair with an alleged Chinese spy and earlier chip-smuggling controversies. TechCrunch reports that founders and VCs expect smaller checks and lower valuations for AI startups, since Nvidia had invested tens of billions into startups under Huang. The Verge and TechCrunch both frame the departure as a potential national-security and US-China story, though the personal allegations are reported claims rather than confirmed findings in these sources.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Nvidia is the central supplier and a major startup investor, so leadership change and China-related scrutiny could reshape AI funding and chip access.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Watch for changes in Nvidia&#x27;s strategic investing and in GPU availability and pricing, since both could affect infrastructure plans.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2301327883.jpg?resize=1200,795" alt="Nvidia&#x27;s chip dominance under scrutiny: alleged engineered scarcity and export-banned chips in Chinese models" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Nvidia&#x27;s chip dominance under scrutiny: alleged engineered scarcity and export-banned chips in Chinese models</h3>
+        <div class="story-dates">First reported 2026-11-13 · Latest update 2026-11-14</div>
+        <p class="story-text">TechPowerUp reports an allegation that Nvidia engineered GPU scarcity by funding AI startups that then bought its chips; this was widely discussed on Hacker News but is an allegation, not an established finding. Separately, TechCrunch reports new research indicating that some of China&#x27;s most advanced AI models were trained on export-banned Nvidia chips. Together, the stories put pressure on both Nvidia&#x27;s market practices and the effectiveness of US export controls.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Questions about how compute is allocated and whether export controls hold directly affect who can build frontier models and at what cost.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Compute supply and pricing dynamics may shift depending on how these allegations and export-control questions are resolved, which matters for capacity planning.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus" target="_blank" rel="noopener noreferrer"><img src="https://techpowerup.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techpowerup.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/Pilots-during-DFW-departure-500x500.jpg" alt="FAA expands AI tool for air traffic management across the national airspace" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">FAA expands AI tool for air traffic management across the national airspace</h3>
+        <div class="story-dates">First reported 2026-11-13 · Latest update 2026-11-14</div>
+        <p class="story-text">The FAA has expanded its $875 million SMART AI advisory system, which helps air traffic controllers manage traffic, from the Washington, DC airspace it launched in on September 21 to the entire US national airspace system. The agency says the system has helped reroute 180 flights and saved an average of 10 minutes per flight. Airline executives support the rollout, but the air traffic controllers&#x27; union says it was not involved in designing or testing the system.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>This is a high-stakes, government-scale deployment of AI in safety-critical operations, and it raises questions about verification, labor involvement, and accountability.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Safety-critical deployments like this typically demand explicit human-in-the-loop design and evaluation evidence, which is a useful reference for regulated-industry AI projects.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>FAA reports fewer flight delays and reroutes, with about 10 minutes saved per affected flight</li><li>Airline executives support the rollout, suggesting operational value</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>The controllers&#x27; union says it was not involved in designing or testing the system</li><li>Performance claims come from the agency itself and haven&#x27;t been independently verified in these sources</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a><a class="source-chip" href="https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/" target="_blank" rel="noopener noreferrer"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2f3fa101-2d0b-426b-9e3f-12181ec8d947/image.png?t=1794644828" alt="llama.cpp and ggml reach 1.0, signaling a stable base for local AI" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">llama.cpp and ggml reach 1.0, signaling a stable base for local AI</h3>
+        <div class="story-dates">First reported 2026-11-13 · Latest update 2026-11-14</div>
+        <p class="story-text">The ggml-org team released ggml v1.0.0 and published a llama.cpp v1.0.0 announcement, declaring stability for the widely used local inference stack. According to Latent Space&#x27;s coverage, llama.cpp&#x27;s public header removed 35 deprecated functions, and SGLang also announced its own 1.0 at its recent summit. The release marks a shift from rapid, breaking changes toward a stable API surface for downstream projects.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Stable 1.0 APIs in core local-inference libraries make it safer for the ecosystem to build products and tooling on running models on-device or on-premise.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you embed llama.cpp or ggml, check the release notes for removed deprecated functions and plan migrations, since the stabilized API should be a firmer target going forward.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>A stable public API reduces churn for downstream projects</li><li>Local inference becomes more practical for privacy-sensitive or offline use</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Removed deprecated functions may require code changes for existing integrations</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://github.com/ggml-org/ggml/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer"><img src="https://github.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>github.com</span></a><a class="source-chip" href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank" rel="noopener noreferrer"><img src="https://huggingface.co/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>huggingface.co</span></a><a class="source-chip" href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04398_processed.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Anthropic pushes consumer and team agents: Claude Duet, parallel workers in Projects, and Claude Meetings" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">Anthropic pushes consumer and team agents: Claude Duet, parallel workers in Projects, and Claude Meetings</h3>
+        <div class="story-dates">First reported 2026-11-13 · Latest update 2026-11-14</div>
+        <p class="story-text">Anthropic has rolled out several agent-focused features. Its Projects were redesigned to run parallel AI workers, according to Anthropic&#x27;s own article. It also published material on Claude Meetings. The Verge&#x27;s hands-on review of Claude Duet, a consumer-facing agent, found it oddly anxious in tone but surprisingly helpful for work tasks, and positioned it as more work-focused than competing consumer assistants.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Anthropic is extending its agent capabilities from developers into everyday work and team workflows, moving the competition further into productivity software.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Parallel workers inside Projects suggest a pattern worth studying for orchestrating multiple agent tasks in your own tools.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Parallel workers can speed up multi-part tasks</li><li>Consumer agents aimed at work may reduce friction for non-developers</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Early hands-on impressions describe Duet&#x27;s tone as neurotic, suggesting rough edges in personality and reliability</li><li>Agent autonomy in everyday work raises questions about oversight and errors</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://claude.com/resources/articles/projects-redesigned" target="_blank" rel="noopener noreferrer"><img src="https://claude.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>claude.com</span></a><a class="source-chip" href="https://claude.com/resources/articles/claude-meetings" target="_blank" rel="noopener noreferrer"><img src="https://claude.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>claude.com</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/11/google-ambient-agent-prod/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/11/google-ambient-agent-prod/en/headerimage/generatedHeaderImage-1792894383462.jpg" alt="Google open-sources AQuA to diagnose failures in production AI agents" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Google open-sources AQuA to diagnose failures in production AI agents</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">Google released AQuA (Ambient Quality Agent), an open-source reference implementation that analyzes production agent sessions, identifies recurring failure patterns, and investigates root causes against deployed source snapshots. In a 32-session replay reported by InfoQ, developers cut seat-selection bypasses from 15 sessions to two and dietary-preference omissions from seven to zero after prompt changes. These are Google-reported results from a replay, not a broad production study.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Observability for agent failures is a major gap as agents move into production, and an open reference implementation gives teams a concrete pattern to copy.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Consider adapting the session-analysis approach to log review and regression detection in your own agent deployments.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Open source, so teams can inspect and adapt the approach</li><li>Demonstrated the ability to find and fix recurring failure patterns</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Evidence comes from a small 32-session replay</li><li>Reference implementation may need significant adaptation for other stacks</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/11/google-ambient-agent-prod/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/" target="_blank" rel="noopener noreferrer"><img src="https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2304572308-e1794587995495.jpg?resize=1200,600" alt="OpenAI disbands its robotics team as general models begin running robots" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span>
+        </div>
+        <h3 class="story-headline">OpenAI disbands its robotics team as general models begin running robots</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">Fortune reports that OpenAI has disbanded its dedicated robotics team as its general-purpose models start controlling robots. The move suggests OpenAI is betting that general models, rather than a separate robotics program, will drive embodied AI. The report is based on the headline and summary available here; details of the reorganization are limited.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It signals a strategic shift toward general-purpose models as the route to robotics, which could change where robotics talent and investment flow.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you build robotics applications, expect general model APIs to take on more embodied control tasks rather than relying on task-specific stacks.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Consolidating effort into general models could accelerate progress across modalities</li><li>Fewer siloed teams may speed integration of robot control into general capabilities</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Losing a dedicated robotics team may slow hardware-specific expertise</li><li>Reported details are thin, so the strategic intent is not fully confirmed</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/" target="_blank" rel="noopener noreferrer"><img src="https://fortune.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>fortune.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/11/Raising-money.jpg?resize=1200,829" alt="LangChain reaches $3B valuation with 7,000 LangSmith customers" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">LangChain reaches $3B valuation with 7,000 LangSmith customers</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">TechCrunch reports that LangChain has reached a $3 billion valuation. The company says its LangSmith product, a model- and platform-agnostic tool for managing agents, now has 7,000 customers. The figures are company-reported.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A $3B valuation and a large customer base show that agent tooling and observability are becoming core infrastructure categories.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Agent management and tracing platforms are maturing quickly, so evaluate them against your own observability and vendor-lock-in needs.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-19999-3-scaled.png" alt="Perplexity releases Decider v1.3 open-weight decision models with a new Locate feature" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Perplexity releases Decider v1.3 open-weight decision models with a new Locate feature</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">Perplexity released pplx-decider-v1.3 and pplx-decider-flash-v1.3, open-weight models that return probabilities for yes/no, multiple-choice, and scoring questions about text or images rather than generated text. The new Locate feature extracts exact text spans by type or instruction. Weights are Apache 2.0 on Hugging Face, and the models are also available through Perplexity&#x27;s Decisions API and OpenRouter. Performance claims are company-reported.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Open-weight classifiers and judges that output probabilities are useful building blocks for filtering, routing, and evaluation in production pipelines.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>A probability-output model like this could serve as a cheap gate or judge in pipelines, and Locate may cover extraction tasks without a full generative model.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Apache 2.0 weights allow self-hosting and commercial use</li><li>Probability outputs suit routing and evaluation tasks</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Benchmarks are company-reported and not independently verified in these sources</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.perplexity.ai/hub/blog/perplexity-decider" target="_blank" rel="noopener noreferrer"><img src="https://perplexity.ai/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>perplexity.ai</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-19999-5-scaled.png" alt="Stanford&#x27;s Memorilla gives frozen LLMs a compact learned memory" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">Stanford&#x27;s Memorilla gives frozen LLMs a compact learned memory</h3>
+        <div class="story-dates">First reported 2026-11-14</div>
+        <p class="story-text">Stanford researchers released Memorilla, an open-source 194M-parameter memory module that reads a document collection and hands a frozen LLM just 16 memory tokens. Reported results on FactKG show a frozen Qwen3-8B scoring 84.33% with Memorilla versus 80.43% with all documents in context, using 108x fewer document tokens. Code, training recipes, and checkpoints are released under Apache 2.0. These numbers come from the release coverage and have not been independently replicated here.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>If compact memory modules hold up, they offer a cheaper way to give models access to large document sets than stuffing everything into context.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Test whether a memory-token approach can replace long-context retrieval for your document-heavy workloads, after checking results on your own data.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Large token savings if the results generalize</li><li>Open code, training recipes, and checkpoints under Apache 2.0</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Results are reported on one benchmark and need replication</li><li>Requires training a memory module per document collection, which adds engineering overhead</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/" target="_blank" rel="noopener noreferrer"><img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/11/ML-22318-1.png" alt="AWS shows how to route coding agent requests across models on Bedrock with NVIDIA NeMo Switchyard" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">AWS shows how to route coding agent requests across models on Bedrock with NVIDIA NeMo Switchyard</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">AWS published a guide on routing coding-agent traffic to the right model on Amazon Bedrock using NVIDIA NeMo Switchyard. The post argues that per-token price is a poor cost signal for agents, because total task cost depends on turns, replayed history, and retries. Routing decisions should therefore be based on whole-task cost and completion rates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Measuring cost per completed task rather than per token is a more accurate way to manage agent economics, and routing is becoming a standard lever.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you run coding agents at scale, instrument cost per completed task and consider routing across models based on that metric.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/acastro_STK103__03.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Amazon plans a World Product Graph to index product data across the web" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">Amazon plans a World Product Graph to index product data across the web</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">According to Reuters as reported by The Verge, Amazon is building a &#x27;World Product Graph,&#x27; an index of products sold anywhere online, including items Amazon does not sell. The goal is to keep shoppers on Amazon for product research and to make Amazon&#x27;s index the default source for AI shopping agents. Amazon&#x27;s plans are described through a press report, not a company announcement in these sources.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Whoever controls the product catalog that agents query could gain significant leverage in agentic commerce.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you build shopping or comparison agents, expect platform-owned product indexes to become a key dependency and possibly a gatekeeper.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths" target="_blank" rel="noopener noreferrer"><img src="https://i.guim.co.uk/img/media/6eeccf216579fe2181ae737d30f31abd7590125c/210_58_1759_1407/master/1759.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&amp;enable=upscale&amp;s=334efc63d7472a97d72be0ffd23af8bb" alt="AI helps unlock Kurt Gödel&#x27;s notebooks, reportedly containing hundreds of proved theorems" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">AI helps unlock Kurt Gödel&#x27;s notebooks, reportedly containing hundreds of proved theorems</h3>
+        <div class="story-dates">First reported 2026-11-13</div>
+        <p class="story-text">The Guardian reports that AI tools are helping researchers decode Kurt Gödel&#x27;s notebooks, which are said to contain hundreds of proved theorems, including previously unseen results. The story is a notable example of AI applied to historical scientific documents. The theorem count is reported as a claim pending full analysis.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a concrete example of AI helping with archival and mathematical research, not just generating new text.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Handwriting recognition and mathematical notation parsing from messy historical sources is a practical application area for document AI.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths" target="_blank" rel="noopener noreferrer"><img src="https://theguardian.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theguardian.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>Nvidia&#x27;s chip dominance under scrutiny: alleged engineered scarcity and export-banned chips in Chinese models</h4><p>Questions about how compute is allocated and whether export controls hold directly affect who can build frontier models and at what cost.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Google open-sources AQuA to diagnose failures in production AI agents</h4><p>Observability for agent failures is a major gap as agents move into production, and an open reference implementation gives teams a concrete pattern to copy.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>LangChain reaches $3B valuation with 7,000 LangSmith customers</h4><p>A $3B valuation and a large customer base show that agent tooling and observability are becoming core infrastructure categories.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Perplexity releases Decider v1.3 open-weight decision models with a new Locate feature</h4><p>Open-weight classifiers and judges that output probabilities are useful building blocks for filtering, routing, and evaluation in production pipelines.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Stanford&#x27;s Memorilla gives frozen LLMs a compact learned memory</h4><p>If compact memory modules hold up, they offer a cheaper way to give models access to large document sets than stuffing everything into context.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>AWS shows how to route coding agent requests across models on Bedrock with NVIDIA NeMo Switchyard</h4><p>Measuring cost per completed task rather than per token is a more accurate way to manage agent economics, and routing is becoming a standard lever.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Amazon plans a World Product Graph to index product data across the web</h4><p>Whoever controls the product catalog that agents query could gain significant leverage in agentic commerce.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Paul Christiano, an OpenAI Foundation board member, warned in a Toronto lecture that an AI accident may be among the most likely causes of death for people in the room; this is a notable safety-community voice, though the timeline claims are alarmist and worth weighing carefully. <a href="https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Microsoft says a bad update, not a cyberattack or AI, caused a roughly 24-hour Microsoft 365 outage, a reminder of concentration risk in cloud productivity tools. <a href="https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Unsloth published updated dynamic quantizations for Qwen3.8-27B (v3.1), which may matter for people running the model locally. <a href="https://unsloth.ai/docs/models/qwen3.8" target="_blank" rel="noopener noreferrer">↗</a></li><li>ElevenLabs launched ElevenAI, a meeting note-taker and dictation app for teams and enterprises, extending voice AI into workplace productivity. <a href="https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Vercel Labs released an open-source beta UI SDK of headless behaviors designed for coding agents to assemble into accessible components across several frameworks. <a href="https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/" target="_blank" rel="noopener noreferrer">↗</a></li><li>The &#x27;No AI Slop&#x27; manifesto, which arose from conference discussions and gained traction on Hacker News, offers a framework for teams deciding how to judge and limit low-quality AI-generated work. <a href="https://www.slopmanifesto.com/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A practitioner report of 600 experiments on JEPA world models is drawing attention on Hacker News and may be useful for anyone exploring non-generative world-model architectures. <a href="https://haddyalchaer.com/jepa" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Memorilla: a 16-token learned memory module for frozen LLMs</div>
+        <p>Memorilla is a concrete, open-source alternative to stuffing whole document collections into context: a small trainable module compresses a collection into 16 memory tokens for a frozen model. Reading its training recipe and evaluation setup shows how memory-as-tokens compares with retrieval and long-context approaches, which is useful when designing document-heavy LLM systems. Treat the reported FactKG numbers as a starting point to verify on your own data.</p>
+        <a class="explore-link" href="https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
