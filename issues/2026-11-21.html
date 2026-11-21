@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-21</title>
+<meta name="description" content="The past day&#x27;s most consequential item is a claimed AI-assisted proof of the Riemann Hypothesis, which is not yet independently verified but has already drawn serious attention from mathematicians. El">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-21">
+<meta property="og:description" content="The past day&#x27;s most consequential item is a claimed AI-assisted proof of the Riemann Hypothesis, which is not yet independently verified but has already drawn serious attention from mathematicians. El">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-21</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">12 stories · Models (5) · Business (5) · Enterprise (3) · Developer Tools (3) · Research (2)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">The past day&#x27;s most consequential item is a claimed AI-assisted proof of the Riemann Hypothesis, which is not yet independently verified but has already drawn serious attention from mathematicians. Elsewhere, AI is being pushed deeper into core products (Google&#x27;s search homepage) while markets reacted sharply to Anthropic&#x27;s IPO and the broader AI selloff. Open-weight and small-footprint models keep getting more capable, and enterprise cloud vendors are adding managed AI features. Security and governance concerns are rising alongside, including a study of data leakage through AI routing services and new policy threats around data center locations.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305894185.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="AI-assisted claims of proofs of the Riemann Hypothesis (and generalized version) surface" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">AI-assisted claims of proofs of the Riemann Hypothesis (and generalized version) surface</h3>
+        <div class="story-dates">First reported 2026-11-20 · Latest update 2026-11-21</div>
+        <p class="story-text">Anthropic mathematician Levent Alpöge says he and Claude found a proof of the Riemann Hypothesis that he believes extends to the Generalized Riemann Hypothesis, with Lean formalization of the arguments. Separately, Ravi Vakil announced a human-written GRH proof by Alessandro Masullo, reviewed in part by Brian Conrad, which he describes as containing no AI. Latent Space reports that Elliot Glazer judges the formalized statement to be GRH and puts the chance of a Lean bug under 1%, but the claims have not been independently verified and Anthropic has not commented.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>If these claims hold up, they would be a landmark demonstration of AI contributing to frontier mathematics, and the verification process itself will be a test of formal methods as a trust mechanism.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>The Lean formalization and its verification path are a concrete example of using formal proof systems to check large machine-generated outputs, a technique relevant to trusting AI-written code.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Formal Lean code provides a path to mechanical verification rather than relying on reading the argument</li><li>Two independent claims within hours of each other raise confidence that the area is seeing real progress</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Claims are unverified; the Lean artifact (about 1.3GB) is too large for any human to fully read</li><li>Anthropic has not commented, and mathematical claims of this magnitude have failed before</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://simonwillison.net/2026/Nov/20/levent-alpoge/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/google-sign-logo-500x500-1780514708.jpg" alt="Google rolls out AI-centric search homepage with no search button" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">Google rolls out AI-centric search homepage with no search button</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">Google has officially deployed a redesigned desktop search homepage after weeks of testing. The page drops the dedicated search button, adds easier access to AI chat history, and places more AI feature buttons under the search bar, according to Google search VP Robby Stein. The change is part of a broader push to make AI the default layer of Google&#x27;s flagship search product.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Changing the default entry point to search affects how billions of people discover information and how publishers and businesses get traffic.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers building on search traffic or SEO should expect shifting click patterns as AI chat becomes a more prominent entry point.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Faster access to AI chat and conversational follow-ups within the search flow</li><li>Consolidates AI features in the place users already start their queries</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Removing the search button may push users toward AI answers and reduce clicks to websites</li><li>Changes the default experience for users who expect traditional search</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305894185.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Anthropic&#x27;s stock slide deepens an AI-driven market selloff" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">Anthropic&#x27;s stock slide deepens an AI-driven market selloff</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">Anthropic went public on November 19, according to The Verge, and its shares have since fallen. A WSJ report describes the IPO as a bust that deepens a roughly $4 trillion AI-related wipeout on Wall Street. NBC reports that the Nasdaq has erased its 2026 gains and that the S&amp;P and Dow are in correction, with Anthropic shares central to the selloff. Coverage in the candidates is headline-level, so the precise causes and magnitude should be checked against the full reports.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A sharp reversal for a flagship AI company&#x27;s public debut could reshape investor sentiment, funding conditions, and the pace of AI capital spending.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Market stress can change vendor pricing, runway assumptions, and the availability of cheap capital for teams building on frontier APIs.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Corrections can pull back speculative valuations and encourage more disciplined spending</li><li>A public listing adds transparency into Anthropic&#x27;s finances</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Falling valuations could constrain funding for compute-heavy model development</li><li>Broader market contagion could slow enterprise AI budgets</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90" target="_blank" rel="noopener noreferrer"><img src="https://wsj.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wsj.com</span></a><a class="source-chip" href="https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394" target="_blank" rel="noopener noreferrer"><img src="https://nbcnews.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>nbcnews.com</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6b007b4f6873ef9746910ee1/master/pass/GettyImages-2298479100.jpg" alt="Nvidia ousts Jensen Huang; company halts H200 sales to China" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Nvidia ousts Jensen Huang; company halts H200 sales to China</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">Nvidia&#x27;s board removed CEO Jensen Huang, and WIRED reports that the board&#x27;s main concern was his &quot;lack of candor.&quot; In its latest earnings report, Nvidia said it will stop selling its H200 chips in China while forecasting continued growth. Coverage in the candidates is limited to reporting and a podcast, so the details of the governance dispute are still developing.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Leadership change at the dominant AI chip supplier, combined with export-related sales restrictions, affects the supply side of the entire AI industry.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Compute availability and pricing for teams training or serving models could shift if China-related restrictions and leadership change alter Nvidia&#x27;s roadmap or allocation.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Strong reported growth suggests demand for AI chips remains robust</li><li>Board action signals accountability at a critical infrastructure company</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Leadership uncertainty at the central AI chip supplier adds execution risk</li><li>Losing China sales reduces revenue and may shift competitive dynamics</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-500x500.jpg" alt="Researchers find AI routers leak sensitive user data at scale" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Researchers find AI routers leak sensitive user data at scale</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">Researchers planted 2 million canary tokens in requests sent through a network of AI services to see what happens to sensitive information. They found that many AI apps rely on routing brokers such as OpenRouter or Vercel, and that sensitive data leaked through this chain and was in some cases exploited. The findings suggest that the intermediary layer between apps and model providers is a significant and under-examined privacy risk.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows that data privacy in AI applications depends on every intermediary in the routing chain, not just the model provider or the app developer.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Treat AI routers and proxies as data processors: audit what they log or retain, avoid sending secrets through them, and use canary-style testing to verify behavior.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>The canary methodology gives measurable evidence rather than speculation</li><li>The findings can drive better standards for routing services</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Many apps are not aware they depend on these intermediaries, so exposure may be widespread</li><li>Fixing the supply chain requires coordination across many vendors</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/mj1-scaled.png" alt="Thinking Machines releases open-weight Inkling 2 Mini, a looped transformer for local use" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Thinking Machines releases open-weight Inkling 2 Mini, a looped transformer for local use</h3>
+        <div class="story-dates">First reported 2026-11-20 · Latest update 2026-11-21</div>
+        <p class="story-text">Thinking Machines Lab released Inkling 2 Mini, an open-weight model with 26.4B total parameters and 3.4B active, under Apache 2.0. Instead of adding weights, it reuses its middle layers three times per token, keeping the checkpoint near 20GB so it can run on a 32GB Mac or a single DGX Spark. The release has up to 1M-token context and is positioned for agentic coding, tool use, and document work, with hosted inference and fine-tuning on Tinker. The capability claims are the lab&#x27;s; the candidates include no independent benchmarks.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A capable, permissively licensed model that runs on consumer hardware lowers the cost of private, local agentic workflows.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>It is a candidate for local coding-agent or document pipelines where data must stay on-device, and it is worth benchmarking against your own tasks.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Apache 2.0 license and local deployment options reduce vendor lock-in and data exposure</li><li>Looped layer reuse is a different efficiency approach from simply shrinking models</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Capability claims are company-reported and not independently verified in the candidates</li><li>Looping adds per-token compute, so real-world speed on consumer hardware needs testing</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a><a class="source-chip" href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank" rel="noopener noreferrer"><img src="https://thinkingmachines.ai/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>thinkingmachines.ai</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/" target="_blank" rel="noopener noreferrer"><img src="https://wp.technologyreview.com/wp-content/uploads/2026/11/metr2a.jpg?resize=1200,600" alt="METR updates its time-horizon chart: exponential gains, but weaker on judgment tasks" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">METR updates its time-horizon chart: exponential gains, but weaker on judgment tasks</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">METR published an update to its widely shared time-horizon plot, which measures the length of tasks models can complete compared with humans. The report finds some AI capabilities continue to improve along an exponential trajectory. It also indicates models are less strong on tasks requiring judgment than on coding tasks. The update is third-party evaluation data rather than a lab claim.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It gives a more careful reading of where AI progress is fastest, which helps forecasters, buyers, and builders decide where to trust models.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Coding and well-specified tasks are where agents are most reliable, so scope judgment-heavy steps with human checkpoints.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Independent evaluation adds credibility to capability trend claims</li><li>Clarifies the gap between coding and judgment tasks for planning</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Time-horizon metrics are complex and have been widely misinterpreted</li><li>Task suites may not capture real-world work well</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/" target="_blank" rel="noopener noreferrer"><img src="https://technologyreview.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>technologyreview.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/" target="_blank" rel="noopener noreferrer"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png" alt="OpenAI releases GPT-Live-1.1 for voice agents with cheaper idle sessions" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">OpenAI releases GPT-Live-1.1 for voice agents with cheaper idle sessions</h3>
+        <div class="story-dates">First reported 2026-11-21</div>
+        <p class="story-text">OpenAI made GPT-Live-1.1 available in its API as gpt-live-1.1. It is a full-duplex voice model that can listen while speaking, with more consistent accents across languages and more reliable task completion, per OpenAI. A new standby state bills idle sessions at a lower rate, reported at about $0.02 per minute.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Cheaper idle time and full-duplex conversation make voice agents more economically viable for customer-facing use.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Voice agent teams can reduce costs on long-held sessions and should test interruption handling and multilingual quality.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Standby billing directly lowers costs for voice agents that sit idle</li><li>Full-duplex behavior makes conversations feel more natural</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Reliability and accent claims are company-reported</li><li>Voice interactions raise consent and disclosure questions for deployers</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <div class="story-media story-media-fallback" style="background:linear-gradient(135deg, #ec489933, #ec48990d);"><span class="fallback-glyph" style="color:#ec4899;">✦</span></div>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">Google workers petition against punishing schools that opt out of AI</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">Google workers have asked their employer not to punish schools that do not want to adopt AI tools, according to Mother Jones. The petition reflects internal pushback over how Google markets and bundles its AI products, particularly Gemini, to education customers. Details beyond the headline are not in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It surfaces the tension between AI vendors&#x27; push into classrooms and the autonomy of the institutions and workers involved.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Education-focused products may face pressure to offer genuine opt-outs and transparent AI usage controls.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives schools room to decline tools they find unsuitable</li><li>Signals worker voice inside AI companies on deployment ethics</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Vendors may argue that bundling AI tools is needed to stay competitive</li><li>Institutions that decline AI may fall behind on digital skills</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/" target="_blank" rel="noopener noreferrer"><img src="https://motherjones.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>motherjones.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Trump threatens &#x27;tremendous tax&#x27; on AI data centers built abroad" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Trump threatens &#x27;tremendous tax&#x27; on AI data centers built abroad</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">President Trump said the US will put a &quot;tremendous tax&quot; on companies that build data centers outside the country, after a summit with Chinese President Xi Jinping and Russian President Putin. The remarks come as states and cities are placing restrictions on new data center construction domestically. No formal policy text is in the candidates, so this is a stated intention.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Where AI compute is physically built now carries trade and tax risk, which affects multinational AI infrastructure plans.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams planning multi-region inference or training should watch for tariffs or taxes that change the cost of offshore capacity.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Supports domestic buildout of AI infrastructure and jobs</li><li>Clear signal may speed up domestic investment decisions</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Implementation details are unknown and may not materialize</li><li>Could raise compute costs and fragment global AI supply chains</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/Meta-El-Paso-data-center-500x500.jpg" alt="Meta rethinks 2030 net-zero goal as AI data centers push emissions up" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">Meta rethinks 2030 net-zero goal as AI data centers push emissions up</h3>
+        <div class="story-dates">First reported 2026-11-20</div>
+        <p class="story-text">Meta&#x27;s 2026 sustainability report says its executives are reconsidering the goal of net-zero emissions by 2030. The company reported a record percentage increase in greenhouse gas emissions, larger than other Big Tech rivals building AI data centers. The report says its long-term ambitions have not changed but its operating environment has.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows that AI infrastructure growth is colliding with climate commitments across the industry.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Energy and carbon constraints may increasingly shape where and when training and inference capacity can be built.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Candid disclosure gives stakeholders accurate data</li><li>Acknowledging constraints can prompt more realistic planning</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Retreating from climate targets weakens accountability</li><li>Growing AI compute demand may keep emissions rising</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ef4444;">
+      <a class="story-media" href="https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/" target="_blank" rel="noopener noreferrer"><img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/18/ML-22308-2.jpg" alt="AWS ships new enterprise AI features: Quick flows, Textract Insights, and cluster tooling" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">AWS ships new enterprise AI features: Quick flows, Textract Insights, and cluster tooling</h3>
+        <div class="story-dates">First reported 2026-11-20 · Latest update 2026-11-21</div>
+        <p class="story-text">AWS announced several enterprise updates in one batch. Amazon Quick adds chat-built agent flows with deterministic steps and multi-agent collaboration. Amazon Textract Insights reached general availability as a generative AI document Q&amp;A API with verifiable answers. SageMaker HyperPod gained global inference routing across clusters and regions, managed cluster extensions, and enhanced GPU observability. These are AWS-reported product features, not independent evaluations.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Cloud vendors are packaging governed, auditable AI workflows that enterprises need before they can scale agents.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>The deterministic steps and verifiable document answers are useful patterns to copy when building auditable AI pipelines, even outside AWS.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Deterministic steps and verifiable answers address compliance requirements</li><li>Cross-region inference routing can cut idle GPU capacity</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Deepens dependence on a single cloud vendor&#x27;s proprietary workflow tooling</li><li>Feature claims are vendor-reported</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>OpenAI releases GPT-Live-1.1 for voice agents with cheaper idle sessions</h4><p>Cheaper idle time and full-duplex conversation make voice agents more economically viable for customer-facing use.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Google workers petition against punishing schools that opt out of AI</h4><p>It surfaces the tension between AI vendors&#x27; push into classrooms and the autonomy of the institutions and workers involved.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Trump threatens &#x27;tremendous tax&#x27; on AI data centers built abroad</h4><p>Where AI compute is physically built now carries trade and tax risk, which affects multinational AI infrastructure plans.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>AWS ships new enterprise AI features: Quick flows, Textract Insights, and cluster tooling</h4><p>Cloud vendors are packaging governed, auditable AI workflows that enterprises need before they can scale agents.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>A paper titled &#x27;Language Models Can Rewrite Their Own Weights&#x27; drew strong discussion on Hacker News since the last briefing; the candidate text does not include its details, so its significance is still unclear. <a href="https://arxiv.org/abs/2611.21885" target="_blank" rel="noopener noreferrer">↗</a></li><li>Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4 that return calibrated probabilities for routing, triage, and guardrails, with company-reported ranking near the top of an index. <a href="https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/" target="_blank" rel="noopener noreferrer">↗</a></li><li>RadixArk released DaisyRose-27B, an Apache 2.0 agentic coding model post-trained with reinforcement learning only, reporting Terminal Bench 4.1 pass@1 rising from 5.6 to 12.0 (company-reported). <a href="https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/" target="_blank" rel="noopener noreferrer">↗</a></li><li>NVIDIA released Nemotron-Labs-Sigma, 14 open checkpoints of a continuous diffusion language model that works in a latent embedding space rather than on discrete tokens. <a href="https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/" target="_blank" rel="noopener noreferrer">↗</a></li><li>WIRED argues that AI-accelerated vulnerability discovery is forcing faster patching and that outages will continue, a risk for teams depending on rapid updates. <a href="https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Formal verification startups are gaining attention as a defense against low-quality AI-generated code, with several companies offering proof-based checking. <a href="https://latent.space/p/formal-verification/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Meta&#x27;s TLX extends Triton with low-level controls for advanced GPU hardware features, which could matter for teams writing custom kernels. <a href="https://www.infoq.com/news/2026/11/meta-triton-tlx-gpu-compiler/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">Inkling 2 Mini and looped transformers (reusing middle layers per token)</div>
+        <p>Instead of scaling parameters, this model reuses its middle layers several times per token, trading extra per-token compute for a smaller checkpoint that fits on a laptop. Working through how looping changes memory, latency, and quality tradeoffs compared with standard dense or MoE models is a good way to build intuition about inference efficiency design.</p>
+        <a class="explore-link" href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
