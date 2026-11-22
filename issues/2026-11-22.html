@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-22</title>
+<meta name="description" content="Across the past day&#x27;s coverage, AI agents are moving from demos into production infrastructure (sandboxed execution, tool-loading APIs, GPU serverless), and the security and governance costs are surfa">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-22">
+<meta property="og:description" content="Across the past day&#x27;s coverage, AI agents are moving from demos into production infrastructure (sandboxed execution, tool-loading APIs, GPU serverless), and the security and governance costs are surfa">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-22</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">11 stories · Safety (5) · Developer Tools (5) · Business (4) · Policy (3) · Coding (2)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Across the past day&#x27;s coverage, AI agents are moving from demos into production infrastructure (sandboxed execution, tool-loading APIs, GPU serverless), and the security and governance costs are surfacing at the same time. Developer tools are leaking credentials, inference providers are reporting data-handling incidents, and banks are moving to block third-party agents from customer accounts. Policy efforts such as the UN autonomous-weapons talks stalled, while Anthropic&#x27;s public listing has raised questions about how a safety-focused lab operates as a public company. Several items were thin on detail, so some stories below rest on secondary or snippet-level reporting.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/11/claude-code-leaking-secrets/en/headerimage/linux-6-12-real-time-1795344939763.jpeg" alt="Claude Code&#x27;s &#x27;Don&#x27;t Ask Again&#x27; feature exposed developer secrets in public repositories" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Claude Code&#x27;s &#x27;Don&#x27;t Ask Again&#x27; feature exposed developer secrets in public repositories</h3>
+        <div class="story-dates">First reported 2026-11-22</div>
+        <p class="story-text">Agentic security firm Apiiro reported that Claude Code stores approval (&#x27;Don&#x27;t Ask Again&#x27;) decisions in local files, and that these files and related artifacts have leaked secrets into public repositories. Apiiro says it identified 1,122 secrets in claude/settings.local.json files, plus another 1,160 in git history, the shared settings.json, and agent chat transcripts committed to repos. The finding is from a security vendor&#x27;s analysis as reported by InfoQ, so the counts are the researchers&#x27; figures rather than independently verified numbers.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Coding agents that persist permissions and transcripts create a new class of secret-leakage risk that developers may not be checking for.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Audit any repo using coding agents for committed settings files, transcripts, and secrets, and add ignore rules or secret scanning for agent-generated config.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#8b5cf6;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/11/google-agent-compute-engine/en/headerimage/generatedHeaderImage-1793561615054.jpg" alt="Google announces Agent Compute Engine for isolated, checkpointed agent execution" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg filled" style="background:#8b5cf6;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Google announces Agent Compute Engine for isolated, checkpointed agent execution</h3>
+        <div class="story-dates">First reported 2026-11-22</div>
+        <p class="story-text">Google announced Agent Compute Engine, a managed service that runs AI agents in isolated microVMs and can checkpoint and resume execution environments. Its design keeps credentials, API keys, and OAuth refresh tokens outside the agent sandbox, with an external Agent Gateway authenticating requests and injecting secrets. The description comes from InfoQ&#x27;s coverage of Google&#x27;s announcement, and no independent performance or pricing data appeared in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Keeping secrets outside the agent sandbox is a concrete infrastructure pattern for running agents that take real actions safely.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you run agents that call authenticated APIs, evaluate separating credential injection from the execution sandbox, whether through this service or an equivalent gateway.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Credentials stay outside the agent sandbox, reducing exposure if the agent is manipulated or misbehaves</li><li>Checkpointing lets long-running agent tasks be suspended and resumed</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Ties agent execution to a single vendor&#x27;s managed platform</li><li>Details come from announcement-level coverage, so real-world reliability is unproven</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/" target="_blank" rel="noopener noreferrer"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png" alt="Gemini API adds Tool Retrieval so agents load tool schemas on demand" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">Gemini API adds Tool Retrieval so agents load tool schemas on demand</h3>
+        <div class="story-dates">First reported 2026-11-22</div>
+        <p class="story-text">Google launched Tool Retrieval in preview in the Gemini API&#x27;s Interactions API. Instead of sending every tool&#x27;s parameter schema in every prompt, the model loads a schema only when a task needs that tool, which targets the token cost of agents wired to dozens of functions or MCP servers. Google advises static loading for fewer than about 20 stable tools, according to MarkTechPost&#x27;s summary.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Tool definitions are a real cost and context-budget problem for large agent toolsets, and this is a first-party attempt to solve it at the API level.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If your agent exposes many tools or MCP servers, test retrieval-based loading against static loading on both cost and tool-selection accuracy.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#14b8a6;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/en/headerimage/generatedHeaderImage-1795178998128.jpg" alt="AWS Lambda adds GPU inference with shared models across up to 48 concurrent invocations" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg filled" style="background:#14b8a6;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span>
+        </div>
+        <h3 class="story-headline">AWS Lambda adds GPU inference with shared models across up to 48 concurrent invocations</h3>
+        <div class="story-dates">First reported 2026-11-22</div>
+        <p class="story-text">AWS Lambda now runs event functions on EC2 G-series GPU instances through Lambda Managed Instances. Up to 48 concurrent invocations share one model per GPU, with vLLM and SGLang base images that need no handler code and 90-minute asynchronous timeouts. Billing is the instance price plus a 9.75 percent fee. Early hands-on tests reported an eight-minute publish time and no response streaming.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Serverless GPU inference with shared model loading lowers the operational bar for deploying open-weight models on demand.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>For bursty inference workloads, compare the 9.75 percent fee and missing response streaming against always-on GPU instances before adopting.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Shared model per GPU across concurrent invocations can improve utilization</li><li>Prebuilt vLLM and SGLang images reduce setup work</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>No response streaming in early tests</li><li>Management fee on top of instance pricing</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ef4444;">
+      <a class="story-media" href="https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6b0080a25f35c47a5c116087/master/pass/GettyImages-2285133719.jpg" alt="Major US banks are blocking third-party AI agents from logging into customer accounts" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Major US banks are blocking third-party AI agents from logging into customer accounts</h3>
+        <div class="story-dates">First reported 2026-11-22</div>
+        <p class="story-text">Wired reports that major US financial institutions are banning third-party bots from logging into customer accounts and warning that costly bot mistakes are the customer&#x27;s responsibility. The move draws a hard line between consumer-directed agents and the banking systems they would need to access. The reporting summarized in the candidates did not include the specific institutions or policy documents.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Access restrictions from banks will shape whether consumer AI agents can act on financial accounts at all, which affects the whole agent-commerce model.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If your agent needs to act on user financial data, plan for official data-access channels and assume screen-scraping or credential-based login will be blocked.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Limits security and fraud exposure from unvetted bots holding account credentials</li><li>Places clearer liability expectations on agent use</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Customers who want agents to manage their finances may be locked out</li><li>Pushes agent developers toward slower, permissioned integrations</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/" target="_blank" rel="noopener noreferrer"><img src="https://openrouter.ai/og.png" alt="OpenRouter publishes account of data processing incidents at inference providers" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">OpenRouter publishes account of data processing incidents at inference providers</h3>
+        <div class="story-dates">First reported 2026-11-22</div>
+        <p class="story-text">OpenRouter published a post about data processing incidents on inference providers that it routes traffic to. The post drew substantial discussion on Hacker News, but the candidate snippets did not include its specific findings, so the scope of the incidents is not confirmed here. The item is a primary source from the company that aggregates third-party model hosting.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>When developers route prompts through aggregators and third-party hosts, data handling depends on each downstream provider&#x27;s practices, which can be hard to audit.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Check which inference providers your router can use, and pin providers with clear data-retention terms for sensitive workloads.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/" target="_blank" rel="noopener noreferrer"><img src="https://openrouter.ai/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openrouter.ai</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_1121_Site.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Anthropic&#x27;s Nasdaq listing raises questions about safety commitments under public-company pressure" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">Anthropic&#x27;s Nasdaq listing raises questions about safety commitments under public-company pressure</h3>
+        <div class="story-dates">First reported 2026-11-21</div>
+        <p class="story-text">Anthropic, maker of Claude, went public on Nasdaq the previous Thursday, according to The Verge&#x27;s podcast description. The discussion centers on whether the company can keep investing in AI safety while answerable to shareholders. The candidate material is a podcast description rather than the listing documents, so specific financial figures are not confirmed here.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A leading frontier lab entering public markets tests whether safety-first commitments survive quarterly pressure, which will shape industry norms.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Public-company status may bring more formal disclosures and pricing or policy changes, so track Anthropic&#x27;s filings and terms for changes that affect your stack.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Public disclosure requirements may increase transparency about risks and finances</li><li>Access to public capital can fund expensive safety and compute investments</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Shareholder obligations may pressure the company toward growth over caution</li><li>Safety commitments are harder to enforce once they conflict with revenue targets</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://www.theverge.com/tech/1039554/un-regulations-killer-robots" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="UN talks on autonomous weapons end with only an agreement to discuss options" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">UN talks on autonomous weapons end with only an agreement to discuss options</h3>
+        <div class="story-dates">First reported 2026-11-21</div>
+        <p class="story-text">UN diplomats meeting in Geneva failed to agree on rules for autonomous weapons, often called &#x27;killer robots,&#x27; and instead agreed to &#x27;start discussing options.&#x27; The ICRC had called for legally binding rules to be drafted within a year, a position backed by the UN secretary-general and Pope Leo. The outcome was reported by The Verge citing NPR.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>The lack of progress means binding international limits on military AI remain unlikely in the near term, leaving the field to national policies and voluntary commitments.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Defense-adjacent AI work should expect no imminent international rules, so compliance will depend on national and company-level policies.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/tech/1039554/un-regulations-killer-robots" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/" target="_blank" rel="noopener noreferrer"><img src="https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-119999-4-scaled.png" alt="TensorLean uses Lean to formally verify GPU kernels, finding bugs in FlashAttention and DeepGEMM" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">TensorLean uses Lean to formally verify GPU kernels, finding bugs in FlashAttention and DeepGEMM</h3>
+        <div class="story-dates">First reported 2026-11-22</div>
+        <p class="story-text">Researchers from Columbia University and CertiK introduced TensorLean, a Lean-based verifier that checks compiled PTX GPU kernels against tensor-level math specifications. The team checked 149 kernel instances, including every kernel of FlashAttention-2, -3, and -4 and DeepGEMM, and proved 83 correct. The remaining 66 led to 38 reported correctness bugs. These results are from the authors&#x27; own paper as summarized by MarkTechPost and have not been independently reproduced.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Formal verification of low-level kernels that underpin modern LLM inference and training could catch bugs that testing misses.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If you write or rely on custom CUDA or Triton kernels, formal verification of the compiled output is a emerging option worth tracking.</div>
+        
+        <div class="source-chips"><a class="source-chip" href="https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#94a3b8;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/11/Inevitable-Key-Art_3x4-full-size.jpg?resize=899,1200" alt="A microdrama startup is licensing actors&#x27; AI likenesses, raising questions about identity and labor" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">A microdrama startup is licensing actors&#x27; AI likenesses, raising questions about identity and labor</h3>
+        <div class="story-dates">First reported 2026-11-21</div>
+        <p class="story-text">TechCrunch reports that an actor has licensed his face to a microdrama startup, a trend already common in China. Experts quoted question the long-term consequences for performers if the practice spreads through Hollywood. The piece focuses on the licensing arrangement and its implications rather than on the underlying technology.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Licensing AI versions of a performer&#x27;s face turns likeness into a product and changes bargaining power over identity and future work.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Products that generate likenesses need consent, licensing, and revocation mechanisms built in from the start.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives performers a new revenue stream from their likeness</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Long-term control over one&#x27;s digital likeness may be hard to retain</li><li>Could erode work and bargaining power for performers if adopted widely</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800" alt="Signal restricts screenshots, citing AI surveillance as an existential threat" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Signal restricts screenshots, citing AI surveillance as an existential threat</h3>
+        <div class="story-dates">First reported 2026-11-21</div>
+        <p class="story-text">Signal is limiting users&#x27; ability to take screenshots in its Android and iOS apps, framing AI-driven surveillance as an existential threat to private messaging. The change restricts a common way content gets captured and shared. The candidate material is a short summary, so the exact technical scope of the restriction is not detailed here.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>A major privacy-focused messenger treating AI capture as a threat model signals that AI assistants reading screens may drive more defensive product design.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Apps that rely on screen access or OS-level capture for AI features may face more platform-side restrictions.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Reduces the ease of capturing private messages for AI analysis or leakage</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Limits legitimate uses such as saving or sharing content</li><li>Users may route around it with other capture methods</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>Gemini API adds Tool Retrieval so agents load tool schemas on demand</h4><p>Tool definitions are a real cost and context-budget problem for large agent toolsets, and this is a first-party attempt to solve it at the API level.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>AWS Lambda adds GPU inference with shared models across up to 48 concurrent invocations</h4><p>Serverless GPU inference with shared model loading lowers the operational bar for deploying open-weight models on demand.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Entrepreneur/Small Business</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>UN talks on autonomous weapons end with only an agreement to discuss options</h4><p>The lack of progress means binding international limits on military AI remain unlikely in the near term, leaving the field to national policies and voluntary commitments.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>TensorLean uses Lean to formally verify GPU kernels, finding bugs in FlashAttention and DeepGEMM</h4><p>Formal verification of low-level kernels that underpin modern LLM inference and training could catch bugs that testing misses.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>A microdrama startup is licensing actors&#x27; AI likenesses, raising questions about identity and labor</h4><p>Licensing AI versions of a performer&#x27;s face turns likeness into a product and changes bargaining power over identity and future work.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Dragos&#x27;s canary-token research on AI supply chain security could indicate how attackers target model and dependency pipelines, though the candidate material had no detailed findings. <a href="https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens" target="_blank" rel="noopener noreferrer">↗</a></li><li>A third-party analysis claims Anthropic&#x27;s planned power supply for 2028 will be mostly gas and some coal, a claim worth checking against primary disclosures before relying on it. <a href="https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/" target="_blank" rel="noopener noreferrer">↗</a></li><li>A small-model release reportedly runs Inkling-2-Mini in about 5.4 GB of memory and drew strong Hacker News interest, but the candidate material gives no benchmarks or provenance. <a href="https://github.com/ShinMegamiBoson/lookatmyquant" target="_blank" rel="noopener noreferrer">↗</a></li><li>Simon Willison highlights Muru, an AI-assisted Rust server for ASGI and WSGI Python apps, whose developer is publishing a detailed build log as the project progresses. <a href="https://simonwillison.net/2026/Nov/21/muru/" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">TensorLean: Lean-based formal verification of PTX GPU kernels</div>
+        <p>It applies theorem proving directly to the compiled GPU code behind FlashAttention and DeepGEMM, comparing PTX output against tensor-level math specs. For someone learning AI systems, it shows how formal methods can reach the performance-critical layer where subtle kernel bugs hide, and the reported 38 bugs suggest the approach finds real problems. The results are the authors&#x27; own, so read the paper&#x27;s methodology before trusting the numbers.</p>
+        <a class="explore-link" href="https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
