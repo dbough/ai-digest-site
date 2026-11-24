@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Briefing — 2026-11-24</title>
+<meta name="description" content="Agents are moving from demos into real workflows: Anthropic&#x27;s Claude Ship lets agents review, fix, and approve pull requests, and OpenAI reports building a product with Codex agents writing all the co">
+<meta property="og:site_name" content="AI Briefing">
+<meta property="og:title" content="AI Briefing — 2026-11-24">
+<meta property="og:description" content="Agents are moving from demos into real workflows: Anthropic&#x27;s Claude Ship lets agents review, fix, and approve pull requests, and OpenAI reports building a product with Codex agents writing all the co">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ai.danbough.com/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead-brand" href="../index.html"><img class="brand-mark" src="../assets/favicon.svg" alt="" width="28" height="28">AI Briefing</a>
+  <div class="masthead-actions">
+    <a class="nav-link" href="../about.html">How this works</a>
+    <a class="nav-link rss-link" href="../feed.xml" title="Subscribe via RSS">RSS</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="issue">
+  <div class="issue-header">
+    <p class="issue-kicker">Issue · 2026-11-24</p>
+    <h1 class="issue-title">AI Briefing</h1>
+    <p class="issue-substats">12 stories · Safety (4) · Coding (3) · Agents (3) · Business (3) · Enterprise (3)</p>
+    <p class="issue-disclaimer">Written automatically by AI with no human review, so it may contain mistakes. Read the linked sources and use your own judgment. <a href="../about.html">How this works</a></p>
+  </div>
+  <blockquote class="lede">Agents are moving from demos into real workflows: Anthropic&#x27;s Claude Ship lets agents review, fix, and approve pull requests, and OpenAI reports building a product with Codex agents writing all the code. The same autonomy is showing up in security, where Amazon says attacker-run agents found and exploited a zero-day with little human input, and OpenAI and Cisco released an open-source runtime for shielding unpatched systems. On the model side, Z.ai&#x27;s GLM-5.4 is a notable architecture experiment (a looped transformer), though its claims are company-reported. Governance pressure is rising too: state lawsuits over Grok&#x27;s sexualized deepfakes, and a Nvidia leadership crisis that the candidate coverage ties to presidential intervention.</blockquote>
+
+  <section class="top-stories">
+    <h2>Top Stories</h2>
+    <div class="story-grid">
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests" target="_blank" rel="noopener noreferrer"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKB364_CLAUDE_2_C_96d15c-1.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Anthropic launches Claude Ship, with agents that review, fix, and approve pull requests" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">Anthropic launches Claude Ship, with agents that review, fix, and approve pull requests</h3>
+        <div class="story-dates">First reported 2026-11-23 · Latest update 2026-11-24</div>
+        <p class="story-text">Anthropic launched Claude Ship, a bundle of GitHub pull request agents: Code Review (generally available after its October release), plus PR Steward and Claude Approvals, which are in beta. PR Steward responds to failing CI checks, merge conflicts, and review feedback, and Claude Approvals can approve changes, while the repository&#x27;s branch rules still decide what merges. Anthropic reports most code reviews finish in 6 to 10 minutes, about three times faster than the research preview, and that merged PRs on its own Claude Code team more than doubled from June to September (self-reported).</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It shows a frontier lab packaging agents as an automated stage of the software delivery pipeline, not just a chat assistant for writing code.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams using GitHub can evaluate whether agent-driven CI repair and approvals fit their branch protection rules, and should weigh how much autonomy to grant approval steps.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Removes review and CI-fixing bottlenecks as AI-generated code volume grows</li><li>Keeps existing GitHub branch rules as the final merge gate</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Automated approvals raise the risk of rubber-stamped changes reaching production</li><li>Performance and merge-rate figures are self-reported by Anthropic</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://claude.com/resources/articles/introducing-claude-ship" target="_blank" rel="noopener noreferrer"><img src="https://claude.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>claude.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://www.marktechpost.com/2026/11/24/openai-cisco-shirudo-ebpf-linux-runtime/" target="_blank" rel="noopener noreferrer"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/25c0.png" alt="OpenAI and Cisco release Shirudo, an open-source eBPF runtime for shielding unpatched Linux systems" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#14b8a6;color:#14b8a6;">DEVELOPER TOOLS</span>
+        </div>
+        <h3 class="story-headline">OpenAI and Cisco release Shirudo, an open-source eBPF runtime for shielding unpatched Linux systems</h3>
+        <div class="story-dates">First reported 2026-11-23 · Latest update 2026-11-24</div>
+        <p class="story-text">OpenAI and Cisco introduced Shirudo, an open-source runtime that lets teams deploy temporary eBPF &quot;shields&quot; that block a known exploit&#x27;s vulnerable behavior while legitimate traffic keeps flowing, buying time to test and ship a real patch. The engineering came from Isovalent at Cisco, the team behind Cilium and Tetragon. Per MarkTechPost&#x27;s summary, the code is pre-release and runs on Linux on x86-64, arm64, and riscv64, with TPM 2.0 and a patched bpf-next kernel.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It targets a real operational gap, the window between disclosure and patching, using agent-driven mitigation at the kernel level.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Security and platform engineers should look at the quickstart and kernel requirements before planning any use, since the code is not yet production-ready.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Offers a way to contain known exploits without downtime while patches are tested</li><li>Open source, backed by a mature eBPF lineage (Cilium, Tetragon)</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Pre-release code and demanding kernel requirements limit near-term adoption</li><li>Automated shields that block behavior could cause unexpected side effects on legitimate traffic</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://openai.com/index/introducing-shirudo" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/24/openai-cisco-shirudo-ebpf-linux-runtime/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a><a class="source-chip" href="https://openai.com/index/introducing-shirudo/" target="_blank" rel="noopener noreferrer"><img src="https://openai.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>openai.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#dc2626;">
+      <a class="story-media" href="https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner-500x500.jpg" alt="Amazon reports attacker AI agents found and exploited a zero-day with little human oversight" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg filled" style="background:#dc2626;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">Amazon reports attacker AI agents found and exploited a zero-day with little human oversight</h3>
+        <div class="story-dates">First reported 2026-11-24</div>
+        <p class="story-text">Amazon said hackers used AI agents running on Cairn, an open-source AI penetration-testing framework, to find and exploit a zero-day in an open-source medical imaging application on a university server in East Asia. The operators gave prompts in simplified Chinese and a goal of obtaining shell access, with minimal human involvement after that. Per Ars Technica&#x27;s coverage of Amazon&#x27;s account, the agents discovered the vulnerability in short order; the claims come from Amazon and have not been independently verified in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a concrete, vendor-reported example of agents running an end-to-end intrusion with little human direction, which changes the threat model for software and infrastructure.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams running open-source dependencies, especially in healthcare or research settings, should assume scanning and exploitation can be automated and prioritize patching and exposure reduction.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives defenders concrete threat intelligence on agent-driven attacks</li><li>Amazon&#x27;s disclosure may speed up defensive tooling and awareness</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Open-source penetration-testing frameworks lower the skill needed for attacks</li><li>Details come from one company&#x27;s account and need independent confirmation</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://simonwillison.net/2026/Nov/23/glm-54/" target="_blank" rel="noopener noreferrer"><img src="https://static.simonwillison.net/static/2026/glm-5.4-max.webp" alt="Z.ai releases GLM-5.4, its first looped transformer, targeting generalized coding" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span>
+        </div>
+        <h3 class="story-headline">Z.ai releases GLM-5.4, its first looped transformer, targeting generalized coding</h3>
+        <div class="story-dates">First reported 2026-11-23 · Latest update 2026-11-24</div>
+        <p class="story-text">Chinese lab Z.ai released GLM-5.4, its first model built on a Loop Transformer, which runs a group of weight-shared layers for multiple iterations rather than once per pass. MarkTechPost reports it runs 28 layers of the GLM-5 base for two iterations, and Z.ai claims intelligence comparable to 2–3T parameter models; those are company claims. It is available only through Z.ai-hosted services for now, and is pitched around &quot;generalized coding,&quot; such as video, games, 3D shaders, and CAD. Simon Willison notes it is the second looped-transformer model he has seen in about a week.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>If looped architectures hold up, they offer a way to get more effective depth without adding parameters, which could change how models are built and priced.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers can try it only through Z.ai&#x27;s coding plan, ZCode, or chat for now, so it is worth benchmarking on their own coding tasks before relying on the parameter-efficiency claims.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Potential parameter efficiency gains from reusing layers across iterations</li><li>Strong coding focus could suit developer workloads</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Performance and parity claims are company-reported and not independently verified in the candidates</li><li>Hosted-only access and undisclosed active parameter count limit verification and self-hosting</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://simonwillison.net/2026/Nov/23/glm-54/" target="_blank" rel="noopener noreferrer"><img src="https://simonwillison.net/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>simonwillison.net</span></a><a class="source-chip" href="https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/" target="_blank" rel="noopener noreferrer"><img src="https://marktechpost.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>marktechpost.com</span></a><a class="source-chip" href="https://tldr.tech/ai/2026-11-24" target="_blank" rel="noopener noreferrer"><img src="https://tldr.tech/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>tldr.tech</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/" target="_blank" rel="noopener noreferrer"><img src="https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/2d949515-988e-46e3-83cb-c3a9118cb699/Screenshot_2026-11-24_at_12.54.41b.png?t=1795525308" alt="Nvidia reinstates Jensen Huang as CEO after a 11-day resignation" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span>
+        </div>
+        <h3 class="story-headline">Nvidia reinstates Jensen Huang as CEO after a 11-day resignation</h3>
+        <div class="story-dates">First reported 2026-11-23 · Latest update 2026-11-24</div>
+        <p class="story-text">Nvidia&#x27;s board reinstated Jensen Huang as CEO, president, and board member, reversing his resignation of November 12 over undisclosed affairs, including one with a suspected Chinese-linked executive at Megaspeed. The board said it received input from senior U.S. officials, and reporting says President Trump called into the board meeting to advocate for his return. Coverage also notes Megaspeed appears headed for a U.S. blacklist and that Huang is scheduled to testify before the Senate.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>The company that supplies most AI accelerators changed leadership under direct political pressure, raising questions about governance, China-related supply-chain risk, and government influence over AI industry firms.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Infrastructure buyers should watch for any change in Nvidia&#x27;s roadmap or export-related constraints that could affect GPU availability.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Restores continuity of leadership at the central AI chip company, which markets reportedly welcomed</li><li>Nvidia&#x27;s stock reportedly rose on the news, reflecting investor confidence</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Government intervention in a corporate leadership decision raises governance and rule-of-law concerns</li><li>Unresolved China-linked scrutiny and a possible U.S. blacklist of an affiliated company create supply-chain and legal risk</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1040428/nvidia-jensen-huang-ceo-return" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/" target="_blank" rel="noopener noreferrer"><img src="https://latent.space/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>latent.space</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#64748b;">
+      <a class="story-media" href="https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2284791219-500x500.jpg" alt="Virginia and Oregon sue SpaceX over Grok&#x27;s sexualized deepfakes" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="4/5"><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg filled" style="background:#64748b;"></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">4/5</span>
+          <span class="tag-chip" style="border-color:#64748b;color:#64748b;">POLICY</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">Virginia and Oregon sue SpaceX over Grok&#x27;s sexualized deepfakes</h3>
+        <div class="story-dates">First reported 2026-11-23</div>
+        <p class="story-text">Virginia and Oregon became the first states to sue SpaceX, which acquired xAI in February, alleging that Grok continues to sexualize real photos of mostly women and children. The complaints, filed under state consumer protection laws, say xAI ignored industry-standard safeguards and falsely promoted the safety of X and Grok, and point to the lax initial rollout of Grok&#x27;s &quot;spicy mode.&quot; The allegations are complaint claims, not findings.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is one of the first state enforcement actions against a major AI image-generation product, signaling that consumer protection law can be used against generative AI safety failures.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams shipping image or video generation should document safeguards and avoid consumer-facing claims of safety that they cannot back up.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Creates legal pressure for stronger safeguards against NCII and CSAM generation</li><li>Gives states a clear route to regulate generative AI without waiting for federal law</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Allegations are one side of a legal dispute and remain unproven</li><li>State-by-state litigation could create inconsistent rules for AI developers</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/" target="_blank" rel="noopener noreferrer"><img src="https://arstechnica.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>arstechnica.com</span></a><a class="source-chip" href="https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit" target="_blank" rel="noopener noreferrer"><img src="https://theverge.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>theverge.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ec4899;">
+      <a class="story-media" href="https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/wp-content/uploads/2024/12/Decart-Founders-Dean-Leitersdorf-CEO-and-Moshe-Shalev-CPO.jpg?resize=1200,800" alt="Amazon acquires Decart&#x27;s optimization technology for a reported $7.5B to close the Trainium gap" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg filled" style="background:#ec4899;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">Amazon acquires Decart&#x27;s optimization technology for a reported $7.5B to close the Trainium gap</h3>
+        <div class="story-dates">First reported 2026-11-23 · Latest update 2026-11-24</div>
+        <p class="story-text">Amazon is acquiring Decart&#x27;s AI optimization technology and research team in a deal reported at $7.5 billion. The acquisition is aimed at improving the efficiency of Amazon&#x27;s Trainium chips ahead of selling them more broadly, with analysts framing it as a software-driven push to narrow the gap with Nvidia. The price and terms are reported, not confirmed in the candidates.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Investment in efficiency software for custom accelerators is a sign that the competition with Nvidia is being fought on software performance as well as hardware.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>If Trainium becomes more widely sold and better optimized, teams may gain a lower-cost alternative for training and inference.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Could make non-Nvidia accelerators more practical for training and inference</li><li>Adds optimization expertise to Amazon&#x27;s chip program</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Reported price is large relative to a unproven software payoff</li><li>Developers still face migration and tooling costs away from the CUDA ecosystem</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#f59e0b;">
+      <a class="story-media" href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" target="_blank" rel="noopener noreferrer"><img src="https://lh3.googleusercontent.com/jIoM2lo98EDqLMQjIaXBlXPmXgPbUPpM2GgtXcDsGekZBOPUY41IjBsnuZIhLac7MSOuRkklNBsp20a5M25oDz-xTIY0BIqoBxUqmmXvEHwlM3MJJw=w528-h297-n-nu-rw-lo" alt="Google DeepMind uses agent teams and formal verification to find faster quantum algorithms" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg filled" style="background:#f59e0b;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#f59e0b;color:#f59e0b;">RESEARCH</span><span class="tag-chip" style="border-color:#8b5cf6;color:#8b5cf6;">AGENTS</span>
+        </div>
+        <h3 class="story-headline">Google DeepMind uses agent teams and formal verification to find faster quantum algorithms</h3>
+        <div class="story-dates">First reported 2026-11-23</div>
+        <p class="story-text">Google DeepMind described using teams of agents combined with formal verification to improve quantum algorithms, with target applications in fusion and chemistry simulation. Formal verification is the key element: candidate algorithmic improvements can be checked rather than trusted on benchmark results. The post is a primary research announcement, and the candidates do not include independent assessment of the speedups.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is a concrete example of agents producing verifiable scientific results, a pattern that could extend beyond quantum computing.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>The pairing of agent search with formal checking is a useful template for any domain where generated output must be provably correct.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Verification reduces the risk of agents producing plausible but wrong results</li><li>Targets practically relevant domains such as fusion and chemistry</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Details of the speedups and their significance are not independently assessed in the candidates</li><li>Quantum-algorithm gains may take years to matter in practice</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" target="_blank" rel="noopener noreferrer"><img src="https://deepmind.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>deepmind.google</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#6366f1;">
+      <a class="story-media" href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/" target="_blank" rel="noopener noreferrer"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_pContext_Drive_1118.max-600x600.format-webp.webp" alt="Google lets AI Mode draw on personal Drive, Wallet, and Gemini data" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg filled" style="background:#6366f1;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#6366f1;color:#6366f1;">MODELS</span><span class="tag-chip" style="border-color:#ec4899;color:#ec4899;">BUSINESS</span>
+        </div>
+        <h3 class="story-headline">Google lets AI Mode draw on personal Drive, Wallet, and Gemini data</h3>
+        <div class="story-dates">First reported 2026-11-23</div>
+        <p class="story-text">Google extended its Personal Intelligence feature in AI Mode in Search to connect to users&#x27; Google Drive, Google Wallet, and the Gemini app, all on an opt-in basis. The company says the change makes Search answers more personalized and tailored to the user. Google&#x27;s own announcement is the primary source here.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Search is moving from generic answers to answers grounded in users&#x27; personal data, which deepens Google&#x27;s advantage from its ecosystem.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Developers building on search-like experiences should expect user expectations for personalization to rise, along with privacy scrutiny.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>More relevant answers grounded in a user&#x27;s own documents and purchases</li><li>Opt-in design keeps users in control of what gets connected</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Consolidating personal data across services raises privacy and lock-in concerns</li><li>Users may not understand what the assistant can see when they opt in</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/" target="_blank" rel="noopener noreferrer"><img src="https://blog.google/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>blog.google</span></a><a class="source-chip" href="https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/" target="_blank" rel="noopener noreferrer"><img src="https://techcrunch.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>techcrunch.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#0ea5e9;">
+      <a class="story-media" href="https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://res.infoq.com/news/2026/11/qcon-sf-openai-lessons/en/headerimage/generatedHeaderImage-1795453078651.jpg" alt="OpenAI describes shipping a $100M ChatGPT ads product with Codex agents and no human-written code" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#0ea5e9;color:#0ea5e9;">CODING</span><span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span>
+        </div>
+        <h3 class="story-headline">OpenAI describes shipping a $100M ChatGPT ads product with Codex agents and no human-written code</h3>
+        <div class="story-dates">First reported 2026-11-24</div>
+        <p class="story-text">At QCon San Francisco, OpenAI&#x27;s Brian Yang described building the ChatGPT ads product with Codex agents and no human-written code, in roughly six weeks. He outlined layered testing, sandboxes, and batched pull request reviews, and flagged failure modes such as code &quot;slop&quot; and unsafe agent actions. He advised gradual adoption and framed engineers as managers of agents. The account is a first-person talk summary, not an independent audit.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>It is one of the more detailed public accounts of agent-written production code at scale, including what went wrong.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>The practices described, such as sandboxing, batched reviews, and gradual adoption, offer a concrete checklist for teams piloting coding agents.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Shows a concrete, fast-shipping workflow with explicit guardrails</li><li>Candid about failure modes like code slop and unsafe agent actions</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Single-company account with an unverified productivity claim</li><li>No-human-code approach may not transfer to teams with weaker testing</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener noreferrer"><img src="https://infoq.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>infoq.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#ef4444;">
+      <a class="story-media" href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/" target="_blank" rel="noopener noreferrer"><img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/23/ML-22385-1.png" alt="Amazon Bedrock adds Trusted Access API with Anthropic&#x27;s enterprise safeguards and data controls" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg filled" style="background:#ef4444;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#ef4444;color:#ef4444;">ENTERPRISE</span><span class="tag-chip" style="border-color:#dc2626;color:#dc2626;">SAFETY</span>
+        </div>
+        <h3 class="story-headline">Amazon Bedrock adds Trusted Access API with Anthropic&#x27;s enterprise safeguards and data controls</h3>
+        <div class="story-dates">First reported 2026-11-24</div>
+        <p class="story-text">AWS made generally available a trusted access program API on Amazon Bedrock, giving customers one place to discover and enroll in model-provider trusted access programs. Public preview begins with Anthropic&#x27;s Enterprise Frontier Safeguards and Enterprise Data Controls, available for Claude models used through the Cyber Verification Program. The move formalizes stricter, gated access for high-risk capabilities inside a major cloud platform.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Gated access tiers for sensitive capabilities are becoming a standard enterprise procurement mechanism, not just a lab policy.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Teams in regulated or security-sensitive work should check whether their use case needs enrollment in a trusted access program before relying on certain Claude capabilities.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Gives enterprises a single channel to enroll in safety and data-control programs</li><li>Stricter monitoring for frontier capabilities can reduce misuse</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Extra enrollment and verification steps add friction for legitimate users</li><li>Only in public preview for the first offerings</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/" target="_blank" rel="noopener noreferrer"><img src="https://aws.amazon.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>aws.amazon.com</span></a></div>
+      </div>
+    </article>
+    <article class="story-card" style="--accent:#94a3b8;">
+      <a class="story-media" href="https://www.wired.com/story/dont-bring-up-ai-if-you-want-to-enjoy-your-thanksgiving/" target="_blank" rel="noopener noreferrer"><img src="https://media.wired.com/photos/6b04ca840ad1d7b44d47c2ed/master/pass/Dont-Bring-Up-AI-if-You-Want-to-Enjoy-Thanksgiving-Business.jpg" alt="Young people are souring on their pro-AI parents, and holidays may get tense" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('media-broken')"></a>
+      <div class="story-body">
+        <div class="story-meta">
+          <span class="meter" role="img" aria-label="3/5"><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg filled" style="background:#94a3b8;"></span><span class="meter-seg" style=""></span><span class="meter-seg" style=""></span></span>
+          <span class="meter-label">3/5</span>
+          <span class="tag-chip" style="border-color:#94a3b8;color:#94a3b8;">OTHER</span>
+        </div>
+        <h3 class="story-headline">Young people are souring on their pro-AI parents, and holidays may get tense</h3>
+        <div class="story-dates">First reported 2026-11-24</div>
+        <p class="story-text">Wired reports that young people anxious about their futures are increasingly frustrated with parents who are enthusiastic about AI, and worry that the topic will make holiday gatherings tense. The piece is a trend story built on reporting about generational attitudes, not a survey with a measured effect size in the candidates. It points to a widening gap in how people of different ages relate to AI&#x27;s role in work and the economy.</p>
+        <div class="callout callout-why"><span class="callout-label">Why it matters</span>Public attitudes toward AI are splitting along generational lines, which matters for trust, adoption, and the politics of AI policy.</div><div class="callout callout-builders"><span class="callout-label">For builders</span>Products aimed at young users may face skepticism about AI framing, so messaging should be honest about job and skill impacts.</div>
+        <div class="pros-cons"><div class="pros"><h4>Pros</h4><ul><li>Surfaces anxieties about careers that product and policy teams need to hear</li><li>Highlights that AI optimism is not universal</li></ul></div><div class="cons"><h4>Cons</h4><ul><li>Anecdotal trend story rather than systematic evidence</li><li>Generational framing may overstate the divide</li></ul></div></div>
+        <div class="source-chips"><a class="source-chip" href="https://www.wired.com/story/dont-bring-up-ai-if-you-want-to-enjoy-your-thanksgiving/" target="_blank" rel="noopener noreferrer"><img src="https://wired.com/favicon.ico" alt="" class="source-favicon" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span>wired.com</span></a></div>
+      </div>
+    </article></div>
+  </section>
+  
+        <section class="relevance-section">
+          <h2>Especially Relevant to Your Work</h2>
+          <div class="relevance-grid"><div class="relevance-card"><h4>Amazon acquires Decart&#x27;s optimization technology for a reported $7.5B to close the Trainium gap</h4><p>Investment in efficiency software for custom accelerators is a sign that the competition with Nvidia is being fought on software performance as well as hardware.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Google lets AI Mode draw on personal Drive, Wallet, and Gemini data</h4><p>Search is moving from generic answers to answers grounded in users&#x27; personal data, which deepens Google&#x27;s advantage from its ecosystem.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>OpenAI describes shipping a $100M ChatGPT ads product with Codex agents and no human-written code</h4><p>It is one of the more detailed public accounts of agent-written production code at scale, including what went wrong.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div></div><div class="relevance-card"><h4>Amazon Bedrock adds Trusted Access API with Anthropic&#x27;s enterprise safeguards and data controls</h4><p>Gated access tiers for sensitive capabilities are becoming a standard enterprise procurement mechanism, not just a lab policy.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Developer</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div><div class="relevance-card"><h4>Young people are souring on their pro-AI parents, and holidays may get tense</h4><p>Public attitudes toward AI are splitting along generational lines, which matters for trust, adoption, and the politics of AI policy.</p><div class="relevance-bar-row"><span class="relevance-bar-label">Tech Consulting</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Nonprofit</span><span class="meter" role="img" aria-label="2/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg" style=""></span></span></div><div class="relevance-bar-row"><span class="relevance-bar-label">Coaching &amp; Human Impact</span><span class="meter" role="img" aria-label="3/3"><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span><span class="meter-seg filled" style="background:#0ea5e9;"></span></span></div></div></div>
+        </section>
+  <section class="worth-watching">
+    <h2>Worth Watching</h2>
+    <ul class="worth-watching-list"><li>Wired reports an Anthropic researcher produced a 17-million-line solution to the Riemann hypothesis that humans need months to understand; the claim is extraordinary and the candidates include no independent verification, so treat it as unconfirmed. <a href="https://www.wired.com/story/ai-solved-maths-most-famous-problem/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Anthropic&#x27;s stock reportedly traded below its $83 IPO price in premarket trading, a early test of public-market sentiment toward frontier AI labs. <a href="https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading" target="_blank" rel="noopener noreferrer">↗</a></li><li>Anthropic built a honeypot test to see whether AI agents can be lured into misbehaving, a potentially useful evaluation approach for agent safety. <a href="https://www.wired.com/story/ai-agents-can-get-honeypotted-too-aw/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Pinterest will let parents limit the AI-generated content their teens see, a sign that AI content filtering is becoming a product feature for minors. <a href="https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/" target="_blank" rel="noopener noreferrer">↗</a></li><li>The New York Times has told freelance photographers not to update Photoshop because 2027 AI features may tag photos as AI-generated, a signal of provenance-metadata friction in newsrooms. <a href="https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features" target="_blank" rel="noopener noreferrer">↗</a></li><li>NVIDIA&#x27;s cuDSS 1.0 direct sparse solver, which brings GPU acceleration to engineering simulation workloads, is a developer-relevant infrastructure release to track. <a href="https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/" target="_blank" rel="noopener noreferrer">↗</a></li><li>Anthropic&#x27;s stance that AI sentience is a risk factor for investors drew philosophical pushback in MIT Technology Review, an emerging debate over AI moral-status claims. <a href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/" target="_blank" rel="noopener noreferrer">↗</a></li></ul>
+  </section>
+
+  <section class="explore-card">
+    <h2>One Thing to Explore</h2>
+    
+        <div class="explore-title">When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents</div>
+        <p>This paper uses a sandboxed testbed with real filesystem permissions, SQLite, and fault injection across 2,100 faulted runs to show how agents respond when tools break, and whether they admit it or invent results. For anyone building agents, it sharpens the practical question of how to detect silent failures and why verification-first oversight matters, and the testbed design is a reusable pattern for your own agent evals.</p>
+        <a class="explore-link" href="https://arxiv.org/abs/2611.28341" target="_blank" rel="noopener noreferrer">Start here →</a>
+        
+  </section>
+  
+
+  <footer class="issue-footer">
+    <a href="../index.html">← All issues</a>
+  </footer>
+</main>
+
+<footer class="site-footer">
+  <p>AI-generated with no human review; may contain errors. Verify with the sources and use your own judgment.</p>
+  <p class="footer-links"><a href="../about.html">How this works</a>
+    · <a href="https://www.linkedin.com/in/dan-bough/" target="_blank" rel="noopener">Feedback</a>
+    · <a href="../feed.xml">RSS</a></p>
+</footer>
+
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ai-digest-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  } catch (e) {}
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ai-digest-theme', next); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>
